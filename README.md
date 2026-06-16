@@ -6,7 +6,7 @@
 </h3>
 
 <p align="center">
-🎓 B.Tech Computer Science Engineering (2026 Passout)<br>
+🎓 B.Tech Computer Science Engineering <br>
 ☁️ Passionate about Cloud Computing, DevOps & Automation<br>
 🔧 Building scalable cloud and infrastructure projects
 </p>
@@ -21,7 +21,7 @@
 
 # 🌌 About Me
 
-- 🎓 B.Tech CSE Student (2026 Passout)
+- 🎓 B.Tech CSE Student 
 - ☁️ AWS & DevOps Engineer
 - 🐳 Learning Docker, Kubernetes & Terraform
 - 🔧 Passionate about Automation & Cloud Infrastructure
