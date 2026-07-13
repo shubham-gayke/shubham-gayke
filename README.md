@@ -1,47 +1,26 @@
 <div align="center">
 
 <!-- ═══════════════════════════════════════════════════════════════════ -->
-<!-- ██  ANIMATED CYBERPUNK HEADER WITH GLOWING NEON TERMINAL BOOT  ██ -->
+<!-- ██          GLACIER.OS DYNAMIC HERO SECTION                      ██ -->
 <!-- ═══════════════════════════════════════════════════════════════════ -->
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=venom&color=0:0d1117,25:1a0533,50:6366f1,75:f97316,100:0d1117&height=300&section=header&text=SHUBHAM%20GAYKE&fontSize=60&fontColor=ffffff&animation=twinkling&fontAlignY=35&desc=%E2%9A%A1%20DevOps%20Engineer%20%E2%80%A2%20Cloud%20Architect%20%E2%80%A2%20AI%20Automation%20Specialist%20%E2%9A%A1&descSize=16&descAlignY=55&stroke=f97316&strokeWidth=2" />
-
-<!-- ══════════════ ANIMATED TERMINAL BOOT SEQUENCE ══════════════ -->
+<img width="100%" src="./hero.svg" alt="Shubham Gayke Hero Section" />
 
 <br/>
 
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=800&size=28&duration=2500&pause=800&color=00FF41&center=true&vCenter=true&multiline=true&repeat=true&random=false&width=800&height=100&lines=%24+sudo+deploy+--production+--scale+infinity;%24+kubectl+apply+-f+future.yaml+%E2%9C%93+deployed;%24+terraform+plan+%E2%80%94+infrastructure+ready+%F0%9F%9A%80" alt="Terminal Typing" /></a>
+<!-- ══════════════ GLACIER LINK BADGES ══════════════ -->
 
-<br/>
-
-<!-- ══════════════ SOCIAL COMMAND LINE ══════════════ -->
-
-```
-╔══════════════════════════════════════════════════════════════════════════════════╗
-║  ██████╗  █████╗ ██╗   ██╗██╗  ██╗███████╗    ███████╗██╗  ██╗███████╗██╗     ║
-║ ██╔════╝ ██╔══██╗╚██╗ ██╔╝██║ ██╔╝██╔════╝    ██╔════╝██║  ██║██╔════╝██║     ║
-║ ██║  ███╗███████║ ╚████╔╝ █████╔╝ █████╗      ███████╗███████║█████╗  ██║     ║
-║ ██║   ██║██╔══██║  ╚██╔╝  ██╔═██╗ ██╔══╝      ╚════██║██╔══██║██╔══╝  ██║     ║
-║ ╚██████╔╝██║  ██║   ██║   ██║  ██╗███████╗    ███████║██║  ██║███████╗███████╗ ║
-║  ╚═════╝ ╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝╚══════╝    ╚══════╝╚═╝  ╚═╝╚══════╝╚══════╝ ║
-╚══════════════════════════════════════════════════════════════════════════════════╝
-```
-
-<br/>
-
-<!-- ══════════════ NEON LINK BADGES ══════════════ -->
-
-<a href="https://shubham-gayke.github.io/Portfolio-/"><img src="https://img.shields.io/badge/%E2%9A%A1_PORTFOLIO-00FF41?style=for-the-badge&logoColor=black&labelColor=0d1117" alt="Portfolio"/></a>&nbsp;
-<a href="https://www.linkedin.com/in/shubhamgayke/"><img src="https://img.shields.io/badge/%F0%9F%94%97_LINKEDIN-0A66C2?style=for-the-badge&logoColor=white&labelColor=0d1117" alt="LinkedIn"/></a>&nbsp;
-<a href="https://drive.google.com/file/d/1sSvI-UPhe_FvE0ypRYgzPECl5ng3pbRe/view?usp=sharing"><img src="https://img.shields.io/badge/%F0%9F%93%84_RESUME-f97316?style=for-the-badge&logoColor=white&labelColor=0d1117" alt="Resume"/></a>&nbsp;
-<a href="mailto:shubhamgayke9860@gmail.com"><img src="https://img.shields.io/badge/%F0%9F%93%A7_EMAIL-EA4335?style=for-the-badge&logoColor=white&labelColor=0d1117" alt="Email"/></a>&nbsp;
-<a href="https://github.com/shubham-gayke"><img src="https://img.shields.io/badge/%F0%9F%92%BB_GITHUB-6366f1?style=for-the-badge&logoColor=white&labelColor=0d1117" alt="GitHub"/></a>
+<a href="https://shubham-gayke.github.io/Portfolio-/"><img src="https://img.shields.io/badge/%E2%9A%A1_PORTFOLIO-38BDF8?style=for-the-badge&logoColor=black&labelColor=040910" alt="Portfolio"/></a>&nbsp;
+<a href="https://www.linkedin.com/in/shubhamgayke/"><img src="https://img.shields.io/badge/%F0%9F%94%97_LINKEDIN-0A66C2?style=for-the-badge&logoColor=white&labelColor=040910" alt="LinkedIn"/></a>&nbsp;
+<a href="https://drive.google.com/file/d/1sSvI-UPhe_FvE0ypRYgzPECl5ng3pbRe/view?usp=sharing"><img src="https://img.shields.io/badge/%F0%9F%93%84_RESUME-22D3EE?style=for-the-badge&logoColor=black&labelColor=040910" alt="Resume"/></a>&nbsp;
+<a href="mailto:shubhamgayke9860@gmail.com"><img src="https://img.shields.io/badge/%F0%9F%93%A7_EMAIL-38BDF8?style=for-the-badge&logoColor=black&labelColor=040910" alt="Email"/></a>&nbsp;
+<a href="https://github.com/shubham-gayke"><img src="https://img.shields.io/badge/%F0%9F%92%BB_GITHUB-5EEAD4?style=for-the-badge&logoColor=black&labelColor=040910" alt="GitHub"/></a>
 
 <br/><br/>
 
-<img src="https://komarev.com/ghpvc/?username=shubham-gayke&style=for-the-badge&color=00FF41&label=SYSTEM+VISITORS&labelColor=0d1117" alt="Profile Views"/>
+<img src="https://komarev.com/ghpvc/?username=shubham-gayke&style=for-the-badge&color=38BDF8&label=SYSTEM+VISITORS&labelColor=040910" alt="Profile Views"/>
 &nbsp;
-<img src="https://img.shields.io/github/followers/shubham-gayke?style=for-the-badge&color=f97316&label=NETWORK+NODES&labelColor=0d1117&logo=github" alt="Followers"/>
+<img src="https://img.shields.io/github/followers/shubham-gayke?style=for-the-badge&color=22D3EE&label=NETWORK+NODES&labelColor=040910&logo=github" alt="Followers"/>
 
 </div>
 
@@ -551,15 +530,15 @@ DevOpsEngineer.deploy();
 
 | `STATUS` | `CERTIFICATION` | `ISSUER` | `VERIFY` |
 |:---:|:---|:---|:---:|
-| ![Active](https://img.shields.io/badge/●-ACTIVE-00FF41?style=flat-square&labelColor=0d1117) | **Oracle Certified DevOps Professional** | Oracle | [![🔗](https://img.shields.io/badge/VERIFY-→-f97316?style=flat-square&labelColor=0d1117)](https://catalog-education.oracle.com/ords/certview/sharebadge?id=D5959B79548455792A7547789EC433509523A61DAE0BFF0B1CF42B6437F7CD44) |
-| ![Active](https://img.shields.io/badge/●-ACTIVE-00FF41?style=flat-square&labelColor=0d1117) | **Oracle AWS Certified Architect Professional** | Oracle | [![🔗](https://img.shields.io/badge/VERIFY-→-f97316?style=flat-square&labelColor=0d1117)](https://catalog-education.oracle.com/ords/certview/sharebadge?id=350B59B6807EFD465DC623FECE329C9CFE51A56BA1266899394D6DA5E5CFDC02) |
-| ![Active](https://img.shields.io/badge/●-ACTIVE-00FF41?style=flat-square&labelColor=0d1117) | **SQL Advanced** | HackerRank | [![🔗](https://img.shields.io/badge/VERIFY-→-f97316?style=flat-square&labelColor=0d1117)](https://www.hackerrank.com/certificates/iframe/3877fd359065) |
-| ![Active](https://img.shields.io/badge/●-ACTIVE-00FF41?style=flat-square&labelColor=0d1117) | **REST API Certification** | HackerRank | [![🔗](https://img.shields.io/badge/VERIFY-→-f97316?style=flat-square&labelColor=0d1117)](https://www.hackerrank.com/certificates/iframe/e7ecdbe31b88) |
-| ![Active](https://img.shields.io/badge/●-ACTIVE-00FF41?style=flat-square&labelColor=0d1117) | **Microsoft AI Skills Fest 2026** | Microsoft / Credly | [![🔗](https://img.shields.io/badge/VERIFY-→-f97316?style=flat-square&labelColor=0d1117)](https://www.credly.com/badges/f9cfab76-4566-4a2f-8241-4bba8207ed6a) |
-| ![Active](https://img.shields.io/badge/●-ACTIVE-00FF41?style=flat-square&labelColor=0d1117) | **Azure Certification & Achievement** | Microsoft | [![🔗](https://img.shields.io/badge/VERIFY-→-f97316?style=flat-square&labelColor=0d1117)](https://learn.microsoft.com/en-us/users/shubhamgayke-0899/) |
-| ![Active](https://img.shields.io/badge/●-ACTIVE-00FF41?style=flat-square&labelColor=0d1117) | **GCP Skills & Badges** | Google Cloud / Credly | [![🔗](https://img.shields.io/badge/VERIFY-→-f97316?style=flat-square&labelColor=0d1117)](https://www.credly.com/users/shubham-gayke/edit/badges/credly) |
-| ![Active](https://img.shields.io/badge/●-ACTIVE-00FF41?style=flat-square&labelColor=0d1117) | **AWS Solution Architect** | Udemy | [![🔗](https://img.shields.io/badge/VERIFY-→-f97316?style=flat-square&labelColor=0d1117)](https://www.udemy.com/certificate/UC-3cee2428-890d-44c1-b27d-b07c3d319046/) |
-| ![Active](https://img.shields.io/badge/●-ACTIVE-00FF41?style=flat-square&labelColor=0d1117) | **Deloitte Completion Certificate** | Forage | [![🔗](https://img.shields.io/badge/VERIFY-→-f97316?style=flat-square&labelColor=0d1117)](https://www.theforage.com/completion-certificates/9PBTqmSxAf6zZTseP/udmxiyHeqYQLkTPvf_9PBTqmSxAf6zZTseP_QHZfHBduwup8Bnq62_1755798824468_completion_certificate.pdf) |
+| ![Active](https://img.shields.io/badge/●-ACTIVE-38BDF8?style=flat-square&labelColor=040910) | **Oracle Certified DevOps Professional** | Oracle | [![🔗](https://img.shields.io/badge/VERIFY-→-22D3EE?style=flat-square&labelColor=040910)](https://catalog-education.oracle.com/ords/certview/sharebadge?id=D5959B79548455792A7547789EC433509523A61DAE0BFF0B1CF42B6437F7CD44) |
+| ![Active](https://img.shields.io/badge/●-ACTIVE-38BDF8?style=flat-square&labelColor=040910) | **Oracle AWS Certified Architect Professional** | Oracle | [![🔗](https://img.shields.io/badge/VERIFY-→-22D3EE?style=flat-square&labelColor=040910)](https://catalog-education.oracle.com/ords/certview/sharebadge?id=350B59B6807EFD465DC623FECE329C9CFE51A56BA1266899394D6DA5E5CFDC02) |
+| ![Active](https://img.shields.io/badge/●-ACTIVE-38BDF8?style=flat-square&labelColor=040910) | **SQL Advanced** | HackerRank | [![🔗](https://img.shields.io/badge/VERIFY-→-22D3EE?style=flat-square&labelColor=040910)](https://www.hackerrank.com/certificates/iframe/3877fd359065) |
+| ![Active](https://img.shields.io/badge/●-ACTIVE-38BDF8?style=flat-square&labelColor=040910) | **REST API Certification** | HackerRank | [![🔗](https://img.shields.io/badge/VERIFY-→-22D3EE?style=flat-square&labelColor=040910)](https://www.hackerrank.com/certificates/iframe/e7ecdbe31b88) |
+| ![Active](https://img.shields.io/badge/●-ACTIVE-38BDF8?style=flat-square&labelColor=040910) | **Microsoft AI Skills Fest 2026** | Microsoft / Credly | [![🔗](https://img.shields.io/badge/VERIFY-→-22D3EE?style=flat-square&labelColor=040910)](https://www.credly.com/badges/f9cfab76-4566-4a2f-8241-4bba8207ed6a) |
+| ![Active](https://img.shields.io/badge/●-ACTIVE-38BDF8?style=flat-square&labelColor=040910) | **Azure Certification & Achievement** | Microsoft | [![🔗](https://img.shields.io/badge/VERIFY-→-22D3EE?style=flat-square&labelColor=040910)](https://learn.microsoft.com/en-us/users/shubhamgayke-0899/) |
+| ![Active](https://img.shields.io/badge/●-ACTIVE-38BDF8?style=flat-square&labelColor=040910) | **GCP Skills & Badges** | Google Cloud / Credly | [![🔗](https://img.shields.io/badge/VERIFY-→-22D3EE?style=flat-square&labelColor=040910)](https://www.credly.com/users/shubham-gayke/edit/badges/credly) |
+| ![Active](https://img.shields.io/badge/●-ACTIVE-38BDF8?style=flat-square&labelColor=040910) | **AWS Solution Architect** | Udemy | [![🔗](https://img.shields.io/badge/VERIFY-→-22D3EE?style=flat-square&labelColor=040910)](https://www.udemy.com/certificate/UC-3cee2428-890d-44c1-b27d-b07c3d319046/) |
+| ![Active](https://img.shields.io/badge/●-ACTIVE-38BDF8?style=flat-square&labelColor=040910) | **Deloitte Completion Certificate** | Forage | [![🔗](https://img.shields.io/badge/VERIFY-→-22D3EE?style=flat-square&labelColor=040910)](https://www.theforage.com/completion-certificates/9PBTqmSxAf6zZTseP/udmxiyHeqYQLkTPvf_9PBTqmSxAf6zZTseP_QHZfHBduwup8Bnq62_1755798824468_completion_certificate.pdf) |
 
 </div>
 
@@ -616,20 +595,20 @@ DevOpsEngineer.deploy();
 
 <!-- Coding & Community Profiles -->
 
-<a href="https://leetcode.com/u/Shubham_Gayke/"><img src="https://img.shields.io/badge/LEETCODE-▸_ACTIVE-FFA116?style=for-the-badge&logo=leetcode&logoColor=FFA116&labelColor=0d1117" alt="LeetCode"/></a>&nbsp;
-<a href="https://www.hackerrank.com/profile/shubhamgayke9860"><img src="https://img.shields.io/badge/HACKERRANK-▸_ACTIVE-00EA64?style=for-the-badge&logo=hackerrank&logoColor=00EA64&labelColor=0d1117" alt="HackerRank"/></a>&nbsp;
-<a href="https://github.com/shubham-gayke"><img src="https://img.shields.io/badge/GITHUB-▸_ACTIVE-ffffff?style=for-the-badge&logo=github&logoColor=ffffff&labelColor=0d1117" alt="GitHub"/></a>
+<a href="https://leetcode.com/u/Shubham_Gayke/"><img src="https://img.shields.io/badge/LEETCODE-▸_ACTIVE-38BDF8?style=for-the-badge&logo=leetcode&logoColor=38BDF8&labelColor=040910" alt="LeetCode"/></a>&nbsp;
+<a href="https://www.hackerrank.com/profile/shubhamgayke9860"><img src="https://img.shields.io/badge/HACKERRANK-▸_ACTIVE-22D3EE?style=for-the-badge&logo=hackerrank&logoColor=22D3EE&labelColor=040910" alt="HackerRank"/></a>&nbsp;
+<a href="https://github.com/shubham-gayke"><img src="https://img.shields.io/badge/GITHUB-▸_ACTIVE-ffffff?style=for-the-badge&logo=github&logoColor=ffffff&labelColor=040910" alt="GitHub"/></a>
 
 <br/>
 
-<a href="https://www.credly.com/users/shubham-gayke/badges/credly"><img src="https://img.shields.io/badge/CREDLY-▸_ACTIVE-FF6B00?style=for-the-badge&logo=credly&logoColor=FF6B00&labelColor=0d1117" alt="Credly"/></a>&nbsp;
-<a href="https://learn.microsoft.com/en-us/users/shubhamgayke-0899/"><img src="https://img.shields.io/badge/MICROSOFT_LEARN-▸_ACTIVE-0089D6?style=for-the-badge&logo=microsoftazure&logoColor=0089D6&labelColor=0d1117" alt="Microsoft Learn"/></a>&nbsp;
-<a href="https://dev.to/shubham_gayke"><img src="https://img.shields.io/badge/DEV.TO-▸_ACTIVE-ffffff?style=for-the-badge&logo=devdotto&logoColor=ffffff&labelColor=0d1117" alt="DEV Community"/></a>
+<a href="https://www.credly.com/users/shubham-gayke/badges/credly"><img src="https://img.shields.io/badge/CREDLY-▸_ACTIVE-38BDF8?style=for-the-badge&logo=credly&logoColor=38BDF8&labelColor=040910" alt="Credly"/></a>&nbsp;
+<a href="https://learn.microsoft.com/en-us/users/shubhamgayke-0899/"><img src="https://img.shields.io/badge/MICROSOFT_LEARN-▸_ACTIVE-22D3EE?style=for-the-badge&logo=microsoftazure&logoColor=22D3EE&labelColor=040910" alt="Microsoft Learn"/></a>&nbsp;
+<a href="https://dev.to/shubham_gayke"><img src="https://img.shields.io/badge/DEV.TO-▸_ACTIVE-ffffff?style=for-the-badge&logo=devdotto&logoColor=ffffff&labelColor=040910" alt="DEV Community"/></a>
 
 <br/><br/>
 
-<a href="https://drive.google.com/file/d/1OzzT5Mz3NrrzNX2J7AIz2WrCvPAfnGu0/view?usp=sharing"><img src="https://img.shields.io/badge/AWS_EMERGING_TALENT-▸_VERIFIED-FF9900?style=for-the-badge&logo=amazonaws&logoColor=FF9900&labelColor=0d1117" alt="AWS Emerging Talent"/></a>&nbsp;
-<a href="https://community.oracle.com/ou/profile/discussions/Shubham%20Gayke"><img src="https://img.shields.io/badge/ORACLE_EDU-▸_VERIFIED-F80000?style=for-the-badge&logo=oracle&logoColor=F80000&labelColor=0d1117" alt="Oracle Education"/></a>
+<a href="https://drive.google.com/file/d/1OzzT5Mz3NrrzNX2J7AIz2WrCvPAfnGu0/view?usp=sharing"><img src="https://img.shields.io/badge/AWS_EMERGING_TALENT-▸_VERIFIED-38BDF8?style=for-the-badge&logo=amazonaws&logoColor=38BDF8&labelColor=040910" alt="AWS Emerging Talent"/></a>&nbsp;
+<a href="https://community.oracle.com/ou/profile/discussions/Shubham%20Gayke"><img src="https://img.shields.io/badge/ORACLE_EDU-▸_VERIFIED-22D3EE?style=for-the-badge&logo=oracle&logoColor=22D3EE&labelColor=040910" alt="Oracle Education"/></a>
 
 </div>
 
@@ -646,18 +625,18 @@ DevOpsEngineer.deploy();
 <br/>
 
 <!-- GitHub Stats -->
-<img width="49%" src="https://github-readme-stats.vercel.app/api?username=shubham-gayke&show_icons=true&theme=radical&hide_border=true&bg_color=0d1117&title_color=00FF41&icon_color=f97316&text_color=c9d1d9&ring_color=00FF41&count_private=true&include_all_commits=true" alt="GitHub Stats"/>
-<img width="49%" src="https://github-readme-streak-stats.herokuapp.com/?user=shubham-gayke&theme=radical&hide_border=true&background=0d1117&ring=00FF41&fire=f97316&currStreakLabel=00FF41&sideLabels=6366f1&dates=c9d1d9&currStreakNum=ffffff&sideNums=f97316" alt="Streak Stats"/>
+<img width="49%" src="https://github-readme-stats.vercel.app/api?username=shubham-gayke&show_icons=true&theme=radical&hide_border=true&bg_color=040910&title_color=38BDF8&icon_color=22D3EE&text_color=c9d1d9&ring_color=38BDF8&count_private=true&include_all_commits=true" alt="GitHub Stats"/>
+<img width="49%" src="https://github-readme-streak-stats.herokuapp.com/?user=shubham-gayke&theme=radical&hide_border=true&background=040910&ring=38BDF8&fire=38BDF8&currStreakLabel=38BDF8&sideLabels=22D3EE&dates=c9d1d9&currStreakNum=ffffff&sideNums=22D3EE" alt="Streak Stats"/>
 
 <br/><br/>
 
 <!-- Top Languages -->
-<img width="40%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=shubham-gayke&layout=compact&theme=radical&hide_border=true&bg_color=0d1117&title_color=00FF41&text_color=c9d1d9" alt="Top Languages"/>
+<img width="40%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=shubham-gayke&layout=compact&theme=radical&hide_border=true&bg_color=040910&title_color=38BDF8&text_color=c9d1d9" alt="Top Languages"/>
 
 <br/><br/>
 
 <!-- Activity Graph -->
-<img width="98%" src="https://github-readme-activity-graph.vercel.app/graph?username=shubham-gayke&theme=react-dark&hide_border=true&bg_color=0d1117&color=00FF41&line=f97316&point=ffffff&area=true&area_color=6366f1" alt="Activity Graph"/>
+<img width="98%" src="https://github-readme-activity-graph.vercel.app/graph?username=shubham-gayke&theme=react-dark&hide_border=true&bg_color=040910&color=38BDF8&line=22D3EE&point=ffffff&area=true&area_color=5EEAD4" alt="Activity Graph"/>
 
 <br/><br/>
 
@@ -717,10 +696,10 @@ DevOpsEngineer.deploy();
 
 <br/>
 
-<a href="mailto:shubhamgayke9860@gmail.com"><img src="https://img.shields.io/badge/📧_EMAIL_ME-00FF41?style=for-the-badge&labelColor=0d1117" alt="Email"/></a>&nbsp;
-<a href="https://www.linkedin.com/in/shubhamgayke/"><img src="https://img.shields.io/badge/🔗_LINKEDIN-0A66C2?style=for-the-badge&labelColor=0d1117" alt="LinkedIn"/></a>&nbsp;
-<a href="https://drive.google.com/file/d/1sSvI-UPhe_FvE0ypRYgzPECl5ng3pbRe/view?usp=sharing"><img src="https://img.shields.io/badge/📄_RESUME-f97316?style=for-the-badge&labelColor=0d1117" alt="Resume"/></a>&nbsp;
-<a href="https://shubham-gayke.github.io/Portfolio-/"><img src="https://img.shields.io/badge/🌐_PORTFOLIO-6366f1?style=for-the-badge&labelColor=0d1117" alt="Portfolio"/></a>
+<a href="mailto:shubhamgayke9860@gmail.com"><img src="https://img.shields.io/badge/📧_EMAIL_ME-38BDF8?style=for-the-badge&labelColor=040910" alt="Email"/></a>&nbsp;
+<a href="https://www.linkedin.com/in/shubhamgayke/"><img src="https://img.shields.io/badge/🔗_LINKEDIN-0A66C2?style=for-the-badge&labelColor=040910" alt="LinkedIn"/></a>&nbsp;
+<a href="https://drive.google.com/file/d/1sSvI-UPhe_FvE0ypRYgzPECl5ng3pbRe/view?usp=sharing"><img src="https://img.shields.io/badge/📄_RESUME-22D3EE?style=for-the-badge&labelColor=040910" alt="Resume"/></a>&nbsp;
+<a href="https://shubham-gayke.github.io/Portfolio-/"><img src="https://img.shields.io/badge/🌐_PORTFOLIO-38BDF8?style=for-the-badge&labelColor=040910" alt="Portfolio"/></a>
 
 <br/><br/>
 
