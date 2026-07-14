@@ -50,7 +50,7 @@
       </feMerge>
     </filter>
     <filter id="ggh-glow-strong" x="-60%" y="-60%" width="220%" height="220%">
-      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feGaussianBlur stdDeviation="6" result="blur"/>
       <feMerge>
         <feMergeNode in="blur"/>
         <feMergeNode in="blur"/>
@@ -85,10 +85,10 @@
       <animate attributeName="cy" values="260;180;260" dur="14s" repeatCount="indefinite"/>
     </circle>
 
-    <!-- Background tech nodes (Left side only now) -->
+    <!-- Background tech nodes -->
     <g fill="none" stroke="#22D3EE" stroke-opacity="0.15" stroke-width="1.5">
-       <path d="M 400,0 L 500,100 L 500,380"/>
-       <path d="M 500,100 L 700,50 L 750,150"/>
+       <path d="M 500,0 L 550,100 L 550,380"/>
+       <path d="M 550,100 L 700,50 L 750,150"/>
     </g>
 
     <!-- fine grain texture -->
@@ -99,69 +99,72 @@
       <animate attributeName="y" values="-10;390" dur="5.5s" repeatCount="indefinite"/>
     </rect>
 
-    <!-- STATUS PILLS -->
-    <rect x="40" y="34" width="176" height="34" rx="17" fill="#7DD3FC" fill-opacity="0.07" stroke="#7DD3FC" stroke-opacity="0.35"/>
-    <circle cx="59" cy="51" r="5" fill="#22D3EE">
-      <animate attributeName="opacity" values="1;0.25;1" dur="1.8s" repeatCount="indefinite"/>
-    </circle>
-    <text x="75" y="56" font-family="'JetBrains Mono','Fira Code',Consolas,monospace" font-size="13" letter-spacing="1.5" fill="#BFEFFF">SYSTEM ONLINE</text>
-
-    <!-- B-Tech CSE Badge (Glowing) -->
-    <rect x="230" y="34" width="125" height="34" rx="17" fill="#5EEAD4" fill-opacity="0.07" stroke="#5EEAD4" stroke-opacity="0.45"/>
-    <circle cx="249" cy="51" r="5" fill="#5EEAD4">
-      <animate attributeName="opacity" values="0.3;1;0.3" dur="2.5s" repeatCount="indefinite"/>
-    </circle>
-    <text x="265" y="56" font-family="'JetBrains Mono','Fira Code',Consolas,monospace" font-size="13" letter-spacing="1.5" fill="#5EEAD4" filter="url(#ggh-glow)">B-TECH CSE</text>
-
     <!-- watermark -->
     <text x="1150" y="34" text-anchor="end" font-family="'JetBrains Mono',Consolas,monospace" font-size="12" fill="#7C93A8" opacity="0.4">GLACIER.OS</text>
 
     <!-- greeting -->
-    <text x="42" y="122" font-family="'Segoe UI',Roboto,Arial,sans-serif" font-size="21" fill="#8FB4CC">Hi, I'm</text>
+    <text x="40" y="45" font-family="'Segoe UI',Roboto,Arial,sans-serif" font-size="22" fill="#8FB4CC">Hi, I'm</text>
 
-    <!-- name (Reduced glow and font-weight per user request) -->
+    <!-- name -->
     <g>
       <animateTransform attributeName="transform" type="translate" values="0 0; 0 -3; 0 0" dur="6s" repeatCount="indefinite"/>
-      <text x="40" y="186" font-family="'Segoe UI',Roboto,Arial,sans-serif" font-size="62" font-weight="600" letter-spacing="0.5" fill="url(#ggh-nameGrad)" filter="url(#ggh-glow)">SHUBHAM GAYKE</text>
+      <text x="38" y="110" font-family="'Segoe UI',Roboto,Arial,sans-serif" font-size="62" font-weight="600" letter-spacing="0.5" fill="url(#ggh-nameGrad)" filter="url(#ggh-glow)">SHUBHAM GAYKE</text>
     </g>
 
     <!-- typed role cycle -->
-    <g font-family="'JetBrains Mono','Fira Code',Consolas,monospace" font-size="23" fill="#D7F3FF">
-      <text x="40" y="236" opacity="0">
+    <g font-family="'JetBrains Mono','Fira Code',Consolas,monospace" font-size="24" fill="#D7F3FF">
+      <text x="40" y="160" opacity="0">
         DevOps Engineer<tspan fill="#22D3EE">▌</tspan>
         <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.25;0.2501;1" dur="12s" begin="0s" repeatCount="indefinite"/>
       </text>
-      <text x="40" y="236" opacity="0">
+      <text x="40" y="160" opacity="0">
         Cloud Architect<tspan fill="#22D3EE">▌</tspan>
         <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.25;0.2501;1" dur="12s" begin="3s" repeatCount="indefinite"/>
       </text>
-      <text x="40" y="236" opacity="0">
+      <text x="40" y="160" opacity="0">
         AI Automation Specialist<tspan fill="#22D3EE">▌</tspan>
         <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.25;0.2501;1" dur="12s" begin="6s" repeatCount="indefinite"/>
       </text>
-      <text x="40" y="236" opacity="0">
+      <text x="40" y="160" opacity="0">
         Builder of Self-Healing Systems<tspan fill="#22D3EE">▌</tspan>
         <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.25;0.2501;1" dur="12s" begin="9s" repeatCount="indefinite"/>
       </text>
     </g>
-
+    
     <!-- divider -->
-    <line x1="40" y1="272" x2="550" y2="272" stroke="url(#ggh-nameGrad)" stroke-width="1.4" opacity="0.5">
-      <animate attributeName="opacity" values="0.3;0.8;0.3" dur="4s" repeatCount="indefinite"/>
+    <line x1="40" y1="185" x2="550" y2="185" stroke="url(#ggh-nameGrad)" stroke-width="1.4" opacity="0.6">
+      <animate attributeName="opacity" values="0.4;0.9;0.4" dur="4s" repeatCount="indefinite"/>
     </line>
 
-    <!-- tagline -->
-    <text x="40" y="302" font-family="'JetBrains Mono',Consolas,monospace" font-size="14.5" fill="#7C93A8">
-      // infrastructure should be invisible, resilient, self-healing
-      <animate attributeName="opacity" values="0.45;0.9;0.45" dur="5s" repeatCount="indefinite"/>
+    <!-- B-Tech CSE Badge -->
+    <rect x="40" y="200" width="125" height="34" rx="17" fill="#5EEAD4" fill-opacity="0.07" stroke="#5EEAD4" stroke-opacity="0.45"/>
+    <circle cx="59" cy="217" r="5" fill="#5EEAD4">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <text x="75" y="222" font-family="'JetBrains Mono','Fira Code',Consolas,monospace" font-size="13" letter-spacing="1.5" fill="#5EEAD4" filter="url(#ggh-glow)">B-TECH CSE</text>
+
+    <!-- tagline (Highly Visible) -->
+    <text x="185" y="222" font-family="'JetBrains Mono',Consolas,monospace" font-size="14.5" fill="#BAE6FD" opacity="0.9">
+      // infrastructure should be invisible, automated, self-healing
+      <animate attributeName="opacity" values="0.8;1;0.8" dur="5s" repeatCount="indefinite"/>
     </text>
 
-    <!-- footer meta line (Glowing Email) -->
-    <text x="40" y="336" font-family="'JetBrains Mono',Consolas,monospace" font-size="13.5" fill="#5E7A90">
-      📍 India &#160;&#160;·&#160;&#160;
-      <tspan fill="#38BDF8" font-weight="bold" filter="url(#ggh-glow-strong)">✉ shubhamgayke9860@gmail.com</tspan>
-      <animate attributeName="opacity" values="0.8;1;0.8" dur="3s" repeatCount="indefinite"/>
-    </text>
+    <!-- Contact Info (Glowing & Bold) -->
+    <g font-family="'JetBrains Mono',Consolas,monospace" font-size="16" font-weight="bold">
+      <text x="40" y="270" fill="#38BDF8" filter="url(#ggh-glow-strong)">
+        📞 +91 9168469745
+        <animate attributeName="opacity" values="0.8;1;0.8" dur="3s" repeatCount="indefinite"/>
+      </text>
+      
+      <text x="40" y="305" fill="#5EEAD4" filter="url(#ggh-glow-strong)">
+        ✉ shubhamgayke9860@gmail.com
+        <animate attributeName="opacity" values="0.8;1;0.8" dur="3.5s" repeatCount="indefinite"/>
+      </text>
+
+      <text x="40" y="340" fill="#BAE6FD" filter="url(#ggh-glow)">
+        📍 Maharashtra, India
+      </text>
+    </g>
 
     <!-- ═════════════════ DEVOPS TOOLCHAIN (RIGHT SIDE) ═════════════════ -->
     
@@ -171,42 +174,70 @@
       <path d="M 820,180 L 890,260 L 1050,290"/>
       <path d="M 1080,110 L 1100,200 L 1050,290"/>
       <path d="M 920,90 L 980,190 L 890,260"/>
+      <!-- Links for new tools -->
+      <path d="M 890,260 L 780,260 L 820,180"/>
+      <path d="M 920,90 L 840,110 L 820,180"/>
     </g>
 
-    <!-- KUBERNETES (Rotating Heptagon) -->
+    <!-- LINUX (Tux Penguin) -->
+    <g transform="translate(840, 110)">
+      <g filter="url(#ggh-glow)">
+        <animateTransform attributeName="transform" type="rotate" values="-8; 8; -8" dur="3s" repeatCount="indefinite"/>
+        <!-- Penguin Body -->
+        <ellipse cx="0" cy="0" rx="12" ry="17" fill="#E2E8F0"/>
+        <path d="M-10,-5 Q0,-15 10,-5 L12,5 Q0,20 -12,5 Z" fill="#040910" stroke="#E2E8F0" stroke-width="2"/>
+        <!-- Beak -->
+        <polygon points="-4,-2 4,-2 0,4" fill="#FCA326"/>
+      </g>
+      <text y="28" font-family="monospace" font-size="10" fill="#7C93A8" text-anchor="middle">LINUX</text>
+    </g>
+
+    <!-- JENKINS (Bowtie) -->
+    <g transform="translate(770, 250)">
+      <g filter="url(#ggh-glow)">
+        <animateTransform attributeName="transform" type="translate" values="0 -5; 0 5; 0 -5" dur="4s" repeatCount="indefinite"/>
+        <!-- Bowtie -->
+        <polygon points="-12,-5 0,0 -12,5" fill="#D33833"/>
+        <polygon points="12,-5 0,0 12,5" fill="#D33833"/>
+        <circle cx="0" cy="0" r="3" fill="#FFF"/>
+        <!-- Face/Mustache outline -->
+        <path d="M-8,-8 Q0,-12 8,-8" fill="none" stroke="#F0D6B7" stroke-width="2"/>
+      </g>
+      <text y="20" font-family="monospace" font-size="10" fill="#7C93A8" text-anchor="middle">JENKINS</text>
+    </g>
+
+    <!-- KUBERNETES -->
     <g transform="translate(1080, 110)">
       <g filter="url(#ggh-glow)">
         <animateTransform attributeName="transform" type="rotate" values="0;360" dur="15s" repeatCount="indefinite"/>
-        <polygon points="0,-22 17,-13 21,7 9,21 -9,21 -21,7 -17,-13" fill="none" stroke="#38BDF8" stroke-width="3"/>
-        <circle cx="0" cy="0" r="10" fill="none" stroke="#38BDF8" stroke-width="2"/>
-        <line x1="0" y1="0" x2="0" y2="-22" stroke="#38BDF8" stroke-width="2"/>
-        <line x1="0" y1="0" x2="17" y2="-13" stroke="#38BDF8" stroke-width="2"/>
-        <line x1="0" y1="0" x2="21" y2="7" stroke="#38BDF8" stroke-width="2"/>
-        <line x1="0" y1="0" x2="9" y2="21" stroke="#38BDF8" stroke-width="2"/>
-        <line x1="0" y1="0" x2="-9" y2="21" stroke="#38BDF8" stroke-width="2"/>
-        <line x1="0" y1="0" x2="-21" y2="7" stroke="#38BDF8" stroke-width="2"/>
-        <line x1="0" y1="0" x2="-17" y2="-13" stroke="#38BDF8" stroke-width="2"/>
+        <polygon points="0,-22 17,-13 21,7 9,21 -9,21 -21,7 -17,-13" fill="none" stroke="#326CE5" stroke-width="3"/>
+        <circle cx="0" cy="0" r="10" fill="none" stroke="#326CE5" stroke-width="2"/>
+        <line x1="0" y1="0" x2="0" y2="-22" stroke="#326CE5" stroke-width="2"/>
+        <line x1="0" y1="0" x2="17" y2="-13" stroke="#326CE5" stroke-width="2"/>
+        <line x1="0" y1="0" x2="21" y2="7" stroke="#326CE5" stroke-width="2"/>
+        <line x1="0" y1="0" x2="9" y2="21" stroke="#326CE5" stroke-width="2"/>
+        <line x1="0" y1="0" x2="-9" y2="21" stroke="#326CE5" stroke-width="2"/>
+        <line x1="0" y1="0" x2="-21" y2="7" stroke="#326CE5" stroke-width="2"/>
+        <line x1="0" y1="0" x2="-17" y2="-13" stroke="#326CE5" stroke-width="2"/>
       </g>
       <text y="40" font-family="monospace" font-size="10" fill="#7C93A8" text-anchor="middle">K8S</text>
     </g>
 
-    <!-- DOCKER (Container moving fwd/bwd) -->
+    <!-- DOCKER -->
     <g transform="translate(890, 260)">
       <g filter="url(#ggh-glow)">
         <animateTransform attributeName="transform" type="translate" values="-15 0; 15 0; -15 0" dur="4s" repeatCount="indefinite"/>
-        <!-- Whale body simplified -->
-        <path d="M-15,5 Q0,15 15,5 Q10,-5 20,-10 L-20,-10 Q-20,0 -15,5 Z" fill="#22D3EE"/>
-        <!-- Containers -->
-        <rect x="-12" y="-18" width="6" height="6" fill="#040910" stroke="#22D3EE" stroke-width="1.5"/>
-        <rect x="-4" y="-18" width="6" height="6" fill="#040910" stroke="#22D3EE" stroke-width="1.5"/>
-        <rect x="4" y="-18" width="6" height="6" fill="#040910" stroke="#22D3EE" stroke-width="1.5"/>
-        <rect x="-8" y="-26" width="6" height="6" fill="#040910" stroke="#22D3EE" stroke-width="1.5"/>
-        <rect x="0" y="-26" width="6" height="6" fill="#040910" stroke="#22D3EE" stroke-width="1.5"/>
+        <path d="M-15,5 Q0,15 15,5 Q10,-5 20,-10 L-20,-10 Q-20,0 -15,5 Z" fill="#2496ED"/>
+        <rect x="-12" y="-18" width="6" height="6" fill="#040910" stroke="#2496ED" stroke-width="1.5"/>
+        <rect x="-4" y="-18" width="6" height="6" fill="#040910" stroke="#2496ED" stroke-width="1.5"/>
+        <rect x="4" y="-18" width="6" height="6" fill="#040910" stroke="#2496ED" stroke-width="1.5"/>
+        <rect x="-8" y="-26" width="6" height="6" fill="#040910" stroke="#2496ED" stroke-width="1.5"/>
+        <rect x="0" y="-26" width="6" height="6" fill="#040910" stroke="#2496ED" stroke-width="1.5"/>
       </g>
       <text y="28" font-family="monospace" font-size="10" fill="#7C93A8" text-anchor="middle">DOCKER</text>
     </g>
 
-    <!-- AWS (Smile arrow) -->
+    <!-- AWS -->
     <g transform="translate(820, 180)">
       <g filter="url(#ggh-glow)">
         <animateTransform attributeName="transform" type="translate" values="0 -8; 0 8; 0 -8" dur="3s" repeatCount="indefinite"/>
@@ -216,31 +247,31 @@
       </g>
     </g>
 
-    <!-- TERRAFORM (Floating Layered Blocks) -->
+    <!-- TERRAFORM -->
     <g transform="translate(1050, 290)">
       <g filter="url(#ggh-glow)">
         <animate attributeName="opacity" values="0.4;1;0.4" dur="4.5s" repeatCount="indefinite"/>
-        <polygon points="-5,-25 5,-15 5,-5 -5,-15" fill="#5EEAD4"/>
-        <polygon points="7,-25 17,-15 17,-5 7,-15" fill="#5EEAD4"/>
-        <polygon points="-5,-12 5,-2 5,8 -5,-2" fill="#5EEAD4"/>
-        <polygon points="-17,-12 -7,-2 -7,8 -17,-2" fill="#5EEAD4"/>
+        <polygon points="-5,-25 5,-15 5,-5 -5,-15" fill="#7B42BC"/>
+        <polygon points="7,-25 17,-15 17,-5 7,-15" fill="#7B42BC"/>
+        <polygon points="-5,-12 5,-2 5,8 -5,-2" fill="#7B42BC"/>
+        <polygon points="-17,-12 -7,-2 -7,8 -17,-2" fill="#7B42BC"/>
       </g>
       <text y="25" font-family="monospace" font-size="10" fill="#7C93A8" text-anchor="middle">TERRAFORM</text>
     </g>
 
-    <!-- ANSIBLE (Rotating slowly) -->
-    <g transform="translate(920, 90)">
+    <!-- ANSIBLE -->
+    <g transform="translate(930, 80)">
       <g filter="url(#ggh-glow)">
         <animateTransform attributeName="transform" type="rotate" values="360;0" dur="20s" repeatCount="indefinite"/>
-        <circle cx="0" cy="0" r="18" fill="none" stroke="#BAE6FD" stroke-width="2.5"/>
-        <path d="M -8,8 L 0,-10 L 8,8" fill="none" stroke="#BAE6FD" stroke-width="2.5" stroke-linecap="round"/>
-        <path d="M -4,2 L 4,2" fill="none" stroke="#BAE6FD" stroke-width="2.5"/>
+        <circle cx="0" cy="0" r="18" fill="none" stroke="#EE0000" stroke-width="2.5"/>
+        <path d="M -8,8 L 0,-10 L 8,8" fill="none" stroke="#EE0000" stroke-width="2.5" stroke-linecap="round"/>
+        <path d="M -4,2 L 4,2" fill="none" stroke="#EE0000" stroke-width="2.5"/>
       </g>
       <text y="32" font-family="monospace" font-size="10" fill="#7C93A8" text-anchor="middle">ANSIBLE</text>
     </g>
 
-    <!-- PROMETHEUS (Flickering Flame) -->
-    <g transform="translate(980, 190)">
+    <!-- PROMETHEUS -->
+    <g transform="translate(990, 190)">
       <g filter="url(#ggh-glow-strong)">
         <animate attributeName="opacity" values="0.6;1;0.6" dur="1.2s" repeatCount="indefinite"/>
         <!-- Flame shape -->
@@ -251,8 +282,8 @@
       <text y="32" font-family="monospace" font-size="10" fill="#7C93A8" text-anchor="middle">PROMETHEUS</text>
     </g>
 
-    <!-- GRAFANA (Rotating swirl) -->
-    <g transform="translate(730, 270)">
+    <!-- GRAFANA -->
+    <g transform="translate(730, 180)">
       <g filter="url(#ggh-glow)">
         <animateTransform attributeName="transform" type="rotate" values="0;360" dur="8s" repeatCount="indefinite"/>
         <path d="M 0,-12 A 12,12 0 0,1 10,7 L 6,10 A 17,17 0 0,0 0,-17 Z" fill="#F47A20"/>
@@ -262,11 +293,10 @@
       <text y="30" font-family="monospace" font-size="10" fill="#7C93A8" text-anchor="middle">GRAFANA</text>
     </g>
 
-    <!-- GITLAB CI/CD (Hovering Fox) -->
+    <!-- GITLAB CI/CD -->
     <g transform="translate(1120, 200)">
       <g filter="url(#ggh-glow)">
         <animateTransform attributeName="transform" type="translate" values="0 -6; 0 6; 0 -6" dur="5s" repeatCount="indefinite"/>
-        <!-- Diamond base -->
         <polygon points="0,15 15,0 10,-10 5,-2 0,5 -5,-2 -10,-10 -15,0" fill="#FC6D26" stroke="#FC6D26" stroke-width="2"/>
         <polygon points="0,15 15,0 10,5" fill="#E24329"/>
         <polygon points="0,15 -15,0 -10,5" fill="#E24329"/>
