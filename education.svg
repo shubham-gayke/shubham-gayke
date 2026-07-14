@@ -50,7 +50,7 @@
   
   <text x="40" y="45" class="t-mono" font-size="18" fill="url(#textGrad)" font-weight="bold" filter="url(#glow)">> Education</text>
 
-  <g transform="translate(150, 80)">
+  <g transform="translate(150, 60)">
     <!-- Timeline Line -->
     <line x1="0" y1="0" x2="0" y2="240" stroke="url(#lineGrad)" stroke-width="3" stroke-opacity="0.4"/>
     <circle r="5" fill="#ffffff" filter="url(#glow)">
