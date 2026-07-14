@@ -120,10 +120,8 @@
   </style>
 
   <!-- ==================== ANIMATED BACKGROUND ==================== -->
-  <!-- Base Background -->
   <rect width="1200" height="650" fill="url(#bg)" rx="16"/>
 
-  <!-- Orbital Data Rings -->
   <g transform="translate(600, 325)" opacity="0.12">
     <circle r="550" fill="none" stroke="#22D3EE" stroke-width="1.5" stroke-dasharray="15 35">
       <animateTransform attributeName="transform" type="rotate" values="0; 360" dur="120s" repeatCount="indefinite"/>
@@ -136,7 +134,6 @@
     </circle>
   </g>
 
-  <!-- Constellation Neural Nodes -->
   <g stroke="#38BDF8" stroke-opacity="0.3" stroke-width="1" fill="none">
     <path d="M 150,80 L 250,150 L 220,280 Z">
        <animate attributeName="opacity" values="0.1; 0.7; 0.1" dur="5s" repeatCount="indefinite"/>
@@ -155,7 +152,6 @@
     </path>
   </g>
 
-  <!-- Pulsing Data Cores -->
   <g fill="#5EEAD4" filter="url(#glow)">
     <circle r="3" cx="150" cy="150" opacity="0">
        <animate attributeName="opacity" values="0; 0.9; 0" dur="5s" repeatCount="indefinite"/>
@@ -175,7 +171,6 @@
     </circle>
   </g>
 
-  <!-- Ambient Auroras -->
   <circle cx="300" cy="325" r="350" fill="url(#auroraGlow)" filter="url(#softGlow)">
     <animate attributeName="cx" values="150; 450; 150" dur="18s" repeatCount="indefinite"/>
     <animate attributeName="opacity" values="0.3; 0.7; 0.3" dur="8s" repeatCount="indefinite"/>
@@ -200,155 +195,157 @@
   <!-- ==================== AWS CLOUD PANEL (HORIZONTAL GRID) ==================== -->
   <g transform="translate(30, 100)">
     <rect width="1140" height="520" class="cloud-panel"/>
-    <text x="40" y="45" class="t-main cloud-title">☁️ AMAZON WEB SERVICES (AWS) — CORE ARCHITECTURE</text>
-    <path d="M 40 65 L 1100 65" stroke="#38BDF8" stroke-opacity="0.2" stroke-width="1" stroke-dasharray="4 4"/>
+    <text x="50" y="45" class="t-main cloud-title">☁️ AMAZON WEB SERVICES (AWS) — CORE ARCHITECTURE</text>
+    <path d="M 50 65 L 1090 65" stroke="#38BDF8" stroke-opacity="0.2" stroke-width="1" stroke-dasharray="4 4"/>
     
     <!-- Row 1 -->
-    <g transform="translate(40, 100)">
-      <rect width="140" height="60" class="node-bg"/>
+    <g transform="translate(50, 100)">
+      <rect width="160" height="60" class="node-bg"/>
       <use href="#icon-compute" x="25" y="30"/>
       <text x="55" y="36" class="t-main node-text">EC2</text>
     </g>
-    <g transform="translate(195, 100)">
-      <rect width="140" height="60" class="node-bg"/>
+    <g transform="translate(226, 100)">
+      <rect width="160" height="60" class="node-bg"/>
       <use href="#icon-compute" x="25" y="30"/>
       <text x="55" y="36" class="t-main node-text">Auto Scaling</text>
     </g>
-    <g transform="translate(350, 100)">
-      <rect width="140" height="60" class="node-bg"/>
+    <g transform="translate(402, 100)">
+      <rect width="160" height="60" class="node-bg"/>
       <use href="#icon-serverless" x="25" y="30"/>
       <text x="55" y="36" class="t-main node-text">Lambda</text>
     </g>
-    <g transform="translate(505, 100)">
-      <rect width="140" height="60" class="node-bg"/>
+    <g transform="translate(578, 100)">
+      <rect width="160" height="60" class="node-bg"/>
       <use href="#icon-container" x="25" y="30"/>
       <text x="55" y="36" class="t-main node-text">ECS</text>
     </g>
-    <g transform="translate(660, 100)">
-      <rect width="140" height="60" class="node-bg"/>
+    <g transform="translate(754, 100)">
+      <rect width="160" height="60" class="node-bg"/>
       <use href="#icon-container" x="25" y="30"/>
       <text x="55" y="36" class="t-main node-text">EKS</text>
     </g>
-    <g transform="translate(815, 100)">
-      <rect width="140" height="60" class="node-bg"/>
+    <g transform="translate(930, 100)">
+      <rect width="160" height="60" class="node-bg"/>
       <use href="#icon-serverless" x="25" y="30"/>
       <text x="55" y="36" class="t-main node-text">Elast.Beanstalk</text>
     </g>
-    <g transform="translate(970, 100)">
-      <rect width="140" height="60" class="node-bg"/>
-      <use href="#icon-pipeline" x="25" y="30"/>
-      <text x="55" y="36" class="t-main node-text">CodePipeline</text>
-    </g>
 
     <!-- Row 2 -->
-    <g transform="translate(40, 200)">
-      <rect width="140" height="60" class="node-bg"/>
+    <g transform="translate(50, 180)">
+      <rect width="160" height="60" class="node-bg"/>
       <use href="#icon-storage" x="25" y="30"/>
       <text x="55" y="36" class="t-main node-text">S3</text>
     </g>
-    <g transform="translate(195, 200)">
-      <rect width="140" height="60" class="node-bg"/>
+    <g transform="translate(226, 180)">
+      <rect width="160" height="60" class="node-bg"/>
       <use href="#icon-storage" x="25" y="30"/>
       <text x="55" y="36" class="t-main node-text">EBS</text>
     </g>
-    <g transform="translate(350, 200)">
-      <rect width="140" height="60" class="node-bg"/>
+    <g transform="translate(402, 180)">
+      <rect width="160" height="60" class="node-bg"/>
       <use href="#icon-storage" x="25" y="30"/>
       <text x="55" y="36" class="t-main node-text">EFS</text>
     </g>
-    <g transform="translate(505, 200)">
-      <rect width="140" height="60" class="node-bg"/>
+    <g transform="translate(578, 180)">
+      <rect width="160" height="60" class="node-bg"/>
       <use href="#icon-db" x="25" y="30"/>
       <text x="55" y="36" class="t-main node-text">RDS</text>
     </g>
-    <g transform="translate(660, 200)">
-      <rect width="140" height="60" class="node-bg"/>
+    <g transform="translate(754, 180)">
+      <rect width="160" height="60" class="node-bg"/>
       <use href="#icon-db" x="25" y="30"/>
       <text x="55" y="36" class="t-main node-text">DynamoDB</text>
     </g>
-    <g transform="translate(815, 200)">
-      <rect width="140" height="60" class="node-bg"/>
+    <g transform="translate(930, 180)">
+      <rect width="160" height="60" class="node-bg"/>
       <use href="#icon-db" x="25" y="30"/>
       <text x="55" y="36" class="t-main node-text">ElastiCache</text>
     </g>
-    <g transform="translate(970, 200)">
-      <rect width="140" height="60" class="node-bg"/>
+
+    <!-- Row 3 -->
+    <g transform="translate(50, 260)">
+      <rect width="160" height="60" class="node-bg"/>
       <use href="#icon-analytics" x="25" y="30"/>
       <text x="55" y="36" class="t-main node-text">Redshift</text>
     </g>
-
-    <!-- Row 3 -->
-    <g transform="translate(40, 300)">
-      <rect width="140" height="60" class="node-bg"/>
-      <use href="#icon-network" x="25" y="30"/>
-      <text x="55" y="36" class="t-main node-text">VPC</text>
-    </g>
-    <g transform="translate(195, 300)">
-      <rect width="140" height="60" class="node-bg"/>
-      <use href="#icon-global" x="25" y="30"/>
-      <text x="55" y="36" class="t-main node-text">Route 53</text>
-    </g>
-    <g transform="translate(350, 300)">
-      <rect width="140" height="60" class="node-bg"/>
-      <use href="#icon-network" x="25" y="30"/>
-      <text x="55" y="36" class="t-main node-text">ELB</text>
-    </g>
-    <g transform="translate(505, 300)">
-      <rect width="140" height="60" class="node-bg"/>
-      <use href="#icon-network" x="25" y="30"/>
-      <text x="55" y="36" class="t-main node-text">API Gateway</text>
-    </g>
-    <g transform="translate(660, 300)">
-      <rect width="140" height="60" class="node-bg"/>
-      <use href="#icon-security" x="25" y="30"/>
-      <text x="55" y="36" class="t-main node-text">IAM</text>
-    </g>
-    <g transform="translate(815, 300)">
-      <rect width="140" height="60" class="node-bg"/>
-      <use href="#icon-security" x="25" y="30"/>
-      <text x="55" y="36" class="t-main node-text">WAF</text>
-    </g>
-    <g transform="translate(970, 300)">
-      <rect width="140" height="60" class="node-bg"/>
-      <use href="#icon-security" x="25" y="30"/>
-      <text x="55" y="36" class="t-main node-text">Secrets Mgr</text>
-    </g>
-
-    <!-- Row 4 -->
-    <g transform="translate(40, 400)">
-      <rect width="140" height="60" class="node-bg"/>
-      <use href="#icon-monitor" x="25" y="30"/>
-      <text x="55" y="36" class="t-main node-text">CloudWatch</text>
-    </g>
-    <g transform="translate(195, 400)">
-      <rect width="140" height="60" class="node-bg"/>
-      <use href="#icon-monitor" x="25" y="30"/>
-      <text x="55" y="36" class="t-main node-text">CloudTrail</text>
-    </g>
-    <g transform="translate(350, 400)">
-      <rect width="140" height="60" class="node-bg"/>
-      <use href="#icon-serverless" x="25" y="30"/>
-      <text x="55" y="36" class="t-main node-text">CloudForm.</text>
-    </g>
-    <g transform="translate(505, 400)">
-      <rect width="140" height="60" class="node-bg"/>
-      <use href="#icon-network" x="25" y="30"/>
-      <text x="55" y="36" class="t-main node-text">SNS</text>
-    </g>
-    <g transform="translate(660, 400)">
-      <rect width="140" height="60" class="node-bg"/>
-      <use href="#icon-network" x="25" y="30"/>
-      <text x="55" y="36" class="t-main node-text">SQS</text>
-    </g>
-    <g transform="translate(815, 400)">
-      <rect width="140" height="60" class="node-bg"/>
+    <g transform="translate(226, 260)">
+      <rect width="160" height="60" class="node-bg"/>
       <use href="#icon-analytics" x="25" y="30"/>
       <text x="55" y="36" class="t-main node-text">Athena</text>
     </g>
-    <g transform="translate(970, 400)">
-      <rect width="140" height="60" class="node-bg"/>
+    <g transform="translate(402, 260)">
+      <rect width="160" height="60" class="node-bg"/>
       <use href="#icon-analytics" x="25" y="30"/>
       <text x="55" y="36" class="t-main node-text">Glue</text>
+    </g>
+    <g transform="translate(578, 260)">
+      <rect width="160" height="60" class="node-bg"/>
+      <use href="#icon-network" x="25" y="30"/>
+      <text x="55" y="36" class="t-main node-text">VPC</text>
+    </g>
+    <g transform="translate(754, 260)">
+      <rect width="160" height="60" class="node-bg"/>
+      <use href="#icon-global" x="25" y="30"/>
+      <text x="55" y="36" class="t-main node-text">Route 53</text>
+    </g>
+    <g transform="translate(930, 260)">
+      <rect width="160" height="60" class="node-bg"/>
+      <use href="#icon-network" x="25" y="30"/>
+      <text x="55" y="36" class="t-main node-text">ELB</text>
+    </g>
+
+    <!-- Row 4 -->
+    <g transform="translate(50, 340)">
+      <rect width="160" height="60" class="node-bg"/>
+      <use href="#icon-network" x="25" y="30"/>
+      <text x="55" y="36" class="t-main node-text">API Gateway</text>
+    </g>
+    <g transform="translate(226, 340)">
+      <rect width="160" height="60" class="node-bg"/>
+      <use href="#icon-security" x="25" y="30"/>
+      <text x="55" y="36" class="t-main node-text">IAM</text>
+    </g>
+    <g transform="translate(402, 340)">
+      <rect width="160" height="60" class="node-bg"/>
+      <use href="#icon-security" x="25" y="30"/>
+      <text x="55" y="36" class="t-main node-text">WAF</text>
+    </g>
+    <g transform="translate(578, 340)">
+      <rect width="160" height="60" class="node-bg"/>
+      <use href="#icon-security" x="25" y="30"/>
+      <text x="55" y="36" class="t-main node-text">Secrets Mgr</text>
+    </g>
+    <g transform="translate(754, 340)">
+      <rect width="160" height="60" class="node-bg"/>
+      <use href="#icon-monitor" x="25" y="30"/>
+      <text x="55" y="36" class="t-main node-text">CloudWatch</text>
+    </g>
+    <g transform="translate(930, 340)">
+      <rect width="160" height="60" class="node-bg"/>
+      <use href="#icon-monitor" x="25" y="30"/>
+      <text x="55" y="36" class="t-main node-text">CloudTrail</text>
+    </g>
+
+    <!-- Row 5 (Centered 4 items) -->
+    <g transform="translate(226, 420)">
+      <rect width="160" height="60" class="node-bg"/>
+      <use href="#icon-serverless" x="25" y="30"/>
+      <text x="55" y="36" class="t-main node-text">CloudForm.</text>
+    </g>
+    <g transform="translate(402, 420)">
+      <rect width="160" height="60" class="node-bg"/>
+      <use href="#icon-pipeline" x="25" y="30"/>
+      <text x="55" y="36" class="t-main node-text">CodePipeline</text>
+    </g>
+    <g transform="translate(578, 420)">
+      <rect width="160" height="60" class="node-bg"/>
+      <use href="#icon-network" x="25" y="30"/>
+      <text x="55" y="36" class="t-main node-text">SNS</text>
+    </g>
+    <g transform="translate(754, 420)">
+      <rect width="160" height="60" class="node-bg"/>
+      <use href="#icon-network" x="25" y="30"/>
+      <text x="55" y="36" class="t-main node-text">SQS</text>
     </g>
   </g>
 
