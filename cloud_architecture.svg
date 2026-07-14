@@ -133,40 +133,8 @@
   <!-- ==================== ANIMATED BACKGROUND ==================== -->
   <rect width="1200" height="680" fill="url(#bg)" rx="16"/>
 
-  <!-- 1. Expanding Radar Pulses -->
-  <circle cx="600" cy="340" r="0" fill="none" stroke="#22D3EE" stroke-width="3" opacity="0">
-    <animate attributeName="r" values="0; 800" dur="10s" repeatCount="indefinite" />
-    <animate attributeName="opacity" values="0.8; 0" dur="10s" repeatCount="indefinite" />
-  </circle>
-  <circle cx="600" cy="340" r="0" fill="none" stroke="#8B5CF6" stroke-width="3" opacity="0">
-    <animate attributeName="r" values="0; 800" dur="10s" repeatCount="indefinite" begin="3.3s" />
-    <animate attributeName="opacity" values="0.8; 0" dur="10s" repeatCount="indefinite" begin="3.3s"/>
-  </circle>
-  <circle cx="600" cy="340" r="0" fill="none" stroke="#F472B6" stroke-width="3" opacity="0">
-    <animate attributeName="r" values="0; 800" dur="10s" repeatCount="indefinite" begin="6.6s" />
-    <animate attributeName="opacity" values="0.8; 0" dur="10s" repeatCount="indefinite" begin="6.6s"/>
-  </circle>
 
-  <!-- 2. Vertical Data Rain (Matrix Style) -->
-  <g opacity="0.75">
-    <rect x="150" y="-150" width="3" height="150" fill="url(#textGrad)">
-       <animate attributeName="y" values="-150; 800" dur="3s" repeatCount="indefinite" />
-    </rect>
-    <rect x="350" y="-150" width="4" height="80" fill="#F472B6">
-       <animate attributeName="y" values="-150; 800" dur="4.5s" repeatCount="indefinite" begin="1s"/>
-    </rect>
-    <rect x="550" y="-150" width="2" height="200" fill="#22D3EE">
-       <animate attributeName="y" values="-150; 800" dur="2s" repeatCount="indefinite" begin="0.5s"/>
-    </rect>
-    <rect x="850" y="-150" width="3" height="120" fill="#8B5CF6">
-       <animate attributeName="y" values="-150; 800" dur="3.5s" repeatCount="indefinite" begin="2s"/>
-    </rect>
-    <rect x="1050" y="-150" width="2.5" height="180" fill="#38BDF8">
-       <animate attributeName="y" values="-150; 800" dur="5s" repeatCount="indefinite" begin="0s"/>
-    </rect>
-  </g>
-
-  <!-- 3. Floating Intense Glowing Orbs -->
+  <!-- Ambient Smoke Effect (Floating Glowing Orbs) -->
   <circle cx="200" cy="150" r="150" fill="url(#auroraPink)" filter="url(#softGlow)">
     <animate attributeName="cx" values="100; 300; 100" dur="15s" repeatCount="indefinite"/>
     <animate attributeName="cy" values="100; 500; 100" dur="20s" repeatCount="indefinite"/>
@@ -182,23 +150,7 @@
     <animate attributeName="opacity" values="0.1; 0.8; 0.1" dur="6s" repeatCount="indefinite"/>
   </circle>
   
-  <!-- 4. Rotating Geometric Tech Shapes -->
-  <g stroke-width="2" fill="none" opacity="0.6">
-     <rect x="250" y="200" width="100" height="100" stroke="#38BDF8" transform-origin="300 250">
-        <animateTransform attributeName="transform" type="rotate" values="0; 360" dur="20s" repeatCount="indefinite"/>
-     </rect>
-     <rect x="850" y="450" width="120" height="120" stroke="#F472B6" transform-origin="910 510">
-        <animateTransform attributeName="transform" type="rotate" values="360; 0" dur="25s" repeatCount="indefinite"/>
-     </rect>
-     <polygon points="600,100 640,170 560,170" stroke="#8B5CF6" transform-origin="600 145">
-        <animateTransform attributeName="transform" type="rotate" values="0; 360" dur="15s" repeatCount="indefinite"/>
-     </polygon>
-     <polygon points="900,150 930,200 870,200" stroke="#22D3EE" transform-origin="900 180">
-        <animateTransform attributeName="transform" type="rotate" values="360; 0" dur="18s" repeatCount="indefinite"/>
-     </polygon>
-  </g>
 
-  <!-- Title -->
   <g filter="url(#textGlow)">
     <text x="30" y="55" class="t-mono" font-size="24" fill="url(#textGrad)" font-weight="bold">> Cloud &amp; Services</text>
   </g>
