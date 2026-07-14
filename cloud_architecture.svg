@@ -299,21 +299,31 @@
       <text x="55" y="36" class="t-main node-text">CloudTrail</text>
     </g>
 
-    <!-- Row 6 (Centered 3 items) -->
-    <g transform="translate(265, 460)">
+    <!-- Row 6 -->
+    <g transform="translate(55, 460)">
       <rect width="190" height="60" class="node-bg"/>
       <use href="#icon-serverless" x="25" y="30"/>
       <text x="55" y="36" class="t-main node-text">CloudFormation</text>
     </g>
-    <g transform="translate(475, 460)">
+    <g transform="translate(265, 460)">
       <rect width="190" height="60" class="node-bg"/>
       <use href="#icon-network" x="25" y="30"/>
       <text x="55" y="36" class="t-main node-text">SNS</text>
     </g>
-    <g transform="translate(685, 460)">
+    <g transform="translate(475, 460)">
       <rect width="190" height="60" class="node-bg"/>
       <use href="#icon-network" x="25" y="30"/>
       <text x="55" y="36" class="t-main node-text">SQS</text>
+    </g>
+    <g transform="translate(685, 460)">
+      <rect width="190" height="60" class="node-bg"/>
+      <use href="#icon-global" x="25" y="30"/>
+      <text x="55" y="36" class="t-main node-text">CloudFront</text>
+    </g>
+    <g transform="translate(895, 460)">
+      <rect width="190" height="60" class="node-bg"/>
+      <use href="#icon-security" x="25" y="30"/>
+      <text x="55" y="36" class="t-main node-text">KMS</text>
     </g>
   </g>
 
