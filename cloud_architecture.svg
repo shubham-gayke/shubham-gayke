@@ -9,15 +9,15 @@
 
     <!-- Aurora and Glows -->
     <radialGradient id="auroraGlow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.35"/>
+      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.8"/>
       <stop offset="100%" stop-color="#22D3EE" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="auroraPink" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#F472B6" stop-opacity="0.25"/>
+      <stop offset="0%" stop-color="#F472B6" stop-opacity="0.8"/>
       <stop offset="100%" stop-color="#F472B6" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="auroraPurple" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.3"/>
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.8"/>
       <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0"/>
     </radialGradient>
 
@@ -27,27 +27,6 @@
       <stop offset="50%" stop-color="#38BDF8"/>
       <stop offset="100%" stop-color="#5EEAD4"/>
     </linearGradient>
-
-    <!-- Horizontal Fast Data Ray Gradient -->
-    <linearGradient id="rayGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0"/>
-      <stop offset="50%" stop-color="#5EEAD4" stop-opacity="0.8"/>
-      <stop offset="100%" stop-color="#22D3EE" stop-opacity="0"/>
-    </linearGradient>
-
-    <!-- Moving Tech Grid Pattern -->
-    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#22D3EE" stroke-width="0.5" stroke-opacity="0.15"/>
-    </pattern>
-
-    <!-- Grid Mask so it fades out at edges -->
-    <radialGradient id="gridMaskGrad" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="white" stop-opacity="0.7"/>
-      <stop offset="80%" stop-color="white" stop-opacity="0"/>
-    </radialGradient>
-    <mask id="gridMask">
-      <rect width="1200" height="680" fill="url(#gridMaskGrad)"/>
-    </mask>
 
     <!-- Filters -->
     <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
@@ -70,7 +49,7 @@
     </filter>
 
     <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="15"/>
+      <feGaussianBlur stdDeviation="20"/>
     </filter>
 
     <!-- ICONS DEFINITIONS -->
@@ -145,94 +124,79 @@
   <style>
     .t-mono { font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace; }
     .t-main { font-family: 'Segoe UI', Roboto, sans-serif; }
-    .node-bg { fill: #041224; stroke: #22D3EE; stroke-opacity: 0.25; stroke-width: 1.5; rx: 10; transition: all 0.3s; }
+    .node-bg { fill: #041224; fill-opacity: 0.85; stroke: #22D3EE; stroke-opacity: 0.5; stroke-width: 1.5; rx: 10; transition: all 0.3s; }
     .node-text { fill: #F0F9FF; font-size: 16px; font-weight: 700; letter-spacing: 0.5px; filter: url(#textGlow); }
-    .cloud-panel { fill: #061121; fill-opacity: 0.75; stroke: #38BDF8; stroke-opacity: 0.15; stroke-width: 1.5; rx: 16; }
+    .cloud-panel { fill: #061121; fill-opacity: 0.15; stroke: #38BDF8; stroke-opacity: 0.35; stroke-width: 2; rx: 16; }
     .cloud-title { fill: #E0F2FE; font-size: 20px; font-weight: 800; letter-spacing: 2.5px; filter: url(#textGlow); }
   </style>
 
   <!-- ==================== ANIMATED BACKGROUND ==================== -->
   <rect width="1200" height="680" fill="url(#bg)" rx="16"/>
 
-  <!-- Moving Grid -->
-  <g mask="url(#gridMask)">
-    <rect x="-40" y="-40" width="1280" height="760" fill="url(#grid)">
-      <animateTransform attributeName="transform" type="translate" values="0,0; -40,40" dur="4s" repeatCount="indefinite" />
+  <!-- 1. Expanding Radar Pulses -->
+  <circle cx="600" cy="340" r="0" fill="none" stroke="#22D3EE" stroke-width="3" opacity="0">
+    <animate attributeName="r" values="0; 800" dur="10s" repeatCount="indefinite" />
+    <animate attributeName="opacity" values="0.8; 0" dur="10s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="600" cy="340" r="0" fill="none" stroke="#8B5CF6" stroke-width="3" opacity="0">
+    <animate attributeName="r" values="0; 800" dur="10s" repeatCount="indefinite" begin="3.3s" />
+    <animate attributeName="opacity" values="0.8; 0" dur="10s" repeatCount="indefinite" begin="3.3s"/>
+  </circle>
+  <circle cx="600" cy="340" r="0" fill="none" stroke="#F472B6" stroke-width="3" opacity="0">
+    <animate attributeName="r" values="0; 800" dur="10s" repeatCount="indefinite" begin="6.6s" />
+    <animate attributeName="opacity" values="0.8; 0" dur="10s" repeatCount="indefinite" begin="6.6s"/>
+  </circle>
+
+  <!-- 2. Vertical Data Rain (Matrix Style) -->
+  <g opacity="0.75">
+    <rect x="150" y="-150" width="3" height="150" fill="url(#textGrad)">
+       <animate attributeName="y" values="-150; 800" dur="3s" repeatCount="indefinite" />
+    </rect>
+    <rect x="350" y="-150" width="4" height="80" fill="#F472B6">
+       <animate attributeName="y" values="-150; 800" dur="4.5s" repeatCount="indefinite" begin="1s"/>
+    </rect>
+    <rect x="550" y="-150" width="2" height="200" fill="#22D3EE">
+       <animate attributeName="y" values="-150; 800" dur="2s" repeatCount="indefinite" begin="0.5s"/>
+    </rect>
+    <rect x="850" y="-150" width="3" height="120" fill="#8B5CF6">
+       <animate attributeName="y" values="-150; 800" dur="3.5s" repeatCount="indefinite" begin="2s"/>
+    </rect>
+    <rect x="1050" y="-150" width="2.5" height="180" fill="#38BDF8">
+       <animate attributeName="y" values="-150; 800" dur="5s" repeatCount="indefinite" begin="0s"/>
     </rect>
   </g>
 
-  <!-- Fast Sweeping Data Rays -->
-  <rect x="-1200" y="250" width="800" height="1.5" fill="url(#rayGrad)" opacity="0.6">
-    <animate attributeName="x" values="-1200; 1200" dur="7s" repeatCount="indefinite" />
-  </rect>
-  <rect x="-1200" y="480" width="1000" height="2" fill="url(#rayGrad)" opacity="0.5">
-    <animate attributeName="x" values="1200; -1200" dur="9s" repeatCount="indefinite" begin="2s"/>
-  </rect>
-  <rect x="-1200" y="150" width="600" height="1" fill="url(#rayGrad)" opacity="0.7">
-    <animate attributeName="x" values="-1200; 1200" dur="5s" repeatCount="indefinite" begin="4s"/>
-  </rect>
-
-  <g transform="translate(600, 340)" opacity="0.12">
-    <circle r="550" fill="none" stroke="#22D3EE" stroke-width="1.5" stroke-dasharray="15 35">
-      <animateTransform attributeName="transform" type="rotate" values="0; 360" dur="120s" repeatCount="indefinite"/>
-    </circle>
-    <circle r="400" fill="none" stroke="#5EEAD4" stroke-width="2" stroke-dasharray="150 50 20 60">
-      <animateTransform attributeName="transform" type="rotate" values="360; 0" dur="90s" repeatCount="indefinite"/>
-    </circle>
-    <circle r="250" fill="none" stroke="#8B5CF6" stroke-width="1" stroke-dasharray="4 8">
-      <animateTransform attributeName="transform" type="rotate" values="0; 360" dur="60s" repeatCount="indefinite"/>
-    </circle>
-  </g>
-
-  <g stroke="#38BDF8" stroke-opacity="0.3" stroke-width="1" fill="none">
-    <path d="M 150,80 L 250,150 L 220,280 Z">
-       <animate attributeName="opacity" values="0.1; 0.7; 0.1" dur="5s" repeatCount="indefinite"/>
-    </path>
-    <path d="M 900,100 L 980,180 L 950,320 L 850,220 Z">
-       <animate attributeName="opacity" values="0.1; 0.6; 0.1" dur="6s" repeatCount="indefinite"/>
-    </path>
-    <path d="M 480,200 L 580,300 L 650,180 Z">
-       <animate attributeName="opacity" values="0.1; 0.8; 0.1" dur="7s" repeatCount="indefinite"/>
-    </path>
-    <path d="M 100,500 L 200,600 L 300,520 Z">
-       <animate attributeName="opacity" values="0.1; 0.8; 0.1" dur="7s" repeatCount="indefinite"/>
-    </path>
-    <path d="M 850,550 L 1000,450 L 1150,580 Z">
-       <animate attributeName="opacity" values="0.1; 0.7; 0.1" dur="4.5s" repeatCount="indefinite"/>
-    </path>
-  </g>
-
-  <g fill="#5EEAD4" filter="url(#glow)">
-    <circle r="3" cx="150" cy="150" opacity="0">
-       <animate attributeName="opacity" values="0; 0.9; 0" dur="5s" repeatCount="indefinite"/>
-       <animate attributeName="r" values="1; 4; 1" dur="5s" repeatCount="indefinite"/>
-    </circle>
-    <circle r="3" cx="980" cy="180" opacity="0" fill="#F472B6">
-       <animate attributeName="opacity" values="0; 0.9; 0" dur="6s" repeatCount="indefinite" begin="1s"/>
-       <animate attributeName="r" values="1; 5; 1" dur="6s" repeatCount="indefinite" begin="1s"/>
-    </circle>
-    <circle r="3" cx="280" cy="300" opacity="0" fill="#38BDF8">
-       <animate attributeName="opacity" values="0; 0.9; 0" dur="7s" repeatCount="indefinite" begin="2s"/>
-       <animate attributeName="r" values="2; 6; 2" dur="7s" repeatCount="indefinite" begin="2s"/>
-    </circle>
-    <circle r="3" cx="880" cy="350" opacity="0" fill="#8B5CF6">
-       <animate attributeName="opacity" values="0; 0.9; 0" dur="4.5s" repeatCount="indefinite" begin="0.5s"/>
-       <animate attributeName="r" values="1; 4; 1" dur="4.5s" repeatCount="indefinite" begin="0.5s"/>
-    </circle>
-  </g>
-
-  <circle cx="300" cy="340" r="350" fill="url(#auroraGlow)" filter="url(#softGlow)">
-    <animate attributeName="cx" values="150; 450; 150" dur="18s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0.3; 0.7; 0.3" dur="8s" repeatCount="indefinite"/>
+  <!-- 3. Floating Intense Glowing Orbs -->
+  <circle cx="200" cy="150" r="150" fill="url(#auroraPink)" filter="url(#softGlow)">
+    <animate attributeName="cx" values="100; 300; 100" dur="15s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="100; 500; 100" dur="20s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.2; 0.9; 0.2" dur="8s" repeatCount="indefinite"/>
   </circle>
-  <circle cx="900" cy="220" r="350" fill="url(#auroraPink)" filter="url(#softGlow)">
-    <animate attributeName="cy" values="150; 450; 150" dur="22s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0.3; 0.6; 0.3" dur="10s" repeatCount="indefinite"/>
+  <circle cx="1000" cy="500" r="180" fill="url(#auroraGlow)" filter="url(#softGlow)">
+    <animate attributeName="cx" values="800; 1100; 800" dur="18s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="200; 600; 200" dur="22s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.3; 1; 0.3" dur="10s" repeatCount="indefinite"/>
   </circle>
-  <circle cx="600" cy="520" r="400" fill="url(#auroraPurple)" filter="url(#softGlow)">
-    <animate attributeName="cx" values="400; 800; 400" dur="25s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0.2; 0.5; 0.2" dur="12s" repeatCount="indefinite"/>
+  <circle cx="600" cy="340" r="250" fill="url(#auroraPurple)" filter="url(#softGlow)">
+    <animate attributeName="r" values="150; 350; 150" dur="12s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.1; 0.8; 0.1" dur="6s" repeatCount="indefinite"/>
   </circle>
+  
+  <!-- 4. Rotating Geometric Tech Shapes -->
+  <g stroke-width="2" fill="none" opacity="0.6">
+     <rect x="250" y="200" width="100" height="100" stroke="#38BDF8" transform-origin="300 250">
+        <animateTransform attributeName="transform" type="rotate" values="0; 360" dur="20s" repeatCount="indefinite"/>
+     </rect>
+     <rect x="850" y="450" width="120" height="120" stroke="#F472B6" transform-origin="910 510">
+        <animateTransform attributeName="transform" type="rotate" values="360; 0" dur="25s" repeatCount="indefinite"/>
+     </rect>
+     <polygon points="600,100 640,170 560,170" stroke="#8B5CF6" transform-origin="600 145">
+        <animateTransform attributeName="transform" type="rotate" values="0; 360" dur="15s" repeatCount="indefinite"/>
+     </polygon>
+     <polygon points="900,150 930,200 870,200" stroke="#22D3EE" transform-origin="900 180">
+        <animateTransform attributeName="transform" type="rotate" values="360; 0" dur="18s" repeatCount="indefinite"/>
+     </polygon>
+  </g>
 
   <!-- Title -->
   <g filter="url(#textGlow)">
@@ -242,11 +206,11 @@
     <animate attributeName="x2" values="30; 350" dur="2s" fill="freeze"/>
   </line>
 
-  <!-- ==================== AWS CLOUD PANEL (HORIZONTAL GRID) ==================== -->
+  <!-- ==================== AWS CLOUD PANEL ==================== -->
   <g transform="translate(30, 100)">
     <rect width="1140" height="550" class="cloud-panel"/>
     <text x="55" y="45" class="t-main cloud-title">☁️ AMAZON WEB SERVICES (AWS) — CORE ARCHITECTURE</text>
-    <path d="M 55 65 L 1085 65" stroke="#38BDF8" stroke-opacity="0.3" stroke-width="1.5" stroke-dasharray="4 4"/>
+    <path d="M 55 65 L 1085 65" stroke="#38BDF8" stroke-opacity="0.5" stroke-width="1.5" stroke-dasharray="4 4"/>
     
     <!-- Row 1 -->
     <g transform="translate(55, 85)">
