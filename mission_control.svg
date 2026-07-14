@@ -119,18 +119,18 @@
   
   <!-- Buttons -->
   <a href="https://github.com/shubham-gayke" target="_blank">
-    <g transform="translate(690, 60)">
-      <rect width="120" height="40" class="btn-bg"/>
-      <text x="60" y="25" class="mono btn-text" text-anchor="middle">Github ↗</text>
+    <g transform="translate(830, 30)">
+      <rect width="220" height="40" class="btn-bg"/>
+      <text x="110" y="25" class="mono btn-text" text-anchor="middle">Github ↗</text>
       <!-- Pulsing Glow -->
-      <rect width="120" height="40" rx="6" fill="none" stroke="#38bdf8" filter="url(#softGlow)">
+      <rect width="220" height="40" rx="6" fill="none" stroke="#38bdf8" filter="url(#softGlow)">
         <animate attributeName="opacity" values="0.2;0.8;0.2" dur="2s" repeatCount="indefinite"/>
       </rect>
     </g>
   </a>
   
   <a href="https://shubham-gayke.github.io/" target="_blank">
-    <g transform="translate(830, 60)">
+    <g transform="translate(830, 85)">
       <rect width="220" height="40" class="btn-bg-alt"/>
       <text x="110" y="25" class="mono btn-text" text-anchor="middle">Project Architecture ↗</text>
       <!-- Pulsing Glow -->
@@ -182,18 +182,18 @@
   
   <!-- Buttons -->
   <a href="https://github.com/shubham-gayke" target="_blank">
-    <g transform="translate(690, 60)">
-      <rect width="120" height="40" class="btn-bg"/>
-      <text x="60" y="25" class="mono btn-text" text-anchor="middle">Github ↗</text>
+    <g transform="translate(830, 30)">
+      <rect width="220" height="40" class="btn-bg"/>
+      <text x="110" y="25" class="mono btn-text" text-anchor="middle">Github ↗</text>
       <!-- Pulsing Glow -->
-      <rect width="120" height="40" rx="6" fill="none" stroke="#38bdf8" filter="url(#softGlow)">
+      <rect width="220" height="40" rx="6" fill="none" stroke="#38bdf8" filter="url(#softGlow)">
         <animate attributeName="opacity" values="0.2;0.8;0.2" dur="2s" repeatCount="indefinite"/>
       </rect>
     </g>
   </a>
   
   <a href="https://shubham-gayke.github.io/" target="_blank">
-    <g transform="translate(830, 60)">
+    <g transform="translate(830, 85)">
       <rect width="220" height="40" class="btn-bg-alt"/>
       <text x="110" y="25" class="mono btn-text" text-anchor="middle">Project Architecture ↗</text>
       <!-- Pulsing Glow -->
@@ -249,18 +249,18 @@
   
   <!-- Buttons -->
   <a href="https://github.com/shubham-gayke" target="_blank">
-    <g transform="translate(690, 60)">
-      <rect width="120" height="40" class="btn-bg"/>
-      <text x="60" y="25" class="mono btn-text" text-anchor="middle">Github ↗</text>
+    <g transform="translate(830, 30)">
+      <rect width="220" height="40" class="btn-bg"/>
+      <text x="110" y="25" class="mono btn-text" text-anchor="middle">Github ↗</text>
       <!-- Pulsing Glow -->
-      <rect width="120" height="40" rx="6" fill="none" stroke="#38bdf8" filter="url(#softGlow)">
+      <rect width="220" height="40" rx="6" fill="none" stroke="#38bdf8" filter="url(#softGlow)">
         <animate attributeName="opacity" values="0.2;0.8;0.2" dur="2s" repeatCount="indefinite"/>
       </rect>
     </g>
   </a>
   
   <a href="https://shubham-gayke.github.io/" target="_blank">
-    <g transform="translate(830, 60)">
+    <g transform="translate(830, 85)">
       <rect width="220" height="40" class="btn-bg-alt"/>
       <text x="110" y="25" class="mono btn-text" text-anchor="middle">Project Architecture ↗</text>
       <!-- Pulsing Glow -->
@@ -274,12 +274,7 @@
 
   <!-- Bottom Status Bar -->
   <path d="M 30 750 L 1170 750" stroke="#22d3ee" stroke-opacity="0.2" stroke-width="2"/>
-  <text x="60" y="735" class="mono" font-size="12" fill="#94a3b8">STATUS: <tspan fill="#10b981">ALL SYSTEMS OPERATIONAL</tspan></text>
   <text x="1140" y="735" class="mono" font-size="12" fill="#94a3b8" text-anchor="end">UPLINK ESTABLISHED</text>
-  
-  <circle cx="110" cy="731" r="4" fill="#10b981">
-    <animate attributeName="opacity" values="0.2;1;0.2" dur="1.5s" repeatCount="indefinite"/>
-  </circle>
 
 </g>
 </svg>
