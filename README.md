@@ -115,23 +115,9 @@
 <!-- ═══════════════════════════════════════════════════════════════════ -->
 
 <br/>
-<h2 align="center">🌐 `> NETWORK_MAP.scan()`</h2>
-<br/>
-
-<a href="https://leetcode.com/u/Shubham_Gayke/"><img src="https://img.shields.io/badge/LEETCODE-▸_ACTIVE-38BDF8?style=for-the-badge&logo=leetcode&logoColor=38BDF8&labelColor=040910" alt="LeetCode"/></a>&nbsp;
-<a href="https://www.hackerrank.com/profile/shubhamgayke9860"><img src="https://img.shields.io/badge/HACKERRANK-▸_ACTIVE-22D3EE?style=for-the-badge&logo=hackerrank&logoColor=22D3EE&labelColor=040910" alt="HackerRank"/></a>&nbsp;
-<a href="https://github.com/shubham-gayke"><img src="https://img.shields.io/badge/GITHUB-▸_ACTIVE-ffffff?style=for-the-badge&logo=github&logoColor=ffffff&labelColor=040910" alt="GitHub"/></a>
-
-<br/><br/>
-
-<a href="https://www.credly.com/users/shubham-gayke/badges/credly"><img src="https://img.shields.io/badge/CREDLY-▸_ACTIVE-38BDF8?style=for-the-badge&logo=credly&logoColor=38BDF8&labelColor=040910" alt="Credly"/></a>&nbsp;
-<a href="https://learn.microsoft.com/en-us/users/shubhamgayke-0899/"><img src="https://img.shields.io/badge/MICROSOFT_LEARN-▸_ACTIVE-22D3EE?style=for-the-badge&logo=microsoftazure&logoColor=22D3EE&labelColor=040910" alt="Microsoft Learn"/></a>&nbsp;
-<a href="https://dev.to/shubham_gayke"><img src="https://img.shields.io/badge/DEV.TO-▸_ACTIVE-ffffff?style=for-the-badge&logo=devdotto&logoColor=ffffff&labelColor=040910" alt="DEV Community"/></a>
-
-<br/><br/>
-
-<a href="https://drive.google.com/file/d/1OzzT5Mz3NrrzNX2J7AIz2WrCvPAfnGu0/view?usp=sharing"><img src="https://img.shields.io/badge/AWS_EMERGING_TALENT-▸_VERIFIED-38BDF8?style=for-the-badge&logo=amazonaws&logoColor=38BDF8&labelColor=040910" alt="AWS Emerging Talent"/></a>&nbsp;
-<a href="https://community.oracle.com/ou/profile/discussions/Shubham%20Gayke"><img src="https://img.shields.io/badge/ORACLE_EDU-▸_VERIFIED-22D3EE?style=for-the-badge&logo=oracle&logoColor=22D3EE&labelColor=040910" alt="Oracle Education"/></a>
+<div align="center">
+  <img src="./community_profiles.svg" width="100%" alt="Coding Profile & Community Membership" />
+</div>
 
 <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
 
