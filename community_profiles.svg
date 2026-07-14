@@ -1,4 +1,4 @@
-<svg viewBox="0 0 1200 350" xmlns="http://www.w3.org/2000/svg" role="img">
+<svg viewBox="0 0 1200 450" xmlns="http://www.w3.org/2000/svg" role="img">
   <defs>
     <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#020617"/>
@@ -25,9 +25,9 @@
   </style>
 
   <!-- Background Layer -->
-  <rect width="1200" height="350" fill="url(#bgGrad)" rx="16"/>
-  <rect width="1200" height="350" fill="url(#hexGrid)" rx="16"/>
-  <rect x="1" y="1" width="1198" height="348" rx="16" fill="none" stroke="#22d3ee" stroke-opacity="0.15"/>
+  <rect width="1200" height="450" fill="url(#bgGrad)" rx="16"/>
+  <rect width="1200" height="450" fill="url(#hexGrid)" rx="16"/>
+  <rect x="1" y="1" width="1198" height="448" rx="16" fill="none" stroke="#22d3ee" stroke-opacity="0.15"/>
   
   <!-- Glowing Ambient Orbs -->
   <circle cx="200" cy="200" r="150" fill="#38bdf8" opacity="0.05" filter="url(#softGlow)">
@@ -37,9 +37,13 @@
     <animate attributeName="opacity" values="0.02;0.08;0.02" dur="5s" repeatCount="indefinite"/>
   </circle>
 
+  <!-- Header -->
+  <text x="50" y="60" class="mono heading">> Coding Profile &amp; Community Membership_</text>
+  <rect x="50" y="80" width="1100" height="1" fill="#1e293b"/>
+
 
   <a href="https://leetcode.com/u/shubhamgayke/" target="_blank">
-    <g transform="translate(50, 40)">
+    <g transform="translate(50, 110)">
       <rect width="260" height="130" class="card-bg" stroke="#38bdf8"/>
       <text x="25" y="45" font-size="28">⚡</text>
       <text x="25" y="85" class="card-title">LeetCode</text>
@@ -60,7 +64,7 @@
 
 
   <a href="https://www.hackerrank.com/profile/shubhamgayke123" target="_blank">
-    <g transform="translate(330, 40)">
+    <g transform="translate(330, 110)">
       <rect width="260" height="130" class="card-bg" stroke="#5eead4"/>
       <text x="25" y="45" font-size="28">💻</text>
       <text x="25" y="85" class="card-title">HackerRank</text>
@@ -81,7 +85,7 @@
 
 
   <a href="https://github.com/shubham-gayke" target="_blank">
-    <g transform="translate(610, 40)">
+    <g transform="translate(610, 110)">
       <rect width="260" height="130" class="card-bg" stroke="#ffffff"/>
       <text x="25" y="45" font-size="28">🐙</text>
       <text x="25" y="85" class="card-title">GitHub</text>
@@ -102,7 +106,7 @@
 
 
   <a href="https://dev.to/shubham_gayke" target="_blank">
-    <g transform="translate(890, 40)">
+    <g transform="translate(890, 110)">
       <rect width="260" height="130" class="card-bg" stroke="#ffffff"/>
       <text x="25" y="45" font-size="28">📝</text>
       <text x="25" y="85" class="card-title">DEV.TO</text>
@@ -123,7 +127,7 @@
 
 
   <a href="https://www.credly.com/users/shubham-gayke/badges" target="_blank">
-    <g transform="translate(50, 190)">
+    <g transform="translate(50, 260)">
       <rect width="260" height="130" class="card-bg" stroke="#38bdf8"/>
       <text x="25" y="45" font-size="28">🎖️</text>
       <text x="25" y="85" class="card-title">Credly</text>
@@ -144,7 +148,7 @@
 
 
   <a href="https://learn.microsoft.com/en-us/users/shubhamgayke-0899/" target="_blank">
-    <g transform="translate(330, 190)">
+    <g transform="translate(330, 260)">
       <rect width="260" height="130" class="card-bg" stroke="#22d3ee"/>
       <text x="25" y="45" font-size="28">☁️</text>
       <text x="25" y="85" class="card-title">Microsoft Learn</text>
@@ -165,7 +169,7 @@
 
 
   <a href="https://drive.google.com/file/d/1OzzT5Mz3NrrzNX2J7AIz2WrCvPAfnGu0/view?usp=sharing" target="_blank">
-    <g transform="translate(610, 190)">
+    <g transform="translate(610, 260)">
       <rect width="260" height="130" class="card-bg" stroke="#f59e0b"/>
       <text x="25" y="45" font-size="28">🌩️</text>
       <text x="25" y="85" class="card-title">AWS Talent</text>
@@ -186,7 +190,7 @@
 
 
   <a href="https://community.oracle.com/ou/profile/discussions/Shubham%20Gayke" target="_blank">
-    <g transform="translate(890, 190)">
+    <g transform="translate(890, 260)">
       <rect width="260" height="130" class="card-bg" stroke="#ef4444"/>
       <text x="25" y="45" font-size="28">🔴</text>
       <text x="25" y="85" class="card-title">Oracle Edu</text>
