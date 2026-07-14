@@ -5,7 +5,7 @@
 <!-- ═══════════════════════════════════════════════════════════════════ -->
 
 <a href="https://shubham-gayke.github.io/Portfolio-/">
-  <img width="100%" src="./merged_hero.svg" alt="Shubham Gayke Hero Section" />
+  <img width="100%" src="./hero_v2.svg" alt="Shubham Gayke Hero Section" />
 </a>
 
 <br/>
