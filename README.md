@@ -66,12 +66,10 @@
 <!-- ██              PROJECTS — MISSION CONTROL DASHBOARD             ██ -->
 <!-- ═══════════════════════════════════════════════════════════════════ -->
 
-<br/>
-<h2 align="center">🚀 `> MISSION_CONTROL.projects()`</h2>
-<br/>
+
 
 <a href="https://github.com/shubham-gayke">
-  <img width="100%" src="./mission_control_v2.svg" alt="Mission Control Projects" />
+  <img width="100%" src="./mission_control_v3.svg" alt="Mission Control Projects" />
 </a>
 
 <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">

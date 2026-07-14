@@ -26,6 +26,13 @@
       <feMergeNode in="SourceGraphic"/>
     </feMerge>
   </filter>
+  <filter id="textGlowDim" x="-20%" y="-20%" width="140%" height="140%">
+    <feGaussianBlur stdDeviation="0.6" result="blur"/>
+    <feMerge>
+      <feMergeNode in="blur"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
   
   <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
     <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#22d3ee" stroke-opacity="0.03" stroke-width="1"/>
@@ -34,7 +41,7 @@
 
 <style>
   .mono { font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace; }
-  .title { font-weight: 800; font-size: 20px; fill: #ffffff; letter-spacing: 1px; filter: url(#textGlow); }
+  .title { font-weight: 800; font-size: 20px; fill: #22d3ee; letter-spacing: 1px; filter: url(#textGlowDim); }
   .desc { font-weight: 400; font-size: 15px; fill: #94a3b8; line-height: 1.5; }
   .tag { font-weight: 600; font-size: 12px; fill: #5eead4; }
   .btn-text { font-weight: 700; font-size: 13px; letter-spacing: 1.5px; fill: #ffffff; }
@@ -72,7 +79,7 @@
 <path d="M 30 100 L 1170 100" stroke="#22d3ee" stroke-opacity="0.2" stroke-width="2"/>
 <rect x="50" y="30" width="200" height="4" fill="#38bdf8" filter="url(#softGlow)"/>
 
-<text x="60" y="70" class="mono" font-size="20" font-weight="bold" fill="#38bdf8" filter="url(#textGlow)">> INIT_PROTOCOL: <tspan fill="#ffffff">MISSION_CONTROL</tspan></text>
+<text x="60" y="70" class="mono" font-size="20" font-weight="bold" fill="#38bdf8" filter="url(#textGlow)">> VIEW PROJECT</text>
 
 
 <g transform="translate(60, 140)">
