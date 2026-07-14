@@ -116,7 +116,7 @@
 
 <br/>
 <div align="center">
-  <img src="./community_profiles.svg?v=3" width="100%" alt="Coding Profile & Community Membership" />
+  <img src="./community_profiles_final.svg" width="100%" alt="Coding Profile & Community Membership" />
 </div>
 
 <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
