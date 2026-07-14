@@ -119,22 +119,22 @@
   
   <!-- Buttons -->
   <a href="https://github.com/shubham-gayke" target="_blank">
-    <g transform="translate(730, 60)">
-      <rect width="150" height="40" class="btn-bg"/>
-      <text x="75" y="25" class="mono btn-text" text-anchor="middle">VIEW GITHUB</text>
+    <g transform="translate(690, 60)">
+      <rect width="120" height="40" class="btn-bg"/>
+      <text x="60" y="25" class="mono btn-text" text-anchor="middle">Github ↗</text>
       <!-- Pulsing Glow -->
-      <rect width="150" height="40" rx="6" fill="none" stroke="#38bdf8" filter="url(#softGlow)">
+      <rect width="120" height="40" rx="6" fill="none" stroke="#38bdf8" filter="url(#softGlow)">
         <animate attributeName="opacity" values="0.2;0.8;0.2" dur="2s" repeatCount="indefinite"/>
       </rect>
     </g>
   </a>
   
   <a href="https://shubham-gayke.github.io/" target="_blank">
-    <g transform="translate(900, 60)">
-      <rect width="150" height="40" class="btn-bg-alt"/>
-      <text x="75" y="25" class="mono btn-text" text-anchor="middle">LIVE WEBSITE</text>
+    <g transform="translate(830, 60)">
+      <rect width="220" height="40" class="btn-bg-alt"/>
+      <text x="110" y="25" class="mono btn-text" text-anchor="middle">Project Architecture ↗</text>
       <!-- Pulsing Glow -->
-      <rect width="150" height="40" rx="6" fill="none" stroke="#c084fc" filter="url(#softGlow)">
+      <rect width="220" height="40" rx="6" fill="none" stroke="#c084fc" filter="url(#softGlow)">
         <animate attributeName="opacity" values="0.2;0.8;0.2" dur="2.5s" repeatCount="indefinite"/>
       </rect>
     </g>
@@ -182,22 +182,22 @@
   
   <!-- Buttons -->
   <a href="https://github.com/shubham-gayke" target="_blank">
-    <g transform="translate(730, 60)">
-      <rect width="150" height="40" class="btn-bg"/>
-      <text x="75" y="25" class="mono btn-text" text-anchor="middle">VIEW GITHUB</text>
+    <g transform="translate(690, 60)">
+      <rect width="120" height="40" class="btn-bg"/>
+      <text x="60" y="25" class="mono btn-text" text-anchor="middle">Github ↗</text>
       <!-- Pulsing Glow -->
-      <rect width="150" height="40" rx="6" fill="none" stroke="#38bdf8" filter="url(#softGlow)">
+      <rect width="120" height="40" rx="6" fill="none" stroke="#38bdf8" filter="url(#softGlow)">
         <animate attributeName="opacity" values="0.2;0.8;0.2" dur="2s" repeatCount="indefinite"/>
       </rect>
     </g>
   </a>
   
   <a href="https://shubham-gayke.github.io/" target="_blank">
-    <g transform="translate(900, 60)">
-      <rect width="150" height="40" class="btn-bg-alt"/>
-      <text x="75" y="25" class="mono btn-text" text-anchor="middle">LIVE WEBSITE</text>
+    <g transform="translate(830, 60)">
+      <rect width="220" height="40" class="btn-bg-alt"/>
+      <text x="110" y="25" class="mono btn-text" text-anchor="middle">Project Architecture ↗</text>
       <!-- Pulsing Glow -->
-      <rect width="150" height="40" rx="6" fill="none" stroke="#c084fc" filter="url(#softGlow)">
+      <rect width="220" height="40" rx="6" fill="none" stroke="#c084fc" filter="url(#softGlow)">
         <animate attributeName="opacity" values="0.2;0.8;0.2" dur="2.5s" repeatCount="indefinite"/>
       </rect>
     </g>
@@ -249,22 +249,22 @@
   
   <!-- Buttons -->
   <a href="https://github.com/shubham-gayke" target="_blank">
-    <g transform="translate(730, 60)">
-      <rect width="150" height="40" class="btn-bg"/>
-      <text x="75" y="25" class="mono btn-text" text-anchor="middle">VIEW GITHUB</text>
+    <g transform="translate(690, 60)">
+      <rect width="120" height="40" class="btn-bg"/>
+      <text x="60" y="25" class="mono btn-text" text-anchor="middle">Github ↗</text>
       <!-- Pulsing Glow -->
-      <rect width="150" height="40" rx="6" fill="none" stroke="#38bdf8" filter="url(#softGlow)">
+      <rect width="120" height="40" rx="6" fill="none" stroke="#38bdf8" filter="url(#softGlow)">
         <animate attributeName="opacity" values="0.2;0.8;0.2" dur="2s" repeatCount="indefinite"/>
       </rect>
     </g>
   </a>
   
   <a href="https://shubham-gayke.github.io/" target="_blank">
-    <g transform="translate(900, 60)">
-      <rect width="150" height="40" class="btn-bg-alt"/>
-      <text x="75" y="25" class="mono btn-text" text-anchor="middle">LIVE WEBSITE</text>
+    <g transform="translate(830, 60)">
+      <rect width="220" height="40" class="btn-bg-alt"/>
+      <text x="110" y="25" class="mono btn-text" text-anchor="middle">Project Architecture ↗</text>
       <!-- Pulsing Glow -->
-      <rect width="150" height="40" rx="6" fill="none" stroke="#c084fc" filter="url(#softGlow)">
+      <rect width="220" height="40" rx="6" fill="none" stroke="#c084fc" filter="url(#softGlow)">
         <animate attributeName="opacity" values="0.2;0.8;0.2" dur="2.5s" repeatCount="indefinite"/>
       </rect>
     </g>
