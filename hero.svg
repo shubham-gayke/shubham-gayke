@@ -7,24 +7,25 @@
     </linearGradient>
 
     <radialGradient id="ggh-auroraBlue" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.45"/>
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.55"/>
       <stop offset="100%" stop-color="#38BDF8" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="ggh-auroraCyan" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.38"/>
+      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.48"/>
       <stop offset="100%" stop-color="#22D3EE" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="ggh-auroraTeal" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#5EEAD4" stop-opacity="0.28"/>
+      <stop offset="0%" stop-color="#5EEAD4" stop-opacity="0.38"/>
       <stop offset="100%" stop-color="#5EEAD4" stop-opacity="0"/>
     </radialGradient>
 
     <linearGradient id="ggh-nameGrad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#BAE6FD"/>
-      <stop offset="45%" stop-color="#38BDF8"/>
+      <stop offset="35%" stop-color="#38BDF8"/>
+      <stop offset="50%" stop-color="#E0F2FE"/>
       <stop offset="75%" stop-color="#22D3EE"/>
       <stop offset="100%" stop-color="#5EEAD4"/>
-      <animateTransform attributeName="gradientTransform" type="translate" values="-0.4 0; 0.4 0; -0.4 0" dur="7s" repeatCount="indefinite"/>
+      <animateTransform attributeName="gradientTransform" type="translate" values="-0.5 0; 0.5 0; -0.5 0" dur="6s" repeatCount="indefinite"/>
     </linearGradient>
 
     <linearGradient id="ggh-shardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -53,6 +54,15 @@
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
+    <filter id="ggh-glow-strong" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
     <filter id="ggh-softblur" x="-50%" y="-50%" width="200%" height="200%">
       <feGaussianBlur stdDeviation="18"/>
     </filter>
@@ -73,7 +83,7 @@
   <g clip-path="url(#ggh-frame)">
     <rect x="0" y="0" width="1200" height="380" fill="url(#ggh-bg)"/>
 
-    <!-- ambient aurora drift -->
+    <!-- Ambient aurora drift -->
     <circle cx="220" cy="90" r="200" fill="url(#ggh-auroraBlue)" filter="url(#ggh-softblur)">
       <animate attributeName="cx" values="200;340;200" dur="16s" repeatCount="indefinite"/>
       <animate attributeName="cy" values="90;170;90" dur="20s" repeatCount="indefinite"/>
@@ -87,7 +97,19 @@
       <animate attributeName="opacity" values="0.6;1;0.6" dur="9s" repeatCount="indefinite"/>
     </circle>
 
-    <!-- slowly rotating ice shards (signature motif) -->
+    <!-- Background tech nodes -->
+    <g fill="none" stroke="#22D3EE" stroke-opacity="0.15" stroke-width="1.5">
+       <path d="M 400,0 L 500,100 L 500,380"/>
+       <path d="M 500,100 L 700,50 L 800,150 L 1200,150"/>
+       <circle cx="500" cy="100" r="4" fill="#22D3EE" filter="url(#ggh-glow)">
+          <animate attributeName="opacity" values="0;1;0" dur="4s" repeatCount="indefinite"/>
+       </circle>
+       <circle cx="800" cy="150" r="4" fill="#5EEAD4" filter="url(#ggh-glow)">
+          <animate attributeName="opacity" values="0;1;0" dur="5s" repeatCount="indefinite"/>
+       </circle>
+    </g>
+
+    <!-- Slowly rotating ice shards -->
     <g transform="translate(880,150)">
       <polygon points="0,-140 120,-40 90,110 -60,130 -140,10" fill="url(#ggh-shardGrad)" stroke="#7DD3FC" stroke-opacity="0.22" stroke-width="1" filter="url(#ggh-shardblur)">
         <animateTransform attributeName="transform" type="rotate" values="0;360" dur="90s" repeatCount="indefinite"/>
@@ -112,48 +134,40 @@
       <animate attributeName="y" values="-10;390" dur="5.5s" repeatCount="indefinite"/>
     </rect>
 
-    <!-- floating frost particles -->
+    <!-- Floating glowing orbs/particles (increased size & opacity) -->
     <g fill="#BAE6FD">
-      <circle r="2" cx="740" cy="300" opacity="0">
-        <animateMotion path="M0,0 C 10,-60 -20,-140 5,-220" dur="11s" repeatCount="indefinite" begin="0s"/>
-        <animate attributeName="opacity" values="0;0.9;0" dur="11s" repeatCount="indefinite" begin="0s"/>
+      <circle r="3" cx="740" cy="300" opacity="0" filter="url(#ggh-glow)">
+        <animateMotion path="M0,0 C 20,-100 -40,-200 10,-320" dur="9s" repeatCount="indefinite" begin="0s"/>
+        <animate attributeName="opacity" values="0;1;0" dur="9s" repeatCount="indefinite" begin="0s"/>
       </circle>
-      <circle r="1.6" cx="830" cy="330" fill="#22D3EE" opacity="0">
-        <animateMotion path="M0,0 C -15,-80 20,-150 -5,-240" dur="14s" repeatCount="indefinite" begin="1.5s"/>
-        <animate attributeName="opacity" values="0;0.8;0" dur="14s" repeatCount="indefinite" begin="1.5s"/>
+      <circle r="2.5" cx="830" cy="330" fill="#22D3EE" opacity="0" filter="url(#ggh-glow)">
+        <animateMotion path="M0,0 C -30,-120 40,-220 -10,-350" dur="11s" repeatCount="indefinite" begin="1.5s"/>
+        <animate attributeName="opacity" values="0;1;0" dur="11s" repeatCount="indefinite" begin="1.5s"/>
       </circle>
-      <circle r="2.4" cx="910" cy="290" fill="#5EEAD4" opacity="0">
-        <animateMotion path="M0,0 C 20,-70 -10,-160 15,-230" dur="9.5s" repeatCount="indefinite" begin="3s"/>
-        <animate attributeName="opacity" values="0;0.85;0" dur="9.5s" repeatCount="indefinite" begin="3s"/>
+      <circle r="3.5" cx="910" cy="290" fill="#5EEAD4" opacity="0" filter="url(#ggh-glow)">
+        <animateMotion path="M0,0 C 40,-110 -20,-240 20,-340" dur="8.5s" repeatCount="indefinite" begin="3s"/>
+        <animate attributeName="opacity" values="0;1;0" dur="8.5s" repeatCount="indefinite" begin="3s"/>
       </circle>
-      <circle r="1.8" cx="1010" cy="330" opacity="0">
-        <animateMotion path="M0,0 C -12,-90 18,-170 -8,-250" dur="12.5s" repeatCount="indefinite" begin="4.6s"/>
-        <animate attributeName="opacity" values="0;0.9;0" dur="12.5s" repeatCount="indefinite" begin="4.6s"/>
-      </circle>
-      <circle r="2" cx="1090" cy="300" fill="#22D3EE" opacity="0">
-        <animateMotion path="M0,0 C 8,-60 -18,-140 6,-210" dur="10s" repeatCount="indefinite" begin="6.2s"/>
-        <animate attributeName="opacity" values="0;0.8;0" dur="10s" repeatCount="indefinite" begin="6.2s"/>
-      </circle>
-      <circle r="1.5" cx="1140" cy="260" fill="#5EEAD4" opacity="0">
-        <animateMotion path="M0,0 C -10,-70 14,-150 -6,-220" dur="13s" repeatCount="indefinite" begin="2.2s"/>
-        <animate attributeName="opacity" values="0;0.85;0" dur="13s" repeatCount="indefinite" begin="2.2s"/>
-      </circle>
-      <circle r="2.2" cx="790" cy="120" opacity="0">
-        <animateMotion path="M0,0 C 14,-50 -16,-110 4,-170" dur="8.5s" repeatCount="indefinite" begin="5s"/>
-        <animate attributeName="opacity" values="0;0.8;0" dur="8.5s" repeatCount="indefinite" begin="5s"/>
-      </circle>
-      <circle r="1.6" cx="960" cy="90" fill="#22D3EE" opacity="0">
-        <animateMotion path="M0,0 C -8,-55 12,-120 -4,-180" dur="10.8s" repeatCount="indefinite" begin="7.4s"/>
-        <animate attributeName="opacity" values="0;0.85;0" dur="10.8s" repeatCount="indefinite" begin="7.4s"/>
+      <circle r="2.8" cx="1010" cy="330" opacity="0" filter="url(#ggh-glow)">
+        <animateMotion path="M0,0 C -25,-130 35,-250 -15,-360" dur="10.5s" repeatCount="indefinite" begin="4.6s"/>
+        <animate attributeName="opacity" values="0;1;0" dur="10.5s" repeatCount="indefinite" begin="4.6s"/>
       </circle>
     </g>
 
-    <!-- status pill -->
+    <!-- STATUS PILLS -->
+    <!-- System Online -->
     <rect x="40" y="34" width="176" height="34" rx="17" fill="#7DD3FC" fill-opacity="0.07" stroke="#7DD3FC" stroke-opacity="0.35"/>
     <circle cx="59" cy="51" r="5" fill="#22D3EE">
       <animate attributeName="opacity" values="1;0.25;1" dur="1.8s" repeatCount="indefinite"/>
     </circle>
     <text x="75" y="56" font-family="'JetBrains Mono','Fira Code',Consolas,monospace" font-size="13" letter-spacing="1.5" fill="#BFEFFF">SYSTEM ONLINE</text>
+
+    <!-- B-Tech CSE Badge (Glowing) -->
+    <rect x="230" y="34" width="125" height="34" rx="17" fill="#5EEAD4" fill-opacity="0.07" stroke="#5EEAD4" stroke-opacity="0.45"/>
+    <circle cx="249" cy="51" r="5" fill="#5EEAD4">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <text x="265" y="56" font-family="'JetBrains Mono','Fira Code',Consolas,monospace" font-size="13" letter-spacing="1.5" fill="#5EEAD4" filter="url(#ggh-glow)">B-TECH CSE</text>
 
     <!-- watermark -->
     <text x="1150" y="34" text-anchor="end" font-family="'JetBrains Mono',Consolas,monospace" font-size="12" fill="#7C93A8" opacity="0.4">GLACIER.OS</text>
@@ -161,10 +175,10 @@
     <!-- greeting -->
     <text x="42" y="122" font-family="'Segoe UI',Roboto,Arial,sans-serif" font-size="21" fill="#8FB4CC">Hi, I'm</text>
 
-    <!-- name (gently floating) -->
+    <!-- name (gently floating + strong glow) -->
     <g>
       <animateTransform attributeName="transform" type="translate" values="0 0; 0 -5; 0 0" dur="6s" repeatCount="indefinite"/>
-      <text x="40" y="186" font-family="'Segoe UI',Roboto,Arial,sans-serif" font-size="62" font-weight="800" letter-spacing="0.5" fill="url(#ggh-nameGrad)" filter="url(#ggh-glow)">SHUBHAM GAYKE</text>
+      <text x="40" y="186" font-family="'Segoe UI',Roboto,Arial,sans-serif" font-size="62" font-weight="800" letter-spacing="0.5" fill="url(#ggh-nameGrad)" filter="url(#ggh-glow-strong)">SHUBHAM GAYKE</text>
     </g>
 
     <!-- typed role cycle -->
@@ -189,17 +203,21 @@
 
     <!-- divider -->
     <line x1="40" y1="272" x2="660" y2="272" stroke="url(#ggh-nameGrad)" stroke-width="1.4" opacity="0.5">
-      <animate attributeName="opacity" values="0.3;0.65;0.3" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;0.8;0.3" dur="4s" repeatCount="indefinite"/>
     </line>
 
     <!-- tagline -->
     <text x="40" y="302" font-family="'JetBrains Mono',Consolas,monospace" font-size="14.5" fill="#7C93A8">
       // infrastructure should be invisible, resilient, self-healing
-      <animate attributeName="opacity" values="0.55;1;0.55" dur="5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.45;0.9;0.45" dur="5s" repeatCount="indefinite"/>
     </text>
 
-    <!-- footer meta line -->
-    <text x="40" y="330" font-family="'JetBrains Mono',Consolas,monospace" font-size="13" fill="#5E7A90">📍 India &#160;&#160;·&#160;&#160; ✉ shubhamgayke9860@gmail.com</text>
+    <!-- footer meta line (Glowing Email) -->
+    <text x="40" y="336" font-family="'JetBrains Mono',Consolas,monospace" font-size="13.5" fill="#5E7A90">
+      📍 India &#160;&#160;·&#160;&#160;
+      <tspan fill="#38BDF8" font-weight="bold" filter="url(#ggh-glow-strong)">✉ shubhamgayke9860@gmail.com</tspan>
+      <animate attributeName="opacity" values="0.8;1;0.8" dur="3s" repeatCount="indefinite"/>
+    </text>
   </g>
 
   <!-- shimmering frame border -->
