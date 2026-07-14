@@ -31,7 +31,15 @@
   .mono { font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace; }
   .title { font-weight: 800; font-size: 26px; fill: #ffffff; letter-spacing: 1.5px; filter: url(#textGlow); }
   .subtitle { font-weight: 700; font-size: 15px; letter-spacing: 2px; }
-  .item-text { font-weight: 600; font-size: 15.5px; fill: #f8fafc; text-shadow: 0px 2px 4px rgba(0,0,0,0.8); }
+  .item-text { font-weight: 700; font-size: 18px; fill: #ffffff; filter: url(#textGlow); animation: colorShift 5s infinite alternate ease-in-out; }
+  
+  @keyframes colorShift {
+    0% { fill: #ffffff; }
+    33% { fill: #38bdf8; }
+    66% { fill: #c084fc; }
+    100% { fill: #f472b6; }
+  }
+
   .glass-card { fill: url(#glassGrad); stroke: rgba(255,255,255,0.1); stroke-width: 1.5; rx: 16; filter: url(#softShadow); }
   .cursor { animation: blink 1s step-end infinite; }
   @keyframes blink { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }
