@@ -2,22 +2,22 @@
   <defs>
     <!-- Background Gradients -->
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#040910"/>
-      <stop offset="50%" stop-color="#061221"/>
-      <stop offset="100%" stop-color="#03080e"/>
+      <stop offset="0%" stop-color="#02060f"/>
+      <stop offset="50%" stop-color="#081324"/>
+      <stop offset="100%" stop-color="#02050a"/>
     </linearGradient>
 
     <!-- Aurora and Glows -->
     <radialGradient id="auroraGlow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.25"/>
+      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.35"/>
       <stop offset="100%" stop-color="#22D3EE" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="auroraPink" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#F472B6" stop-opacity="0.15"/>
+      <stop offset="0%" stop-color="#F472B6" stop-opacity="0.25"/>
       <stop offset="100%" stop-color="#F472B6" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="auroraPurple" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.2"/>
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.3"/>
       <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0"/>
     </radialGradient>
 
@@ -39,11 +39,6 @@
     
     <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
       <feGaussianBlur stdDeviation="15"/>
-    </filter>
-
-    <filter id="grain">
-      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" stitchTiles="stitch" result="noise"/>
-      <feColorMatrix in="noise" type="matrix" values="0 0 0 0 0.55  0 0 0 0 0.82  0 0 0 0 0.95  0 0 0 0.04 0"/>
     </filter>
 
     <!-- ICONS DEFINITIONS -->
@@ -106,39 +101,78 @@
     .t-main { font-family: 'Segoe UI', Roboto, sans-serif; }
     .node-bg { fill: #041224; stroke: #22D3EE; stroke-opacity: 0.25; stroke-width: 1.5; rx: 8; transition: all 0.3s; }
     .node-text { fill: #F0F9FF; font-size: 14.5px; font-weight: 600; }
-    .cloud-panel { fill: #061121; fill-opacity: 0.7; stroke: #38BDF8; stroke-opacity: 0.15; stroke-width: 1.5; rx: 16; }
+    .cloud-panel { fill: #061121; fill-opacity: 0.8; stroke: #38BDF8; stroke-opacity: 0.15; stroke-width: 1.5; rx: 16; }
     .cloud-title { fill: #E0F2FE; font-size: 18px; font-weight: 800; letter-spacing: 2px; }
     .conn-line { stroke: #38BDF8; stroke-opacity: 0.2; stroke-width: 2; fill: none; }
     .conn-glow { stroke: #5EEAD4; stroke-opacity: 0.5; stroke-width: 2; fill: none; filter: url(#glow); stroke-dasharray: 4 8; }
   </style>
 
+  <!-- ==================== ANIMATED BACKGROUND ==================== -->
   <!-- Base Background -->
   <rect width="1200" height="650" fill="url(#bg)" rx="16"/>
 
-  <!-- Animated Ambient Auroras -->
-  <circle cx="300" cy="300" r="400" fill="url(#auroraGlow)" filter="url(#softGlow)">
-    <animate attributeName="cx" values="300; 500; 300" dur="20s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0.4; 0.8; 0.4" dur="10s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="900" cy="150" r="350" fill="url(#auroraPink)" filter="url(#softGlow)">
-    <animate attributeName="cy" values="150; 400; 150" dur="25s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="700" cy="500" r="450" fill="url(#auroraPurple)" filter="url(#softGlow)">
-    <animate attributeName="cx" values="700; 900; 700" dur="22s" repeatCount="indefinite"/>
-  </circle>
-
-  <!-- Animated Tech Grid Background -->
-  <g stroke="#22D3EE" stroke-opacity="0.04" stroke-width="1">
-    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40"/>
-    </pattern>
-    <rect width="1200" height="650" fill="url(#grid)">
-      <animate attributeName="y" values="0; 40" dur="4s" repeatCount="indefinite"/>
-    </rect>
+  <!-- Orbital Data Rings -->
+  <g transform="translate(600, 325)" opacity="0.12">
+    <circle r="500" fill="none" stroke="#22D3EE" stroke-width="1.5" stroke-dasharray="15 35">
+      <animateTransform attributeName="transform" type="rotate" values="0; 360" dur="120s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="380" fill="none" stroke="#5EEAD4" stroke-width="2" stroke-dasharray="150 50 20 60">
+      <animateTransform attributeName="transform" type="rotate" values="360; 0" dur="90s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="250" fill="none" stroke="#8B5CF6" stroke-width="1" stroke-dasharray="4 8">
+      <animateTransform attributeName="transform" type="rotate" values="0; 360" dur="60s" repeatCount="indefinite"/>
+    </circle>
   </g>
 
-  <!-- Fine grain texture overlay for premium feel -->
-  <rect x="0" y="0" width="1200" height="650" filter="url(#grain)" opacity="0.04" rx="16"/>
+  <!-- Constellation Neural Nodes -->
+  <g stroke="#38BDF8" stroke-opacity="0.3" stroke-width="1" fill="none">
+    <path d="M 120,80 L 250,150 L 180,280 Z">
+       <animate attributeName="opacity" values="0.1; 0.7; 0.1" dur="5s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 900,100 L 1080,180 L 1020,320 L 850,220 Z">
+       <animate attributeName="opacity" values="0.1; 0.6; 0.1" dur="6s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 100,500 L 220,600 L 350,480 Z">
+       <animate attributeName="opacity" values="0.1; 0.8; 0.1" dur="7s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 850,550 L 1000,450 L 1150,580 Z">
+       <animate attributeName="opacity" values="0.1; 0.7; 0.1" dur="4.5s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- Pulsing Data Cores -->
+  <g fill="#5EEAD4" filter="url(#glow)">
+    <circle r="3" cx="250" cy="150" opacity="0">
+       <animate attributeName="opacity" values="0; 0.9; 0" dur="5s" repeatCount="indefinite"/>
+       <animate attributeName="r" values="1; 4; 1" dur="5s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="3" cx="1080" cy="180" opacity="0" fill="#F472B6">
+       <animate attributeName="opacity" values="0; 0.9; 0" dur="6s" repeatCount="indefinite" begin="1s"/>
+       <animate attributeName="r" values="1; 5; 1" dur="6s" repeatCount="indefinite" begin="1s"/>
+    </circle>
+    <circle r="3" cx="220" cy="600" opacity="0" fill="#38BDF8">
+       <animate attributeName="opacity" values="0; 0.9; 0" dur="7s" repeatCount="indefinite" begin="2s"/>
+       <animate attributeName="r" values="2; 6; 2" dur="7s" repeatCount="indefinite" begin="2s"/>
+    </circle>
+    <circle r="3" cx="1000" cy="450" opacity="0" fill="#8B5CF6">
+       <animate attributeName="opacity" values="0; 0.9; 0" dur="4.5s" repeatCount="indefinite" begin="0.5s"/>
+       <animate attributeName="r" values="1; 4; 1" dur="4.5s" repeatCount="indefinite" begin="0.5s"/>
+    </circle>
+  </g>
+
+  <!-- Ambient Auroras -->
+  <circle cx="300" cy="300" r="350" fill="url(#auroraGlow)" filter="url(#softGlow)">
+    <animate attributeName="cx" values="200; 400; 200" dur="18s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.3; 0.7; 0.3" dur="8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="900" cy="150" r="300" fill="url(#auroraPink)" filter="url(#softGlow)">
+    <animate attributeName="cy" values="100; 300; 100" dur="22s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.3; 0.6; 0.3" dur="10s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="700" cy="500" r="400" fill="url(#auroraPurple)" filter="url(#softGlow)">
+    <animate attributeName="cx" values="600; 800; 600" dur="25s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.2; 0.5; 0.2" dur="12s" repeatCount="indefinite"/>
+  </circle>
 
   <!-- Title -->
   <g filter="url(#glow)">
@@ -375,9 +409,6 @@
     <animateMotion href="#aws-gcp" dur="3s" begin="1.5s" repeatCount="indefinite"/>
   </circle>
 
-  <!-- Shimmering Border -->
+  <!-- Static Clean Border (Glowing Border Removed) -->
   <rect x="1" y="1" width="1198" height="648" rx="16" fill="none" stroke="#22D3EE" stroke-opacity="0.25" stroke-width="2"/>
-  <rect x="1" y="1" width="1198" height="648" rx="16" fill="none" stroke="url(#textGrad)" stroke-opacity="0.8" stroke-width="2">
-     <animate attributeName="stroke-dasharray" values="0 3000; 3000 0" dur="8s" repeatCount="indefinite"/>
-  </rect>
 </svg>
