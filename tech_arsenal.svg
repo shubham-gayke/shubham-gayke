@@ -31,7 +31,7 @@
   .mono { font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace; }
   .title { font-weight: 800; font-size: 26px; fill: #ffffff; letter-spacing: 1.5px; filter: url(#textGlow); }
   .subtitle { font-weight: 700; font-size: 15px; letter-spacing: 2px; }
-  .item-text { font-weight: 700; font-size: 18px; fill: #ffffff; filter: url(#textGlow); animation: colorShift 5s infinite alternate ease-in-out; }
+  .item-text { font-weight: 700; font-size: 18px; fill: #ffffff; animation: colorShift 5s infinite alternate ease-in-out; }
   
   @keyframes colorShift {
     0% { fill: #ffffff; }
