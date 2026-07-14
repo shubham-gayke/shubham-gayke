@@ -79,7 +79,9 @@
 <!-- ═══════════════════════════════════════════════════════════════════ -->
 
 <br/>
-<h2 align="center">🛡️ `> SECURITY_CLEARANCE.verify()`</h2>
+<div align="center">
+  <img src="./cert_header.svg" width="600" alt="Certifications & Achievements" />
+</div>
 <br/>
 
 <div align="center">
