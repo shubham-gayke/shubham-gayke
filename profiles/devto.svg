@@ -1,0 +1,35 @@
+<svg viewBox="0 0 260 130" xmlns="http://www.w3.org/2000/svg" role="img">
+  <defs>
+    <filter id="softGlow"><feGaussianBlur stdDeviation="6" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <pattern id="hexGrid" width="40" height="69.282" patternUnits="userSpaceOnUse" patternTransform="scale(0.8)">
+      <path d="M 40 17.321 L 20 5.774 L 0 17.321 L 0 40.415 L 20 51.962 L 40 40.415 Z M 40 51.962 L 20 63.509 L 0 51.962 M 20 5.774 L 20 -5.774 M 20 75.056 L 20 63.509 M 40 17.321 L 60 5.774 M 0 17.321 L -20 5.774 M 40 40.415 L 60 51.962 M 0 40.415 L -20 51.962" stroke="#22d3ee" stroke-opacity="0.04" stroke-width="1.5" fill="none"/>
+    </pattern>
+  </defs>
+
+  <style>
+    .mono { font-family: 'JetBrains Mono', Consolas, 'Fira Code', monospace; }
+    .card-bg { fill: #040910; stroke: #ffffff; stroke-width: 1.5; rx: 12; transition: all 0.3s ease; }
+    .card-title { font-family: 'Segoe UI', sans-serif; font-weight: 700; font-size: 18px; fill: #ffffff; }
+    .card-stat { font-weight: 700; font-size: 11px; letter-spacing: 1px; }
+    
+    .hover-target { cursor: pointer; outline: none; }
+    .hover-target:hover .card-bg { fill: #0a1322; stroke-width: 2.5; filter: url(#softGlow); }
+  </style>
+  
+  <rect width="260" height="130" rx="12" fill="url(#hexGrid)"/>
+  
+  <g class="hover-target">
+    <rect width="260" height="130" class="card-bg"/>
+    <text x="25" y="45" font-size="28">📝</text>
+    <text x="25" y="85" class="card-title">DEV.TO</text>
+    
+    <rect x="25" y="100" width="70" height="20" rx="4" fill="#ffffff" fill-opacity="0.15"/>
+    <text x="60" y="114" class="mono card-stat" fill="#ffffff" text-anchor="middle">ACTIVE</text>
+    
+    <text x="225" y="115" class="mono" font-size="16" fill="#ffffff">↗</text>
+    
+    <rect width="260" height="130" rx="12" fill="none" stroke="#ffffff" filter="url(#softGlow)">
+      <animate attributeName="opacity" values="0;0.5;0" dur="2s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+</svg>
