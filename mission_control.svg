@@ -1,0 +1,285 @@
+<svg viewBox="0 0 1200 780" xmlns="http://www.w3.org/2000/svg" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+<defs>
+  <radialGradient id="bgGrad" cx="50%" cy="50%" r="70%">
+    <stop offset="0%" stop-color="#050a12"/>
+    <stop offset="100%" stop-color="#020408"/>
+  </radialGradient>
+  <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.05"/>
+    <stop offset="100%" stop-color="#38bdf8" stop-opacity="0.01"/>
+  </linearGradient>
+  <linearGradient id="btnGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.3"/>
+    <stop offset="100%" stop-color="#c084fc" stop-opacity="0.1"/>
+  </linearGradient>
+  <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+    <feGaussianBlur stdDeviation="8" result="blur"/>
+    <feMerge>
+      <feMergeNode in="blur"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+  <filter id="textGlow" x="-20%" y="-20%" width="140%" height="140%">
+    <feGaussianBlur stdDeviation="2" result="blur"/>
+    <feMerge>
+      <feMergeNode in="blur"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+  
+  <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+    <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#22d3ee" stroke-opacity="0.03" stroke-width="1"/>
+  </pattern>
+</defs>
+
+<style>
+  .mono { font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace; }
+  .title { font-weight: 800; font-size: 20px; fill: #ffffff; letter-spacing: 1px; filter: url(#textGlow); }
+  .desc { font-weight: 400; font-size: 15px; fill: #94a3b8; line-height: 1.5; }
+  .tag { font-weight: 600; font-size: 12px; fill: #5eead4; }
+  .btn-text { font-weight: 700; font-size: 13px; letter-spacing: 1.5px; fill: #ffffff; }
+  .card-bg { fill: url(#cardGrad); stroke: rgba(34, 211, 238, 0.15); stroke-width: 1.5; rx: 12; }
+  .btn-bg { fill: url(#btnGlow); stroke: #38bdf8; stroke-width: 1; rx: 6; transition: all 0.3s ease; }
+  .btn-bg-alt { fill: rgba(192, 132, 252, 0.15); stroke: #c084fc; stroke-width: 1; rx: 6; transition: all 0.3s ease; }
+  
+  a { cursor: pointer; outline: none; }
+  a:hover .btn-bg { fill: rgba(56, 189, 248, 0.6); stroke-width: 2; }
+  a:hover .btn-bg-alt { fill: rgba(192, 132, 252, 0.6); stroke-width: 2; }
+  
+  /* Loading Sequence */
+  .hud { opacity: 0; animation: fadeIn 1.5s ease forwards; animation-delay: 0.5s; }
+  @keyframes fadeIn { to { opacity: 1; } }
+</style>
+
+<!-- Background -->
+<rect width="1200" height="780" fill="url(#bgGrad)"/>
+<rect x="-60" y="-60" width="1320" height="900" fill="url(#grid)">
+  <animateTransform attributeName="transform" type="translate" values="0,0; -60,60" dur="15s" repeatCount="indefinite" />
+</rect>
+
+<!-- Ambient Glowing Orbs -->
+<circle cx="150" cy="150" r="300" fill="#38bdf8" opacity="0.1" filter="url(#softGlow)">
+  <animate attributeName="opacity" values="0.05;0.15;0.05" dur="4s" repeatCount="indefinite"/>
+</circle>
+<circle cx="1050" cy="650" r="350" fill="#c084fc" opacity="0.1" filter="url(#softGlow)">
+  <animate attributeName="opacity" values="0.05;0.15;0.05" dur="5s" repeatCount="indefinite"/>
+</circle>
+
+<g class="hud">
+
+<!-- Main Border Accent -->
+<rect x="30" y="30" width="1140" height="720" rx="20" fill="none" stroke="#22d3ee" stroke-opacity="0.2" stroke-width="2"/>
+<path d="M 30 100 L 1170 100" stroke="#22d3ee" stroke-opacity="0.2" stroke-width="2"/>
+<rect x="50" y="30" width="200" height="4" fill="#38bdf8" filter="url(#softGlow)"/>
+
+<text x="60" y="70" class="mono" font-size="20" font-weight="bold" fill="#38bdf8" filter="url(#textGlow)">> INIT_PROTOCOL: <tspan fill="#ffffff">MISSION_CONTROL</tspan></text>
+
+
+<g transform="translate(60, 140)">
+  <rect width="1080" height="170" class="card-bg"/>
+  
+  <!-- Content -->
+  <text x="35" y="45" font-size="24">🚀</text>
+  <text x="75" y="42" class="title">Automated CI/CD Pipeline &amp; Multi-Cloud</text>
+  
+  <text x="75" y="75" class="desc">
+    <tspan x="75" dy="0">Designed and implemented a fully automated CI/CD pipeline using GitHub Actions, Jenkins, and Docker </tspan>
+    <tspan x="75" dy="25">to deploy microservices across AWS and Azure.</tspan>
+  </text>
+  
+  <!-- Tags -->
+  <g transform="translate(75, 135)">
+
+
+    <rect x="0" y="-15" width="127" height="22" rx="4" fill="#5eead4" fill-opacity="0.1"/>
+    <text x="8" y="0" class="mono tag">[GitHub Actions]</text>
+
+
+    <rect x="142" y="-15" width="71" height="22" rx="4" fill="#5eead4" fill-opacity="0.1"/>
+    <text x="150" y="0" class="mono tag">[Jenkins]</text>
+
+
+    <rect x="228" y="-15" width="63" height="22" rx="4" fill="#5eead4" fill-opacity="0.1"/>
+    <text x="236" y="0" class="mono tag">[Docker]</text>
+
+
+    <rect x="306" y="-15" width="39" height="22" rx="4" fill="#5eead4" fill-opacity="0.1"/>
+    <text x="314" y="0" class="mono tag">[AWS]</text>
+
+
+    <rect x="360" y="-15" width="55" height="22" rx="4" fill="#5eead4" fill-opacity="0.1"/>
+    <text x="368" y="0" class="mono tag">[Azure]</text>
+
+
+    <rect x="430" y="-15" width="47" height="22" rx="4" fill="#5eead4" fill-opacity="0.1"/>
+    <text x="438" y="0" class="mono tag">[Bash]</text>
+
+
+  </g>
+  
+  <!-- Buttons -->
+  <a href="https://github.com/shubham-gayke" target="_blank">
+    <g transform="translate(730, 60)">
+      <rect width="150" height="40" class="btn-bg"/>
+      <text x="75" y="25" class="mono btn-text" text-anchor="middle">VIEW GITHUB</text>
+      <!-- Pulsing Glow -->
+      <rect width="150" height="40" rx="6" fill="none" stroke="#38bdf8" filter="url(#softGlow)">
+        <animate attributeName="opacity" values="0.2;0.8;0.2" dur="2s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+  </a>
+  
+  <a href="https://shubham-gayke.github.io/" target="_blank">
+    <g transform="translate(900, 60)">
+      <rect width="150" height="40" class="btn-bg-alt"/>
+      <text x="75" y="25" class="mono btn-text" text-anchor="middle">LIVE WEBSITE</text>
+      <!-- Pulsing Glow -->
+      <rect width="150" height="40" rx="6" fill="none" stroke="#c084fc" filter="url(#softGlow)">
+        <animate attributeName="opacity" values="0.2;0.8;0.2" dur="2.5s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+  </a>
+</g>
+
+
+<g transform="translate(60, 340)">
+  <rect width="1080" height="170" class="card-bg"/>
+  
+  <!-- Content -->
+  <text x="35" y="45" font-size="24">⚙️</text>
+  <text x="75" y="42" class="title">Infrastructure as Code Automation &amp; GitOps</text>
+  
+  <text x="75" y="75" class="desc">
+    <tspan x="75" dy="0">Built scalable cloud infrastructure using Terraform and Ansible. Implemented GitOps workflow for Kub</tspan>
+    <tspan x="75" dy="25">ernetes deployments with automated rollbacks.</tspan>
+  </text>
+  
+  <!-- Tags -->
+  <g transform="translate(75, 135)">
+
+
+    <rect x="0" y="-15" width="87" height="22" rx="4" fill="#5eead4" fill-opacity="0.1"/>
+    <text x="8" y="0" class="mono tag">[Terraform]</text>
+
+
+    <rect x="102" y="-15" width="71" height="22" rx="4" fill="#5eead4" fill-opacity="0.1"/>
+    <text x="110" y="0" class="mono tag">[Ansible]</text>
+
+
+    <rect x="188" y="-15" width="95" height="22" rx="4" fill="#5eead4" fill-opacity="0.1"/>
+    <text x="196" y="0" class="mono tag">[Kubernetes]</text>
+
+
+    <rect x="298" y="-15" width="63" height="22" rx="4" fill="#5eead4" fill-opacity="0.1"/>
+    <text x="306" y="0" class="mono tag">[GitOps]</text>
+
+
+    <rect x="376" y="-15" width="63" height="22" rx="4" fill="#5eead4" fill-opacity="0.1"/>
+    <text x="384" y="0" class="mono tag">[Python]</text>
+
+
+  </g>
+  
+  <!-- Buttons -->
+  <a href="https://github.com/shubham-gayke" target="_blank">
+    <g transform="translate(730, 60)">
+      <rect width="150" height="40" class="btn-bg"/>
+      <text x="75" y="25" class="mono btn-text" text-anchor="middle">VIEW GITHUB</text>
+      <!-- Pulsing Glow -->
+      <rect width="150" height="40" rx="6" fill="none" stroke="#38bdf8" filter="url(#softGlow)">
+        <animate attributeName="opacity" values="0.2;0.8;0.2" dur="2s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+  </a>
+  
+  <a href="https://shubham-gayke.github.io/" target="_blank">
+    <g transform="translate(900, 60)">
+      <rect width="150" height="40" class="btn-bg-alt"/>
+      <text x="75" y="25" class="mono btn-text" text-anchor="middle">LIVE WEBSITE</text>
+      <!-- Pulsing Glow -->
+      <rect width="150" height="40" rx="6" fill="none" stroke="#c084fc" filter="url(#softGlow)">
+        <animate attributeName="opacity" values="0.2;0.8;0.2" dur="2.5s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+  </a>
+</g>
+
+
+<g transform="translate(60, 540)">
+  <rect width="1080" height="170" class="card-bg"/>
+  
+  <!-- Content -->
+  <text x="35" y="45" font-size="24">📊</text>
+  <text x="75" y="42" class="title">Kubernetes Cluster Monitoring &amp; Logging</text>
+  
+  <text x="75" y="75" class="desc">
+    <tspan x="75" dy="0">Deployed centralized monitoring and logging stack with Prometheus, Grafana, and ELK stack. Custom al</tspan>
+    <tspan x="75" dy="25">erts for resource utilization reducing system downtime.</tspan>
+  </text>
+  
+  <!-- Tags -->
+  <g transform="translate(75, 135)">
+
+
+    <rect x="0" y="-15" width="95" height="22" rx="4" fill="#5eead4" fill-opacity="0.1"/>
+    <text x="8" y="0" class="mono tag">[Prometheus]</text>
+
+
+    <rect x="110" y="-15" width="71" height="22" rx="4" fill="#5eead4" fill-opacity="0.1"/>
+    <text x="118" y="0" class="mono tag">[Grafana]</text>
+
+
+    <rect x="196" y="-15" width="39" height="22" rx="4" fill="#5eead4" fill-opacity="0.1"/>
+    <text x="204" y="0" class="mono tag">[ELK]</text>
+
+
+    <rect x="250" y="-15" width="95" height="22" rx="4" fill="#5eead4" fill-opacity="0.1"/>
+    <text x="258" y="0" class="mono tag">[Kubernetes]</text>
+
+
+    <rect x="360" y="-15" width="55" height="22" rx="4" fill="#5eead4" fill-opacity="0.1"/>
+    <text x="368" y="0" class="mono tag">[NGINX]</text>
+
+
+    <rect x="430" y="-15" width="47" height="22" rx="4" fill="#5eead4" fill-opacity="0.1"/>
+    <text x="438" y="0" class="mono tag">[RBAC]</text>
+
+
+  </g>
+  
+  <!-- Buttons -->
+  <a href="https://github.com/shubham-gayke" target="_blank">
+    <g transform="translate(730, 60)">
+      <rect width="150" height="40" class="btn-bg"/>
+      <text x="75" y="25" class="mono btn-text" text-anchor="middle">VIEW GITHUB</text>
+      <!-- Pulsing Glow -->
+      <rect width="150" height="40" rx="6" fill="none" stroke="#38bdf8" filter="url(#softGlow)">
+        <animate attributeName="opacity" values="0.2;0.8;0.2" dur="2s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+  </a>
+  
+  <a href="https://shubham-gayke.github.io/" target="_blank">
+    <g transform="translate(900, 60)">
+      <rect width="150" height="40" class="btn-bg-alt"/>
+      <text x="75" y="25" class="mono btn-text" text-anchor="middle">LIVE WEBSITE</text>
+      <!-- Pulsing Glow -->
+      <rect width="150" height="40" rx="6" fill="none" stroke="#c084fc" filter="url(#softGlow)">
+        <animate attributeName="opacity" values="0.2;0.8;0.2" dur="2.5s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+  </a>
+</g>
+
+
+  <!-- Bottom Status Bar -->
+  <path d="M 30 750 L 1170 750" stroke="#22d3ee" stroke-opacity="0.2" stroke-width="2"/>
+  <text x="60" y="735" class="mono" font-size="12" fill="#94a3b8">STATUS: <tspan fill="#10b981">ALL SYSTEMS OPERATIONAL</tspan></text>
+  <text x="1140" y="735" class="mono" font-size="12" fill="#94a3b8" text-anchor="end">UPLINK ESTABLISHED</text>
+  
+  <circle cx="110" cy="731" r="4" fill="#10b981">
+    <animate attributeName="opacity" values="0.2;1;0.2" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+
+</g>
+</svg>
