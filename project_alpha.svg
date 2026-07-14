@@ -1,0 +1,45 @@
+<svg viewBox="0 0 1200 180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Project Alpha">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#040910"/>
+      <stop offset="100%" stop-color="#071627"/>
+    </linearGradient>
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#5EEAD4"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="3" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <style>
+    .t-mono { font-family: 'JetBrains Mono', Consolas, monospace; }
+    .t-main { font-family: 'Segoe UI', Roboto, sans-serif; }
+    .title { fill: #E0F2FE; font-size: 18px; font-weight: bold; }
+    .desc { fill: #7C93A8; font-size: 14px; }
+    .tag { fill: #22D3EE; font-size: 12px; }
+    .stat { fill: #5EEAD4; font-size: 14px; font-weight: bold; }
+    .bar-bg { fill: #04101c; stroke: #38BDF8; stroke-opacity: 0.3; stroke-width: 1; rx: 4; }
+    .bar-fg { fill: url(#borderGrad); rx: 4; }
+  </style>
+
+  <rect width="1198" height="178" x="1" y="1" fill="url(#bg)" rx="12" stroke="url(#borderGrad)" stroke-width="1.5" stroke-opacity="0.4"/>
+  
+  <text x="30" y="40" class="t-main title">🔥 PROJECT ALPHA: Automated CI/CD Pipeline &amp; Multi-Cloud</text>
+  <text x="30" y="70" class="t-main desc">Designed and implemented a fully automated CI/CD pipeline using GitHub Actions,</text>
+  <text x="30" y="90" class="t-main desc">Jenkins, and Docker to deploy microservices across AWS and Azure.</text>
+
+  <text x="30" y="130" class="t-main stat" filter="url(#glow)">✅ RESULT: Reduced deployment time by 40%</text>
+
+  <text x="30" y="160" class="t-mono tag">[GitHub Actions] [Jenkins] [Docker] [AWS] [Azure] [Bash]</text>
+
+  <!-- Progress Bar -->
+  <g transform="translate(800, 40)">
+    <text x="0" y="0" class="t-mono" fill="#BAE6FD" font-size="12">STATUS: DEPLOYED</text>
+    <rect x="0" y="15" width="350" height="12" class="bar-bg"/>
+    <rect x="0" y="15" width="350" height="12" class="bar-fg">
+      <animate attributeName="width" values="0;350" dur="2s" fill="freeze"/>
+    </rect>
+    <circle cx="370" cy="21" r="5" fill="#5EEAD4" filter="url(#glow)">
+      <animate attributeName="opacity" values="1;0.3;1" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>

@@ -1,0 +1,181 @@
+<svg viewBox="0 0 1200 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Tech Stack">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#040910"/>
+      <stop offset="55%" stop-color="#071627"/>
+      <stop offset="100%" stop-color="#04101c"/>
+    </linearGradient>
+
+    <radialGradient id="auroraBlue" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0"/>
+    </radialGradient>
+    
+    <radialGradient id="auroraCyan" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#BAE6FD"/>
+      <stop offset="50%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#5EEAD4"/>
+    </linearGradient>
+    
+    <linearGradient id="scanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#7DD3FC" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#22D3EE" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="borderGrad" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1200" y2="0">
+      <stop offset="0%" stop-color="#7DD3FC" stop-opacity="0"/>
+      <stop offset="45%" stop-color="#7DD3FC" stop-opacity="0.6"/>
+      <stop offset="55%" stop-color="#5EEAD4" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#5EEAD4" stop-opacity="0"/>
+      <animateTransform attributeName="gradientTransform" type="rotate" values="0 600 200; 360 600 200" dur="12s" repeatCount="indefinite"/>
+    </linearGradient>
+
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softblur"><feGaussianBlur stdDeviation="15"/></filter>
+    
+    <clipPath id="frame"><rect x="0" y="0" width="1200" height="400" rx="16"/></clipPath>
+  </defs>
+
+  <style>
+    .t-mono { font-family: 'JetBrains Mono', Consolas, monospace; }
+    .t-main { font-family: 'Segoe UI', Roboto, sans-serif; }
+    .box { fill: #040910; stroke: #38BDF8; stroke-opacity: 0.2; stroke-width: 1; rx: 8; }
+    .title { fill: url(#textGrad); font-size: 16px; font-weight: bold; letter-spacing: 1.5px; }
+    .tech { fill: #E0F2FE; font-size: 13px; }
+    .cat { fill: #7C93A8; font-size: 11px; letter-spacing: 1px; }
+  </style>
+
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="400" fill="url(#bg)"/>
+    
+    <!-- aurora -->
+    <circle cx="300" cy="150" r="250" fill="url(#auroraBlue)" filter="url(#softblur)">
+       <animate attributeName="cx" values="300;600;300" dur="20s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="900" cy="250" r="250" fill="url(#auroraCyan)" filter="url(#softblur)">
+       <animate attributeName="cx" values="900;600;900" dur="25s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- scanline -->
+    <rect x="0" y="0" width="1200" height="2" fill="url(#scanGrad)">
+      <animate attributeName="y" values="-10;410" dur="6s" repeatCount="indefinite"/>
+    </rect>
+
+    <text x="40" y="45" class="t-mono title" filter="url(#glow)">> TECH_ARSENAL.load()</text>
+
+    <!-- Grid items -->
+    <g transform="translate(40, 80)">
+      <!-- Cloud -->
+      <rect x="0" y="0" width="200" height="130" class="box"/>
+      <text x="15" y="25" class="t-mono cat">CLOUD</text>
+      <line x1="15" y1="35" x2="185" y2="35" stroke="#38BDF8" stroke-opacity="0.2"/>
+      <text x="15" y="55" class="t-main tech">☁️ AWS</text>
+      <text x="15" y="75" class="t-main tech">☁️ Azure</text>
+      <text x="15" y="95" class="t-main tech">☁️ Google Cloud</text>
+      
+      <!-- Containers -->
+      <rect x="220" y="0" width="200" height="130" class="box"/>
+      <text x="235" y="25" class="t-mono cat">CONTAINERS</text>
+      <line x1="235" y1="35" x2="405" y2="35" stroke="#38BDF8" stroke-opacity="0.2"/>
+      <text x="235" y="55" class="t-main tech">🐳 Docker</text>
+      <text x="235" y="75" class="t-main tech">☸️ Kubernetes</text>
+      <text x="235" y="95" class="t-main tech">🦭 Podman</text>
+      <text x="235" y="115" class="t-main tech">⛵ Helm</text>
+
+      <!-- Infra -->
+      <rect x="440" y="0" width="200" height="130" class="box"/>
+      <text x="455" y="25" class="t-mono cat">INFRASTRUCTURE</text>
+      <line x1="455" y1="35" x2="625" y2="35" stroke="#38BDF8" stroke-opacity="0.2"/>
+      <text x="455" y="55" class="t-main tech">🏗️ Terraform</text>
+      <text x="455" y="75" class="t-main tech">⚙️ Ansible</text>
+      <text x="455" y="95" class="t-main tech">☁️ CloudFormation</text>
+
+      <!-- CI/CD -->
+      <rect x="660" y="0" width="200" height="130" class="box"/>
+      <text x="675" y="25" class="t-mono cat">CI / CD</text>
+      <line x1="675" y1="35" x2="845" y2="35" stroke="#38BDF8" stroke-opacity="0.2"/>
+      <text x="675" y="55" class="t-main tech">🐙 GitHub Actions</text>
+      <text x="675" y="75" class="t-main tech">🚀 Jenkins</text>
+      <text x="675" y="95" class="t-main tech">🦊 GitLab CI</text>
+      <text x="675" y="115" class="t-main tech">🦑 ArgoCD</text>
+
+      <!-- Programming -->
+      <rect x="880" y="0" width="240" height="130" class="box"/>
+      <text x="895" y="25" class="t-mono cat">PROGRAMMING</text>
+      <line x1="895" y1="35" x2="1105" y2="35" stroke="#38BDF8" stroke-opacity="0.2"/>
+      <text x="895" y="55" class="t-main tech">🐍 Python</text>
+      <text x="895" y="75" class="t-main tech">🐚 Bash / Shell</text>
+      <text x="895" y="95" class="t-main tech">📜 JavaScript</text>
+
+      <!-- Monitoring -->
+      <rect x="0" y="150" width="200" height="130" class="box"/>
+      <text x="15" y="175" class="t-mono cat">MONITORING</text>
+      <line x1="15" y1="185" x2="185" y2="185" stroke="#38BDF8" stroke-opacity="0.2"/>
+      <text x="15" y="205" class="t-main tech">📊 Prometheus</text>
+      <text x="15" y="225" class="t-main tech">📈 Grafana</text>
+      <text x="15" y="245" class="t-main tech">🔎 SonarQube</text>
+
+      <!-- Web / Proxies -->
+      <rect x="220" y="150" width="200" height="130" class="box"/>
+      <text x="235" y="175" class="t-mono cat">WEB / PROXIES</text>
+      <line x1="235" y1="185" x2="405" y2="185" stroke="#38BDF8" stroke-opacity="0.2"/>
+      <text x="235" y="205" class="t-main tech">🌐 NGINX</text>
+      <text x="235" y="225" class="t-main tech">🛡️ HAProxy</text>
+      <text x="235" y="245" class="t-main tech">🪶 Apache</text>
+
+      <!-- Messaging -->
+      <rect x="440" y="150" width="200" height="130" class="box"/>
+      <text x="455" y="175" class="t-mono cat">MESSAGING</text>
+      <line x1="455" y1="185" x2="625" y2="185" stroke="#38BDF8" stroke-opacity="0.2"/>
+      <text x="455" y="205" class="t-main tech">📨 Kafka</text>
+      <text x="455" y="225" class="t-main tech">🐰 RabbitMQ</text>
+      <text x="455" y="245" class="t-main tech">📬 Amazon SQS/SNS</text>
+
+      <!-- Architecture -->
+      <rect x="660" y="150" width="200" height="130" class="box"/>
+      <text x="675" y="175" class="t-mono cat">ARCHITECTURE</text>
+      <line x1="675" y1="185" x2="845" y2="185" stroke="#38BDF8" stroke-opacity="0.2"/>
+      <text x="675" y="205" class="t-main tech">🧩 Microservices</text>
+      <text x="675" y="225" class="t-main tech">⚡ Redis</text>
+      <text x="675" y="245" class="t-main tech">🌍 CDN</text>
+
+      <!-- Security -->
+      <rect x="880" y="150" width="240" height="130" class="box"/>
+      <text x="895" y="175" class="t-mono cat">SECURITY &amp; AI</text>
+      <line x1="895" y1="185" x2="1105" y2="185" stroke="#38BDF8" stroke-opacity="0.2"/>
+      <text x="895" y="205" class="t-main tech">🔒 SSL / TLS / VPN</text>
+      <text x="895" y="225" class="t-main tech">🤖 AI Agents / LangChain</text>
+      <text x="895" y="245" class="t-main tech">🧠 Claude / Copilot</text>
+      <text x="895" y="265" class="t-main tech">⚡ n8n Automation</text>
+    </g>
+
+    <!-- particles -->
+    <g fill="#22D3EE">
+      <circle r="1.5" cx="100" cy="150" opacity="0">
+        <animateMotion path="M0,0 C 20,-50 -20,-100 0,-150" dur="8s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0.8;0" dur="8s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="1" cx="400" cy="300" opacity="0">
+        <animateMotion path="M0,0 C -30,-60 30,-120 0,-180" dur="10s" repeatCount="indefinite" begin="2s"/>
+        <animate attributeName="opacity" values="0;0.6;0" dur="10s" repeatCount="indefinite" begin="2s"/>
+      </circle>
+      <circle r="2" cx="800" cy="350" opacity="0">
+        <animateMotion path="M0,0 C 40,-80 -40,-160 0,-240" dur="12s" repeatCount="indefinite" begin="4s"/>
+        <animate attributeName="opacity" values="0;0.5;0" dur="12s" repeatCount="indefinite" begin="4s"/>
+      </circle>
+    </g>
+  </g>
+  <rect x="1" y="1" width="1198" height="398" rx="16" fill="none" stroke="url(#borderGrad)" stroke-width="2"/>
+</svg>

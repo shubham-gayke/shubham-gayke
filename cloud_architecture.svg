@@ -1,0 +1,164 @@
+<svg viewBox="0 0 1200 450" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Cloud Architecture Map">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#040910"/>
+      <stop offset="55%" stop-color="#071627"/>
+      <stop offset="100%" stop-color="#04101c"/>
+    </linearGradient>
+
+    <radialGradient id="aurora" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#5EEAD4" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#5EEAD4" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#BAE6FD"/>
+      <stop offset="50%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#5EEAD4"/>
+    </linearGradient>
+
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#22D3EE"/>
+    </linearGradient>
+
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .t-mono { font-family: 'JetBrains Mono', Consolas, monospace; }
+    .t-main { font-family: 'Segoe UI', Roboto, sans-serif; }
+    .node { fill: #04101c; stroke: #22D3EE; stroke-opacity: 0.4; stroke-width: 1.5; rx: 6; }
+    .node-text { fill: #E0F2FE; font-size: 12px; font-weight: 500; text-anchor: middle; }
+    .cloud-box { fill: none; stroke: #38BDF8; stroke-opacity: 0.2; stroke-width: 1.5; rx: 12; stroke-dasharray: 6 4; }
+    .cloud-title { fill: #BAE6FD; font-size: 14px; font-weight: bold; letter-spacing: 1px; }
+    .conn { stroke: url(#lineGrad); stroke-opacity: 0.3; stroke-width: 1.5; }
+    .packet { fill: #5EEAD4; filter: url(#glow); }
+  </style>
+
+  <rect width="1200" height="450" fill="url(#bg)" rx="16"/>
+  <rect x="1" y="1" width="1198" height="448" rx="16" fill="none" stroke="#22D3EE" stroke-opacity="0.15"/>
+  
+  <circle cx="600" cy="225" r="300" fill="url(#aurora)">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="10s" repeatCount="indefinite"/>
+  </circle>
+
+  <text x="40" y="45" class="t-mono" font-size="16" fill="url(#textGrad)" font-weight="bold" filter="url(#glow)">> CLOUD_SERVICES.map()</text>
+
+  <!-- AWS Box -->
+  <g transform="translate(60, 80)">
+    <rect width="360" height="320" class="cloud-box"/>
+    <text x="20" y="25" class="t-main cloud-title">☁️ AWS</text>
+    
+    <!-- Nodes -->
+    <rect x="20" y="50" width="80" height="30" class="node"/><text x="60" y="70" class="t-main node-text">EC2</text>
+    <rect x="140" y="50" width="80" height="30" class="node"/><text x="180" y="70" class="t-main node-text">S3</text>
+    <rect x="260" y="50" width="80" height="30" class="node"/><text x="300" y="70" class="t-main node-text">RDS</text>
+
+    <rect x="20" y="110" width="80" height="30" class="node"/><text x="60" y="130" class="t-main node-text">Lambda</text>
+    <rect x="140" y="110" width="80" height="30" class="node"/><text x="180" y="130" class="t-main node-text">VPC</text>
+    <rect x="260" y="110" width="80" height="30" class="node"/><text x="300" y="130" class="t-main node-text">IAM</text>
+
+    <rect x="20" y="170" width="80" height="30" class="node"/><text x="60" y="190" class="t-main node-text">EKS</text>
+    <rect x="140" y="170" width="80" height="30" class="node"/><text x="180" y="190" class="t-main node-text">ECS</text>
+    <rect x="260" y="170" width="80" height="30" class="node"/><text x="300" y="190" class="t-main node-text">CloudForm</text>
+
+    <rect x="20" y="230" width="80" height="30" class="node"/><text x="60" y="250" class="t-main node-text">CloudWatch</text>
+    <rect x="140" y="230" width="80" height="30" class="node"/><text x="180" y="250" class="t-main node-text">SNS/SQS</text>
+    <rect x="260" y="230" width="80" height="30" class="node"/><text x="300" y="250" class="t-main node-text">API Gateway</text>
+
+    <!-- Connections -->
+    <path d="M 60 80 L 60 110 M 180 80 L 180 110 M 300 80 L 300 110" class="conn"/>
+    <path d="M 60 140 L 60 170 M 180 140 L 180 170 M 300 140 L 300 170" class="conn"/>
+    <path d="M 60 200 L 60 230 M 180 200 L 180 230 M 300 200 L 300 230" class="conn"/>
+    <path d="M 100 65 L 140 65 M 220 65 L 260 65" class="conn"/>
+
+    <!-- Data Packets -->
+    <circle r="2" class="packet">
+      <animateMotion path="M 60 80 L 60 110 L 100 110" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="2" class="packet">
+      <animateMotion path="M 180 140 L 180 170" dur="1.5s" repeatCount="indefinite" begin="0.5s"/>
+    </circle>
+  </g>
+
+  <!-- Azure Box -->
+  <g transform="translate(450, 80)">
+    <rect width="250" height="320" class="cloud-box"/>
+    <text x="20" y="25" class="t-main cloud-title">☁️ AZURE</text>
+
+    <rect x="25" y="60" width="85" height="30" class="node"/><text x="67" y="80" class="t-main node-text">VMs</text>
+    <rect x="140" y="60" width="85" height="30" class="node"/><text x="182" y="80" class="t-main node-text">Blob</text>
+    
+    <rect x="25" y="130" width="85" height="30" class="node"/><text x="67" y="150" class="t-main node-text">Functions</text>
+    <rect x="140" y="130" width="85" height="30" class="node"/><text x="182" y="150" class="t-main node-text">VNet</text>
+
+    <rect x="25" y="200" width="85" height="30" class="node"/><text x="67" y="220" class="t-main node-text">AKS</text>
+    <rect x="140" y="200" width="85" height="30" class="node"/><text x="182" y="220" class="t-main node-text">Entra ID</text>
+
+    <rect x="25" y="270" width="85" height="30" class="node"/><text x="67" y="290" class="t-main node-text">ARM Temp</text>
+    <rect x="140" y="270" width="85" height="30" class="node"/><text x="182" y="290" class="t-main node-text">Monitor</text>
+
+    <path d="M 67 90 L 67 130 M 182 90 L 182 130" class="conn"/>
+    <path d="M 67 160 L 67 200 M 182 160 L 182 200" class="conn"/>
+    <path d="M 67 230 L 67 270 M 182 230 L 182 270" class="conn"/>
+    <circle r="2" class="packet">
+      <animateMotion path="M 67 90 L 67 130" dur="2s" repeatCount="indefinite" begin="1s"/>
+    </circle>
+  </g>
+
+  <!-- GCP Box -->
+  <g transform="translate(730, 80)">
+    <rect width="250" height="320" class="cloud-box"/>
+    <text x="20" y="25" class="t-main cloud-title">☁️ GCP</text>
+
+    <rect x="25" y="60" width="85" height="30" class="node"/><text x="67" y="80" class="t-main node-text">Compute Eng</text>
+    <rect x="140" y="60" width="85" height="30" class="node"/><text x="182" y="80" class="t-main node-text">GCS</text>
+    
+    <rect x="25" y="130" width="85" height="30" class="node"/><text x="67" y="150" class="t-main node-text">Cloud Func</text>
+    <rect x="140" y="130" width="85" height="30" class="node"/><text x="182" y="150" class="t-main node-text">VPC</text>
+
+    <rect x="25" y="200" width="85" height="30" class="node"/><text x="67" y="220" class="t-main node-text">GKE</text>
+    <rect x="140" y="200" width="85" height="30" class="node"/><text x="182" y="220" class="t-main node-text">IAM</text>
+
+    <rect x="25" y="270" width="85" height="30" class="node"/><text x="67" y="290" class="t-main node-text">Deploy Mgr</text>
+    <rect x="140" y="270" width="85" height="30" class="node"/><text x="182" y="290" class="t-main node-text">Ops Suite</text>
+
+    <path d="M 67 90 L 67 130 M 182 90 L 182 130" class="conn"/>
+    <path d="M 67 160 L 67 200 M 182 160 L 182 200" class="conn"/>
+    <path d="M 67 230 L 67 270 M 182 230 L 182 270" class="conn"/>
+    <circle r="2" class="packet">
+      <animateMotion path="M 182 230 L 182 270" dur="1.8s" repeatCount="indefinite" begin="0.3s"/>
+    </circle>
+  </g>
+
+  <!-- Cross-Cloud Connectors -->
+  <path d="M 420 160 Q 435 160 450 160" class="conn" stroke-dasharray="2 4"/>
+  <path d="M 700 240 Q 715 240 730 240" class="conn" stroke-dasharray="2 4"/>
+  <circle r="2.5" fill="#38BDF8" filter="url(#glow)">
+    <animateMotion path="M 420 160 L 450 160" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle r="2.5" fill="#38BDF8" filter="url(#glow)">
+    <animateMotion path="M 730 240 L 700 240" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Extended Info Box -->
+  <g transform="translate(1010, 80)">
+    <rect width="150" height="320" class="cloud-box" stroke-dasharray="none" stroke-opacity="0.1"/>
+    <text x="75" y="30" class="t-main cloud-title" text-anchor="middle" font-size="12">EXTENDED</text>
+    <text x="75" y="70" class="t-main node-text" fill="#7C93A8">SageMaker</text>
+    <text x="75" y="100" class="t-main node-text" fill="#7C93A8">Cognito</text>
+    <text x="75" y="130" class="t-main node-text" fill="#7C93A8">Step Fn</text>
+    <text x="75" y="160" class="t-main node-text" fill="#7C93A8">Kinesis</text>
+    <text x="75" y="190" class="t-main node-text" fill="#7C93A8">WAF</text>
+    <text x="75" y="220" class="t-main node-text" fill="#7C93A8">Elastic B/S</text>
+    <text x="75" y="250" class="t-main node-text" fill="#7C93A8">Secrets Mgr</text>
+  </g>
+
+</svg>

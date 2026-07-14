@@ -1,0 +1,74 @@
+<svg viewBox="0 0 1200 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Footer">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#040910"/>
+      <stop offset="55%" stop-color="#071627"/>
+      <stop offset="100%" stop-color="#04101c"/>
+    </linearGradient>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#BAE6FD"/>
+      <stop offset="50%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#5EEAD4"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="3" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <linearGradient id="borderGrad" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1200" y2="0">
+      <stop offset="0%" stop-color="#7DD3FC" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#38BDF8" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#5EEAD4" stop-opacity="0"/>
+      <animateTransform attributeName="gradientTransform" type="rotate" values="0 600 150; 360 600 150" dur="8s" repeatCount="indefinite"/>
+    </linearGradient>
+  </defs>
+
+  <style>
+    .t-mono { font-family: 'JetBrains Mono', Consolas, monospace; }
+    .t-main { font-family: 'Segoe UI', Roboto, sans-serif; }
+    .term-text { fill: #7C93A8; font-size: 14px; }
+    .term-highlight { fill: #5EEAD4; font-weight: bold; }
+    .term-prompt { fill: #38BDF8; font-weight: bold; }
+  </style>
+
+  <rect width="1200" height="300" fill="url(#bg)" rx="16"/>
+  <rect x="1" y="1" width="1198" height="298" rx="16" fill="none" stroke="url(#borderGrad)" stroke-width="2"/>
+  
+  <text x="40" y="45" class="t-mono" font-size="16" fill="url(#textGrad)" font-weight="bold" filter="url(#glow)">> ESTABLISH_CONNECTION()</text>
+
+  <!-- Terminal Window inside Footer -->
+  <g transform="translate(250, 80)">
+    <rect width="700" height="180" fill="#030712" rx="8" stroke="#22D3EE" stroke-opacity="0.3"/>
+    
+    <!-- Top bar -->
+    <rect width="700" height="30" fill="#0A192F" rx="8"/>
+    <circle cx="20" cy="15" r="5" fill="#ef4444"/>
+    <circle cx="40" cy="15" r="5" fill="#eab308"/>
+    <circle cx="60" cy="15" r="5" fill="#22c55e"/>
+    <text x="350" y="20" class="t-mono" fill="#4B637B" font-size="12" text-anchor="middle">glacier-os-terminal ~ shubham</text>
+
+    <!-- Content with typing effect -->
+    <g class="t-mono term-text" transform="translate(20, 60)">
+      <text y="0">
+        <tspan class="term-prompt">shubham@system:~$</tspan> session.end()
+      </text>
+      <text y="30" opacity="0">
+        > Thank you for visiting my profile.
+        <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.1;1" dur="10s" begin="1s" repeatCount="indefinite"/>
+      </text>
+      <text y="60" opacity="0">
+        > All systems operational. <tspan class="term-highlight">████████████████████ 100%</tspan>
+        <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.1;1" dur="10s" begin="2.5s" repeatCount="indefinite"/>
+      </text>
+      <text y="90" opacity="0">
+        > Connection terminated gracefully.
+        <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.1;1" dur="10s" begin="4s" repeatCount="indefinite"/>
+      </text>
+      <text y="120" opacity="0">
+        > Until next time... ⚡
+        <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.1;1" dur="10s" begin="5.5s" repeatCount="indefinite"/>
+      </text>
+      
+      <!-- Blinking cursor -->
+      <rect x="180" y="108" width="8" height="15" fill="#5EEAD4" opacity="0">
+        <animate attributeName="opacity" values="0;1;0" dur="0.8s" repeatCount="indefinite" begin="6.5s"/>
+      </rect>
+    </g>
+  </g>
+</svg>

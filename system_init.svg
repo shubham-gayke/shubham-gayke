@@ -1,0 +1,111 @@
+<svg viewBox="0 0 1000 950" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="System Initialization Code">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#040910"/>
+      <stop offset="100%" stop-color="#071627"/>
+    </linearGradient>
+    
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#5EEAD4" stop-opacity="0.1"/>
+    </linearGradient>
+
+    <!-- Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <style>
+      .txt { font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace; font-size: 15px; }
+      .comment { fill: #7C93A8; font-style: italic; }
+      .keyword { fill: #22D3EE; }
+      .variable { fill: #BAE6FD; }
+      .string { fill: #5EEAD4; }
+      .bracket { fill: #38BDF8; }
+      .key { fill: #7DD3FC; }
+      .fade-in { animation: fadeIn 0.5s ease-in forwards; opacity: 0; }
+      
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(5px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      
+      .line { animation-delay: calc(var(--i) * 0.05s); }
+      
+      .typewriter {
+        overflow: hidden;
+        white-space: nowrap;
+        animation: typing 2s steps(60, end) forwards;
+        animation-delay: 2.2s;
+        width: 0;
+        opacity: 0;
+      }
+      
+      @keyframes typing {
+        0% { width: 0; opacity: 1; }
+        100% { width: 100%; opacity: 1; }
+      }
+    </style>
+  </defs>
+
+  <rect width="998" height="948" x="1" y="1" rx="16" fill="url(#bg)" stroke="url(#borderGrad)" stroke-width="1.5"/>
+
+  <!-- Window controls -->
+  <circle cx="30" cy="30" r="6" fill="#ef4444" opacity="0.8"/>
+  <circle cx="50" cy="30" r="6" fill="#eab308" opacity="0.8"/>
+  <circle cx="70" cy="30" r="6" fill="#22c55e" opacity="0.8"/>
+  <text x="500" y="34" class="txt" fill="#7C93A8" text-anchor="middle">system.boot() — Glacier.OS Neural Interface</text>
+  
+  <line x1="0" y1="55" x2="1000" y2="55" stroke="#22D3EE" stroke-opacity="0.1"/>
+
+  <!-- Code content -->
+  <g class="txt" transform="translate(30, 90)">
+    
+    <text y="0" class="comment fade-in line" style="--i:1">// ═════════════════════════════════════════════════════════════════════════════════════</text>
+    <text y="25" class="comment fade-in line" style="--i:2">// ██  system.boot() — Loading Shubham Gayke's Neural Interface                       ██</text>
+    <text y="50" class="comment fade-in line" style="--i:3">// ═════════════════════════════════════════════════════════════════════════════════════</text>
+
+    <text y="100" class="fade-in line" style="--i:4"><tspan class="keyword">const</tspan> <tspan class="variable">DevOpsEngineer</tspan> <tspan class="bracket">=</tspan> <tspan class="bracket">{</tspan></text>
+    
+    <text y="125" class="fade-in line" style="--i:5">    <tspan class="key">identity</tspan><tspan class="bracket">:</tspan> <tspan class="bracket">{</tspan></text>
+    <text y="150" class="fade-in line" style="--i:6">        <tspan class="key">name</tspan><tspan class="bracket">:</tspan>     <tspan class="string">"Shubham Gayke"</tspan><tspan class="bracket">,</tspan></text>
+    <text y="175" class="fade-in line" style="--i:7">        <tspan class="key">role</tspan><tspan class="bracket">:</tspan>     <tspan class="string">"DevOps Engineer | Cloud Architect | AI Automation Specialist"</tspan><tspan class="bracket">,</tspan></text>
+    <text y="200" class="fade-in line" style="--i:8">        <tspan class="key">location</tspan><tspan class="bracket">:</tspan> <tspan class="string">"India 🇮🇳"</tspan><tspan class="bracket">,</tspan></text>
+    <text y="225" class="fade-in line" style="--i:9">        <tspan class="key">email</tspan><tspan class="bracket">:</tspan>    <tspan class="string">"shubhamgayke9860@gmail.com"</tspan><tspan class="bracket">,</tspan></text>
+    <text y="250" class="fade-in line" style="--i:10">        <tspan class="key">phone</tspan><tspan class="bracket">:</tspan>    <tspan class="string">"+91 9168469745"</tspan><tspan class="bracket">,</tspan></text>
+    <text y="275" class="fade-in line" style="--i:11">    <tspan class="bracket">},</tspan></text>
+
+    <text y="325" class="fade-in line" style="--i:12">    <tspan class="key">education</tspan><tspan class="bracket">:</tspan> <tspan class="bracket">{</tspan></text>
+    <text y="350" class="fade-in line" style="--i:13">        <tspan class="key">degree</tspan><tspan class="bracket">:</tspan>       <tspan class="string">"B-Tech in Computer Science Engineering"</tspan><tspan class="bracket">,</tspan></text>
+    <text y="375" class="fade-in line" style="--i:14">        <tspan class="key">university</tspan><tspan class="bracket">:</tspan>   <tspan class="string">"Dr. Babasaheb Ambedkar Technological University"</tspan><tspan class="bracket">,</tspan></text>
+    <text y="400" class="fade-in line" style="--i:15">        <tspan class="key">cgpa</tspan><tspan class="bracket">:</tspan>         <tspan class="string">"8.12 / 10"</tspan><tspan class="bracket">,</tspan></text>
+    <text y="425" class="fade-in line" style="--i:16">        <tspan class="key">achievement</tspan><tspan class="bracket">:</tspan>  <tspan class="string">"🥇 1st Rank in Polytechnic — Diploma (92.17%)"</tspan><tspan class="bracket">,</tspan></text>
+    <text y="450" class="fade-in line" style="--i:17">    <tspan class="bracket">},</tspan></text>
+
+    <text y="500" class="fade-in line" style="--i:18">    <tspan class="key">currentMission</tspan><tspan class="bracket">:</tspan> <tspan class="bracket">[</tspan></text>
+    <text y="525" class="fade-in line" style="--i:19">        <tspan class="string">"🔥 Building scalable, secure &amp; production-ready cloud systems"</tspan><tspan class="bracket">,</tspan></text>
+    <text y="550" class="fade-in line" style="--i:20">        <tspan class="string">"🤖 Developing AI agents with MCP (Model Context Protocol) integration"</tspan><tspan class="bracket">,</tspan></text>
+    <text y="575" class="fade-in line" style="--i:21">        <tspan class="string">"⚡ Automating everything — if it runs twice, it gets a pipeline"</tspan><tspan class="bracket">,</tspan></text>
+    <text y="600" class="fade-in line" style="--i:22">        <tspan class="string">"🧠 Pushing boundaries of AI-powered developer tooling"</tspan><tspan class="bracket">,</tspan></text>
+    <text y="625" class="fade-in line" style="--i:23">    <tspan class="bracket">],</tspan></text>
+
+    <text y="675" class="fade-in line" style="--i:24">    <tspan class="key">philosophy</tspan><tspan class="bracket">:</tspan> <tspan class="string">"Infrastructure should be invisible, resilient, and self-healing."</tspan><tspan class="bracket">,</tspan></text>
+
+    <text y="725" class="fade-in line" style="--i:25">    <tspan class="key">deploy</tspan><tspan class="bracket">:</tspan> <tspan class="keyword">function</tspan><tspan class="bracket">() {</tspan></text>
+    <text y="750" class="fade-in line" style="--i:26">        <tspan class="keyword">return</tspan> <tspan class="string">"🚀 Systems online. All pipelines green. Zero downtime achieved."</tspan><tspan class="bracket">;</tspan></text>
+    <text y="775" class="fade-in line" style="--i:27">    <tspan class="bracket">}</tspan></text>
+    <text y="800" class="fade-in line" style="--i:28"><tspan class="bracket">};</tspan></text>
+
+    <text y="850" class="fade-in line" style="--i:29"><tspan class="variable">DevOpsEngineer</tspan><tspan class="bracket">.</tspan><tspan class="key">deploy</tspan><tspan class="bracket">();</tspan></text>
+
+    <!-- Typing Output -->
+    <g transform="translate(0, 875)">
+      <text class="typewriter" filter="url(#glow)"><tspan class="comment">// Output:</tspan> <tspan class="string">🚀 Systems online. All pipelines green. Zero downtime achieved.</tspan> <tspan class="bracket" fill="#22D3EE">_</tspan></text>
+    </g>
+  </g>
+</svg>
