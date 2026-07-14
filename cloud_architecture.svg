@@ -1,4 +1,4 @@
-<svg viewBox="0 0 560 1000" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Cloud &amp; Services Architecture Map">
+<svg viewBox="0 0 1200 450" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Cloud &amp; Services Architecture Map">
   <defs>
     <!-- Background Gradients -->
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -114,17 +114,18 @@
     .t-mono { font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace; }
     .t-main { font-family: 'Segoe UI', Roboto, sans-serif; }
     .node-bg { fill: #041224; stroke: #22D3EE; stroke-opacity: 0.25; stroke-width: 1.5; rx: 8; transition: all 0.3s; }
-    .node-text { fill: #F0F9FF; font-size: 14.5px; font-weight: 600; }
+    .node-text { fill: #F0F9FF; font-size: 13.5px; font-weight: 600; }
     .cloud-panel { fill: #061121; fill-opacity: 0.8; stroke: #38BDF8; stroke-opacity: 0.15; stroke-width: 1.5; rx: 16; }
     .cloud-title { fill: #E0F2FE; font-size: 18px; font-weight: 800; letter-spacing: 2px; }
+    .row-title { fill: #7C93A8; font-size: 12px; letter-spacing: 1.5px; font-weight: 700; }
   </style>
 
   <!-- ==================== ANIMATED BACKGROUND ==================== -->
   <!-- Base Background -->
-  <rect width="560" height="1000" fill="url(#bg)" rx="16"/>
+  <rect width="1200" height="450" fill="url(#bg)" rx="16"/>
 
   <!-- Orbital Data Rings -->
-  <g transform="translate(280, 500)" opacity="0.12">
+  <g transform="translate(600, 225)" opacity="0.12">
     <circle r="450" fill="none" stroke="#22D3EE" stroke-width="1.5" stroke-dasharray="15 35">
       <animateTransform attributeName="transform" type="rotate" values="0; 360" dur="120s" repeatCount="indefinite"/>
     </circle>
@@ -138,17 +139,14 @@
 
   <!-- Constellation Neural Nodes -->
   <g stroke="#38BDF8" stroke-opacity="0.3" stroke-width="1" fill="none">
-    <path d="M 50,80 L 150,150 L 120,280 Z">
+    <path d="M 150,80 L 250,150 L 220,280 Z">
        <animate attributeName="opacity" values="0.1; 0.7; 0.1" dur="5s" repeatCount="indefinite"/>
     </path>
-    <path d="M 400,100 L 480,180 L 450,320 L 350,220 Z">
+    <path d="M 900,100 L 980,180 L 950,320 L 850,220 Z">
        <animate attributeName="opacity" values="0.1; 0.6; 0.1" dur="6s" repeatCount="indefinite"/>
     </path>
-    <path d="M 80,700 L 180,800 L 250,680 Z">
+    <path d="M 480,200 L 580,300 L 650,180 Z">
        <animate attributeName="opacity" values="0.1; 0.8; 0.1" dur="7s" repeatCount="indefinite"/>
-    </path>
-    <path d="M 350,850 L 480,750 L 520,880 Z">
-       <animate attributeName="opacity" values="0.1; 0.7; 0.1" dur="4.5s" repeatCount="indefinite"/>
     </path>
   </g>
 
@@ -158,209 +156,203 @@
        <animate attributeName="opacity" values="0; 0.9; 0" dur="5s" repeatCount="indefinite"/>
        <animate attributeName="r" values="1; 4; 1" dur="5s" repeatCount="indefinite"/>
     </circle>
-    <circle r="3" cx="480" cy="180" opacity="0" fill="#F472B6">
+    <circle r="3" cx="980" cy="180" opacity="0" fill="#F472B6">
        <animate attributeName="opacity" values="0; 0.9; 0" dur="6s" repeatCount="indefinite" begin="1s"/>
        <animate attributeName="r" values="1; 5; 1" dur="6s" repeatCount="indefinite" begin="1s"/>
     </circle>
-    <circle r="3" cx="180" cy="800" opacity="0" fill="#38BDF8">
+    <circle r="3" cx="280" cy="300" opacity="0" fill="#38BDF8">
        <animate attributeName="opacity" values="0; 0.9; 0" dur="7s" repeatCount="indefinite" begin="2s"/>
        <animate attributeName="r" values="2; 6; 2" dur="7s" repeatCount="indefinite" begin="2s"/>
     </circle>
-    <circle r="3" cx="480" cy="750" opacity="0" fill="#8B5CF6">
+    <circle r="3" cx="880" cy="350" opacity="0" fill="#8B5CF6">
        <animate attributeName="opacity" values="0; 0.9; 0" dur="4.5s" repeatCount="indefinite" begin="0.5s"/>
        <animate attributeName="r" values="1; 4; 1" dur="4.5s" repeatCount="indefinite" begin="0.5s"/>
     </circle>
   </g>
 
   <!-- Ambient Auroras -->
-  <circle cx="100" cy="400" r="300" fill="url(#auroraGlow)" filter="url(#softGlow)">
-    <animate attributeName="cx" values="50; 250; 50" dur="18s" repeatCount="indefinite"/>
+  <circle cx="300" cy="200" r="300" fill="url(#auroraGlow)" filter="url(#softGlow)">
+    <animate attributeName="cx" values="150; 350; 150" dur="18s" repeatCount="indefinite"/>
     <animate attributeName="opacity" values="0.3; 0.7; 0.3" dur="8s" repeatCount="indefinite"/>
   </circle>
-  <circle cx="450" cy="250" r="300" fill="url(#auroraPink)" filter="url(#softGlow)">
-    <animate attributeName="cy" values="100; 400; 100" dur="22s" repeatCount="indefinite"/>
+  <circle cx="950" cy="150" r="300" fill="url(#auroraPink)" filter="url(#softGlow)">
+    <animate attributeName="cy" values="100; 300; 100" dur="22s" repeatCount="indefinite"/>
     <animate attributeName="opacity" values="0.3; 0.6; 0.3" dur="10s" repeatCount="indefinite"/>
   </circle>
-  <circle cx="280" cy="800" r="350" fill="url(#auroraPurple)" filter="url(#softGlow)">
-    <animate attributeName="cx" values="150; 400; 150" dur="25s" repeatCount="indefinite"/>
+  <circle cx="600" cy="350" r="350" fill="url(#auroraPurple)" filter="url(#softGlow)">
+    <animate attributeName="cx" values="450; 750; 450" dur="25s" repeatCount="indefinite"/>
     <animate attributeName="opacity" values="0.2; 0.5; 0.2" dur="12s" repeatCount="indefinite"/>
   </circle>
 
   <!-- Title -->
   <g filter="url(#glow)">
-    <text x="40" y="55" class="t-mono" font-size="22" fill="url(#textGrad)" font-weight="bold">> Cloud &amp; Services</text>
+    <text x="30" y="45" class="t-mono" font-size="22" fill="url(#textGrad)" font-weight="bold">> Cloud &amp; Services</text>
   </g>
-  <line x1="40" y1="75" x2="350" y2="75" stroke="url(#textGrad)" stroke-width="2" opacity="0.4">
-    <animate attributeName="x2" values="40; 350" dur="2s" fill="freeze"/>
+  <line x1="30" y1="60" x2="350" y2="60" stroke="url(#textGrad)" stroke-width="2" opacity="0.4">
+    <animate attributeName="x2" values="30; 350" dur="2s" fill="freeze"/>
   </line>
 
-  <!-- ==================== AWS CLOUD PANEL ==================== -->
-  <g transform="translate(40, 100)">
-    <rect width="480" height="860" class="cloud-panel"/>
-    <text x="30" y="40" class="t-main cloud-title">☁️ AMAZON WEB SERVICES (AWS)</text>
+  <!-- ==================== AWS CLOUD PANEL (HORIZONTAL GRID) ==================== -->
+  <g transform="translate(30, 80)">
+    <rect width="1140" height="340" class="cloud-panel"/>
+    <text x="30" y="40" class="t-main cloud-title">☁️ AMAZON WEB SERVICES (AWS) — CORE ARCHITECTURE</text>
+    <path d="M 30 55 L 1110 55" stroke="#38BDF8" stroke-opacity="0.2" stroke-width="1" stroke-dasharray="4 4"/>
     
-    <!-- Compute Row 1 -->
-    <text x="30" y="80" class="t-mono" font-size="12" fill="#7C93A8">COMPUTE &amp; CONTAINERS</text>
-    <g transform="translate(30, 95)">
+    <!-- Row 1: Compute & App -->
+    <text x="30" y="105" class="t-mono row-title">COMPUTE</text>
+    <!-- Col 0 -->
+    <g transform="translate(150, 75)">
       <rect width="130" height="45" class="node-bg"/>
       <use href="#icon-compute" x="25" y="22"/>
       <text x="50" y="27" class="t-main node-text">EC2</text>
     </g>
-    <g transform="translate(175, 95)">
-      <rect width="130" height="45" class="node-bg"/>
-      <use href="#icon-serverless" x="25" y="22"/>
-      <text x="50" y="27" class="t-main node-text">Lambda</text>
-    </g>
-    <g transform="translate(320, 95)">
-      <rect width="130" height="45" class="node-bg"/>
-      <use href="#icon-container" x="25" y="22"/>
-      <text x="50" y="27" class="t-main node-text">EKS</text>
-    </g>
-
-    <!-- Compute Row 2 -->
-    <g transform="translate(30, 155)">
-      <rect width="130" height="45" class="node-bg"/>
-      <use href="#icon-container" x="25" y="22"/>
-      <text x="50" y="27" class="t-main node-text">ECS</text>
-    </g>
-    <g transform="translate(175, 155)">
+    <!-- Col 1 -->
+    <g transform="translate(290, 75)">
       <rect width="130" height="45" class="node-bg"/>
       <use href="#icon-compute" x="25" y="22"/>
       <text x="50" y="27" class="t-main node-text">Auto Scaling</text>
     </g>
-    <g transform="translate(320, 155)">
+    <!-- Col 2 -->
+    <g transform="translate(430, 75)">
+      <rect width="130" height="45" class="node-bg"/>
+      <use href="#icon-serverless" x="25" y="22"/>
+      <text x="50" y="27" class="t-main node-text">Lambda</text>
+    </g>
+    <!-- Col 3 -->
+    <g transform="translate(570, 75)">
+      <rect width="130" height="45" class="node-bg"/>
+      <use href="#icon-container" x="25" y="22"/>
+      <text x="50" y="27" class="t-main node-text">ECS</text>
+    </g>
+    <!-- Col 4 -->
+    <g transform="translate(710, 75)">
+      <rect width="130" height="45" class="node-bg"/>
+      <use href="#icon-container" x="25" y="22"/>
+      <text x="50" y="27" class="t-main node-text">EKS</text>
+    </g>
+    <!-- Col 5 -->
+    <g transform="translate(850, 75)">
       <rect width="130" height="45" class="node-bg"/>
       <use href="#icon-serverless" x="25" y="22"/>
       <text x="50" y="27" class="t-main node-text">Elast.Beanstalk</text>
     </g>
-
-    <!-- Storage Row -->
-    <text x="30" y="240" class="t-mono" font-size="12" fill="#7C93A8">STORAGE</text>
-    <g transform="translate(30, 255)">
-      <rect width="130" height="45" class="node-bg"/>
-      <use href="#icon-storage" x="25" y="22"/>
-      <text x="50" y="27" class="t-main node-text">S3</text>
-    </g>
-    <g transform="translate(175, 255)">
-      <rect width="130" height="45" class="node-bg"/>
-      <use href="#icon-storage" x="25" y="22"/>
-      <text x="50" y="27" class="t-main node-text">EBS</text>
-    </g>
-    <g transform="translate(320, 255)">
-      <rect width="130" height="45" class="node-bg"/>
-      <use href="#icon-storage" x="25" y="22"/>
-      <text x="50" y="27" class="t-main node-text">EFS</text>
-    </g>
-
-    <!-- Databases Row 1 -->
-    <text x="30" y="340" class="t-mono" font-size="12" fill="#7C93A8">DATABASES &amp; ANALYTICS</text>
-    <g transform="translate(30, 355)">
-      <rect width="130" height="45" class="node-bg"/>
-      <use href="#icon-db" x="25" y="22"/>
-      <text x="50" y="27" class="t-main node-text">RDS</text>
-    </g>
-    <g transform="translate(175, 355)">
-      <rect width="130" height="45" class="node-bg"/>
-      <use href="#icon-db" x="25" y="22"/>
-      <text x="50" y="27" class="t-main node-text">DynamoDB</text>
-    </g>
-    <g transform="translate(320, 355)">
-      <rect width="130" height="45" class="node-bg"/>
-      <use href="#icon-db" x="25" y="22"/>
-      <text x="50" y="27" class="t-main node-text">ElastiCache</text>
-    </g>
-
-    <!-- Databases Row 2 -->
-    <g transform="translate(30, 415)">
-      <rect width="130" height="45" class="node-bg"/>
-      <use href="#icon-analytics" x="25" y="22"/>
-      <text x="50" y="27" class="t-main node-text">Redshift</text>
-    </g>
-    <g transform="translate(175, 415)">
-      <rect width="130" height="45" class="node-bg"/>
-      <use href="#icon-analytics" x="25" y="22"/>
-      <text x="50" y="27" class="t-main node-text">Athena</text>
-    </g>
-    <g transform="translate(320, 415)">
-      <rect width="130" height="45" class="node-bg"/>
-      <use href="#icon-analytics" x="25" y="22"/>
-      <text x="50" y="27" class="t-main node-text">Glue</text>
-    </g>
-
-    <!-- Networking & Delivery Row -->
-    <text x="30" y="500" class="t-mono" font-size="12" fill="#7C93A8">NETWORKING &amp; DELIVERY</text>
-    <g transform="translate(30, 515)">
-      <rect width="130" height="45" class="node-bg"/>
-      <use href="#icon-network" x="25" y="22"/>
-      <text x="50" y="27" class="t-main node-text">VPC</text>
-    </g>
-    <g transform="translate(175, 515)">
-      <rect width="130" height="45" class="node-bg"/>
-      <use href="#icon-global" x="25" y="22"/>
-      <text x="50" y="27" class="t-main node-text">Route 53</text>
-    </g>
-    <g transform="translate(320, 515)">
-      <rect width="130" height="45" class="node-bg"/>
-      <use href="#icon-network" x="25" y="22"/>
-      <text x="50" y="27" class="t-main node-text">ELB</text>
-    </g>
-    
-    <!-- Networking Row 2 -->
-    <g transform="translate(30, 575)">
-      <rect width="130" height="45" class="node-bg"/>
-      <use href="#icon-network" x="25" y="22"/>
-      <text x="50" y="27" class="t-main node-text">API Gateway</text>
-    </g>
-
-    <!-- Security & Management Row 1 -->
-    <text x="30" y="660" class="t-mono" font-size="12" fill="#7C93A8">SECURITY &amp; MANAGEMENT</text>
-    <g transform="translate(30, 675)">
-      <rect width="130" height="45" class="node-bg"/>
-      <use href="#icon-security" x="25" y="22"/>
-      <text x="50" y="27" class="t-main node-text">IAM</text>
-    </g>
-    <g transform="translate(175, 675)">
-      <rect width="130" height="45" class="node-bg"/>
-      <use href="#icon-monitor" x="25" y="22"/>
-      <text x="50" y="27" class="t-main node-text">CloudWatch</text>
-    </g>
-    <g transform="translate(320, 675)">
-      <rect width="130" height="45" class="node-bg"/>
-      <use href="#icon-monitor" x="25" y="22"/>
-      <text x="50" y="27" class="t-main node-text">CloudTrail</text>
-    </g>
-
-    <!-- Security & Management Row 2 -->
-    <g transform="translate(30, 735)">
-      <rect width="130" height="45" class="node-bg"/>
-      <use href="#icon-serverless" x="25" y="22"/>
-      <text x="50" y="27" class="t-main node-text">CloudForm.</text>
-    </g>
-    <g transform="translate(175, 735)">
-      <rect width="130" height="45" class="node-bg"/>
-      <use href="#icon-security" x="25" y="22"/>
-      <text x="50" y="27" class="t-main node-text">Secrets Mgr</text>
-    </g>
-    <g transform="translate(320, 735)">
-      <rect width="130" height="45" class="node-bg"/>
-      <use href="#icon-security" x="25" y="22"/>
-      <text x="50" y="27" class="t-main node-text">WAF</text>
-    </g>
-
-    <!-- Application Integration Row -->
-    <text x="30" y="820" class="t-mono" font-size="12" fill="#7C93A8">APPLICATION INTEGRATION</text>
-    <g transform="translate(30, 835)">
-      <rect width="130" height="45" class="node-bg"/>
-      <use href="#icon-network" x="25" y="22"/>
-      <text x="50" y="27" class="t-main node-text">SNS / SQS</text>
-    </g>
-    <g transform="translate(175, 835)">
+    <!-- Col 6 -->
+    <g transform="translate(990, 75)">
       <rect width="130" height="45" class="node-bg"/>
       <use href="#icon-pipeline" x="25" y="22"/>
       <text x="50" y="27" class="t-main node-text">CodePipeline</text>
     </g>
+
+    <!-- Row 2: Data & Storage -->
+    <text x="30" y="170" class="t-mono row-title">DATA &amp; STORE</text>
+    <g transform="translate(150, 140)">
+      <rect width="130" height="45" class="node-bg"/>
+      <use href="#icon-storage" x="25" y="22"/>
+      <text x="50" y="27" class="t-main node-text">S3</text>
+    </g>
+    <g transform="translate(290, 140)">
+      <rect width="130" height="45" class="node-bg"/>
+      <use href="#icon-storage" x="25" y="22"/>
+      <text x="50" y="27" class="t-main node-text">EBS</text>
+    </g>
+    <g transform="translate(430, 140)">
+      <rect width="130" height="45" class="node-bg"/>
+      <use href="#icon-storage" x="25" y="22"/>
+      <text x="50" y="27" class="t-main node-text">EFS</text>
+    </g>
+    <g transform="translate(570, 140)">
+      <rect width="130" height="45" class="node-bg"/>
+      <use href="#icon-db" x="25" y="22"/>
+      <text x="50" y="27" class="t-main node-text">RDS</text>
+    </g>
+    <g transform="translate(710, 140)">
+      <rect width="130" height="45" class="node-bg"/>
+      <use href="#icon-db" x="25" y="22"/>
+      <text x="50" y="27" class="t-main node-text">DynamoDB</text>
+    </g>
+    <g transform="translate(850, 140)">
+      <rect width="130" height="45" class="node-bg"/>
+      <use href="#icon-db" x="25" y="22"/>
+      <text x="50" y="27" class="t-main node-text">ElastiCache</text>
+    </g>
+    <g transform="translate(990, 140)">
+      <rect width="130" height="45" class="node-bg"/>
+      <use href="#icon-analytics" x="25" y="22"/>
+      <text x="50" y="27" class="t-main node-text">Redshift</text>
+    </g>
+
+    <!-- Row 3: Network & Security -->
+    <text x="30" y="235" class="t-mono row-title">NETWORK &amp; SEC.</text>
+    <g transform="translate(150, 205)">
+      <rect width="130" height="45" class="node-bg"/>
+      <use href="#icon-network" x="25" y="22"/>
+      <text x="50" y="27" class="t-main node-text">VPC</text>
+    </g>
+    <g transform="translate(290, 205)">
+      <rect width="130" height="45" class="node-bg"/>
+      <use href="#icon-global" x="25" y="22"/>
+      <text x="50" y="27" class="t-main node-text">Route 53</text>
+    </g>
+    <g transform="translate(430, 205)">
+      <rect width="130" height="45" class="node-bg"/>
+      <use href="#icon-network" x="25" y="22"/>
+      <text x="50" y="27" class="t-main node-text">ELB</text>
+    </g>
+    <g transform="translate(570, 205)">
+      <rect width="130" height="45" class="node-bg"/>
+      <use href="#icon-network" x="25" y="22"/>
+      <text x="50" y="27" class="t-main node-text">API Gateway</text>
+    </g>
+    <g transform="translate(710, 205)">
+      <rect width="130" height="45" class="node-bg"/>
+      <use href="#icon-security" x="25" y="22"/>
+      <text x="50" y="27" class="t-main node-text">IAM</text>
+    </g>
+    <g transform="translate(850, 205)">
+      <rect width="130" height="45" class="node-bg"/>
+      <use href="#icon-security" x="25" y="22"/>
+      <text x="50" y="27" class="t-main node-text">WAF</text>
+    </g>
+    <g transform="translate(990, 205)">
+      <rect width="130" height="45" class="node-bg"/>
+      <use href="#icon-security" x="25" y="22"/>
+      <text x="50" y="27" class="t-main node-text">Secrets Mgr</text>
+    </g>
+
+    <!-- Row 4: Management & Analytics -->
+    <text x="30" y="300" class="t-mono row-title">MGMT &amp; METRICS</text>
+    <g transform="translate(150, 270)">
+      <rect width="130" height="45" class="node-bg"/>
+      <use href="#icon-monitor" x="25" y="22"/>
+      <text x="50" y="27" class="t-main node-text">CloudWatch</text>
+    </g>
+    <g transform="translate(290, 270)">
+      <rect width="130" height="45" class="node-bg"/>
+      <use href="#icon-monitor" x="25" y="22"/>
+      <text x="50" y="27" class="t-main node-text">CloudTrail</text>
+    </g>
+    <g transform="translate(430, 270)">
+      <rect width="130" height="45" class="node-bg"/>
+      <use href="#icon-serverless" x="25" y="22"/>
+      <text x="50" y="27" class="t-main node-text">CloudForm.</text>
+    </g>
+    <g transform="translate(570, 270)">
+      <rect width="130" height="45" class="node-bg"/>
+      <use href="#icon-network" x="25" y="22"/>
+      <text x="50" y="27" class="t-main node-text">SNS / SQS</text>
+    </g>
+    <g transform="translate(710, 270)">
+      <rect width="130" height="45" class="node-bg"/>
+      <use href="#icon-analytics" x="25" y="22"/>
+      <text x="50" y="27" class="t-main node-text">Athena</text>
+    </g>
+    <g transform="translate(850, 270)">
+      <rect width="130" height="45" class="node-bg"/>
+      <use href="#icon-analytics" x="25" y="22"/>
+      <text x="50" y="27" class="t-main node-text">Glue</text>
+    </g>
   </g>
 
   <!-- Static Clean Border -->
-  <rect x="1" y="1" width="558" height="998" rx="16" fill="none" stroke="#22D3EE" stroke-opacity="0.25" stroke-width="2"/>
+  <rect x="1" y="1" width="1198" height="448" rx="16" fill="none" stroke="#22D3EE" stroke-opacity="0.25" stroke-width="2"/>
 </svg>
