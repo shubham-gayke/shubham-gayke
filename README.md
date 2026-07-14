@@ -5,7 +5,7 @@
 <!-- ═══════════════════════════════════════════════════════════════════ -->
 
 <a href="https://shubham-gayke.github.io/Portfolio-/">
-  <img width="100%" src="./hero.svg" alt="Shubham Gayke Hero Section" />
+  <img width="100%" src="./merged_hero.svg" alt="Shubham Gayke Hero Section" />
 </a>
 
 <br/>
@@ -43,10 +43,6 @@
 <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
 
 <div align="center">
-
-<!-- ══════════════ SYSTEM BOOT / ABOUT ══════════════ -->
-
-<img width="100%" src="./system_init.svg" alt="System Initialization Code" />
 
 <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
 

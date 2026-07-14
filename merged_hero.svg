@@ -1,0 +1,258 @@
+<svg viewBox="0 0 1200 1250" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" aria-label="Shubham Gayke — DevOps Engineer & System Boot">
+  <defs>
+    <!-- Combined Background Gradient -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#040910"/>
+      <stop offset="35%" stop-color="#071627"/>
+      <stop offset="70%" stop-color="#05101a"/>
+      <stop offset="100%" stop-color="#020408"/>
+    </linearGradient>
+
+    <!-- Aurora Effects -->
+    <radialGradient id="auroraBlue" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="auroraCyan" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="auroraTeal" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#5EEAD4" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#5EEAD4" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Text & Glow Gradients -->
+    <linearGradient id="nameGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#BAE6FD"/>
+      <stop offset="45%" stop-color="#38BDF8"/>
+      <stop offset="75%" stop-color="#22D3EE"/>
+      <stop offset="100%" stop-color="#5EEAD4"/>
+      <animateTransform attributeName="gradientTransform" type="translate" values="-0.4 0; 0.4 0; -0.4 0" dur="7s" repeatCount="indefinite"/>
+    </linearGradient>
+
+    <linearGradient id="scanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#7DD3FC" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#22D3EE" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="borderGrad" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1200" y2="0">
+      <stop offset="0%" stop-color="#7DD3FC" stop-opacity="0"/>
+      <stop offset="45%" stop-color="#7DD3FC" stop-opacity="0.7"/>
+      <stop offset="55%" stop-color="#5EEAD4" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#5EEAD4" stop-opacity="0"/>
+      <animateTransform attributeName="gradientTransform" type="rotate" values="0 600 625; 360 600 625" dur="15s" repeatCount="indefinite"/>
+    </linearGradient>
+
+    <linearGradient id="shardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7DD3FC" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#5EEAD4" stop-opacity="0.03"/>
+    </linearGradient>
+
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softblur"><feGaussianBlur stdDeviation="25"/></filter>
+    <filter id="shardblur"><feGaussianBlur stdDeviation="0.6"/></filter>
+    
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch" result="noise"/>
+      <feColorMatrix in="noise" type="matrix" values="0 0 0 0 0.55  0 0 0 0 0.82  0 0 0 0 0.95  0 0 0 0.05 0"/>
+    </filter>
+
+    <style>
+      .t-main { font-family: 'Segoe UI', Roboto, sans-serif; }
+      .t-mono { font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace; }
+      
+      /* Code styling */
+      .txt { font-size: 15px; }
+      .comment { fill: #7C93A8; font-style: italic; }
+      .keyword { fill: #22D3EE; font-weight: bold; }
+      .variable { fill: #BAE6FD; }
+      .string { fill: #5EEAD4; }
+      .bracket { fill: #38BDF8; }
+      .key { fill: #7DD3FC; }
+      
+      .fade-in { animation: fadeIn 0.5s ease-in forwards; opacity: 0; }
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(5px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      .line { animation-delay: calc(var(--i) * 0.06s + 1s); } /* delayed start to let hero load */
+      
+      .typewriter {
+        overflow: hidden;
+        white-space: nowrap;
+        animation: typing 2s steps(60, end) forwards;
+        animation-delay: 3.5s;
+        width: 0;
+        opacity: 0;
+      }
+      @keyframes typing {
+        0% { width: 0; opacity: 1; }
+        100% { width: 100%; opacity: 1; }
+      }
+    </style>
+  </defs>
+
+  <rect width="1200" height="1250" fill="url(#bg)" rx="28"/>
+
+  <!-- ambient aurora drift for entire canvas -->
+  <circle cx="220" cy="150" r="280" fill="url(#auroraBlue)" filter="url(#softblur)">
+    <animate attributeName="cx" values="220;380;220" dur="18s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="150;250;150" dur="22s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="950" cy="400" r="300" fill="url(#auroraCyan)" filter="url(#softblur)">
+    <animate attributeName="cx" values="950;750;950" dur="20s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="400;500;400" dur="16s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="500" cy="900" r="350" fill="url(#auroraTeal)" filter="url(#softblur)">
+    <animate attributeName="cx" values="500;700;500" dur="25s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.4;0.8;0.4" dur="12s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- grain texture -->
+  <rect x="0" y="0" width="1200" height="1250" filter="url(#grain)" opacity="0.05" rx="28"/>
+
+  <!-- ═════════════════ HERO SECTION (TOP 380px) ═════════════════ -->
+  
+  <!-- slowly rotating ice shards (signature motif) -->
+  <g transform="translate(900,180)">
+    <polygon points="0,-140 120,-40 90,110 -60,130 -140,10" fill="url(#shardGrad)" stroke="#7DD3FC" stroke-opacity="0.22" stroke-width="1" filter="url(#shardblur)">
+      <animateTransform attributeName="transform" type="rotate" values="0;360" dur="90s" repeatCount="indefinite"/>
+    </polygon>
+  </g>
+  <g transform="translate(1080,300)">
+    <polygon points="0,-70 65,-10 40,70 -55,55" fill="url(#shardGrad)" stroke="#5EEAD4" stroke-opacity="0.2" stroke-width="1" filter="url(#shardblur)">
+      <animateTransform attributeName="transform" type="rotate" values="360;0" dur="70s" repeatCount="indefinite"/>
+    </polygon>
+  </g>
+
+  <!-- moving scanline -->
+  <rect x="0" y="-6" width="1200" height="4" fill="url(#scanGrad)">
+    <animate attributeName="y" values="-10;1260" dur="8s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- status pill -->
+  <rect x="50" y="44" width="186" height="36" rx="18" fill="#7DD3FC" fill-opacity="0.07" stroke="#7DD3FC" stroke-opacity="0.35"/>
+  <circle cx="72" cy="62" r="5" fill="#22D3EE">
+    <animate attributeName="opacity" values="1;0.25;1" dur="1.8s" repeatCount="indefinite"/>
+  </circle>
+  <text x="90" y="67" class="t-mono" font-size="13" letter-spacing="1.5" fill="#BFEFFF">SYSTEM ONLINE</text>
+
+  <!-- watermark -->
+  <text x="1150" y="54" text-anchor="end" class="t-mono" font-size="12" fill="#7C93A8" opacity="0.4">GLACIER.OS</text>
+
+  <!-- greeting -->
+  <text x="52" y="142" class="t-main" font-size="24" fill="#8FB4CC">Hi, I'm</text>
+
+  <!-- name -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0 0; 0 -4; 0 0" dur="6s" repeatCount="indefinite"/>
+    <text x="50" y="216" class="t-main" font-size="70" font-weight="900" letter-spacing="1" fill="url(#nameGrad)" filter="url(#glow)">SHUBHAM GAYKE</text>
+  </g>
+
+  <!-- typed role cycle -->
+  <g class="t-mono" font-size="25" fill="#D7F3FF">
+    <text x="52" y="276" opacity="0">
+      DevOps Engineer<tspan fill="#22D3EE">▌</tspan>
+      <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.25;0.2501;1" dur="12s" begin="0s" repeatCount="indefinite"/>
+    </text>
+    <text x="52" y="276" opacity="0">
+      Cloud Architect<tspan fill="#22D3EE">▌</tspan>
+      <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.25;0.2501;1" dur="12s" begin="3s" repeatCount="indefinite"/>
+    </text>
+    <text x="52" y="276" opacity="0">
+      AI Automation Specialist<tspan fill="#22D3EE">▌</tspan>
+      <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.25;0.2501;1" dur="12s" begin="6s" repeatCount="indefinite"/>
+    </text>
+    <text x="52" y="276" opacity="0">
+      Builder of Self-Healing Systems<tspan fill="#22D3EE">▌</tspan>
+      <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.25;0.2501;1" dur="12s" begin="9s" repeatCount="indefinite"/>
+    </text>
+  </g>
+
+  <!-- tagline -->
+  <text x="52" y="342" class="t-mono" font-size="15" fill="#7C93A8">
+    // infrastructure should be invisible, resilient, self-healing
+    <animate attributeName="opacity" values="0.55;1;0.55" dur="5s" repeatCount="indefinite"/>
+  </text>
+  <text x="52" y="372" class="t-mono" font-size="14" fill="#5E7A90">📍 India &#160;&#160;·&#160;&#160; ✉ shubhamgayke9860@gmail.com</text>
+
+  <!-- ═════════════════ SEAMLESS TRANSITION ═════════════════ -->
+  
+  <line x1="50" y1="440" x2="1150" y2="440" stroke="url(#nameGrad)" stroke-width="1.5" opacity="0.3">
+    <animate attributeName="opacity" values="0.1;0.5;0.1" dur="4s" repeatCount="indefinite"/>
+  </line>
+
+  <!-- ═════════════════ TERMINAL SYSTEM BOOT SECTION ═════════════════ -->
+  
+  <!-- Terminal Window Glass Panel -->
+  <g transform="translate(50, 480)">
+    <rect width="1100" height="720" rx="16" fill="#020813" fill-opacity="0.6" stroke="#22D3EE" stroke-opacity="0.2" stroke-width="1.5"/>
+    
+    <!-- Window controls -->
+    <circle cx="30" cy="30" r="7" fill="#ef4444" opacity="0.8"/>
+    <circle cx="55" cy="30" r="7" fill="#eab308" opacity="0.8"/>
+    <circle cx="80" cy="30" r="7" fill="#22c55e" opacity="0.8"/>
+    <text x="550" y="35" class="t-mono" fill="#5E7A90" font-size="14" text-anchor="middle">system.boot() — Glacier.OS Neural Interface</text>
+    
+    <line x1="0" y1="60" x2="1100" y2="60" stroke="#22D3EE" stroke-opacity="0.1"/>
+
+    <!-- Code content -->
+    <g class="t-mono txt" transform="translate(40, 100)">
+      <text y="0" class="comment fade-in line" style="--i:1">// ═══════════════════════════════════════════════════════════════════════════════════════════════</text>
+      <text y="28" class="comment fade-in line" style="--i:2">// ██  system.boot() — Loading Shubham Gayke's Neural Interface                                 ██</text>
+      <text y="56" class="comment fade-in line" style="--i:3">// ═══════════════════════════════════════════════════════════════════════════════════════════════</text>
+
+      <text y="112" class="fade-in line" style="--i:4"><tspan class="keyword">const</tspan> <tspan class="variable">DevOpsEngineer</tspan> <tspan class="bracket">=</tspan> <tspan class="bracket">{</tspan></text>
+      
+      <text y="140" class="fade-in line" style="--i:5">    <tspan class="key">identity</tspan><tspan class="bracket">:</tspan> <tspan class="bracket">{</tspan></text>
+      <text y="168" class="fade-in line" style="--i:6">        <tspan class="key">name</tspan><tspan class="bracket">:</tspan>     <tspan class="string">"Shubham Gayke"</tspan><tspan class="bracket">,</tspan></text>
+      <text y="196" class="fade-in line" style="--i:7">        <tspan class="key">role</tspan><tspan class="bracket">:</tspan>     <tspan class="string">"DevOps Engineer | Cloud Architect | AI Automation Specialist"</tspan><tspan class="bracket">,</tspan></text>
+      <text y="224" class="fade-in line" style="--i:8">        <tspan class="key">location</tspan><tspan class="bracket">:</tspan> <tspan class="string">"India 🇮🇳"</tspan><tspan class="bracket">,</tspan></text>
+      <text y="252" class="fade-in line" style="--i:9">        <tspan class="key">email</tspan><tspan class="bracket">:</tspan>    <tspan class="string">"shubhamgayke9860@gmail.com"</tspan><tspan class="bracket">,</tspan></text>
+      <text y="280" class="fade-in line" style="--i:10">        <tspan class="key">phone</tspan><tspan class="bracket">:</tspan>    <tspan class="string">"+91 9168469745"</tspan><tspan class="bracket">,</tspan></text>
+      <text y="308" class="fade-in line" style="--i:11">    <tspan class="bracket">},</tspan></text>
+
+      <text y="364" class="fade-in line" style="--i:12">    <tspan class="key">education</tspan><tspan class="bracket">:</tspan> <tspan class="bracket">{</tspan></text>
+      <text y="392" class="fade-in line" style="--i:13">        <tspan class="key">degree</tspan><tspan class="bracket">:</tspan>       <tspan class="string">"B-Tech in Computer Science Engineering"</tspan><tspan class="bracket">,</tspan></text>
+      <text y="420" class="fade-in line" style="--i:14">        <tspan class="key">university</tspan><tspan class="bracket">:</tspan>   <tspan class="string">"Dr. Babasaheb Ambedkar Technological University"</tspan><tspan class="bracket">,</tspan></text>
+      <text y="448" class="fade-in line" style="--i:15">        <tspan class="key">cgpa</tspan><tspan class="bracket">:</tspan>         <tspan class="string">"8.12 / 10"</tspan><tspan class="bracket">,</tspan></text>
+      <text y="476" class="fade-in line" style="--i:16">        <tspan class="key">achievement</tspan><tspan class="bracket">:</tspan>  <tspan class="string">"🥇 1st Rank in Polytechnic — Diploma (92.17%)"</tspan><tspan class="bracket">,</tspan></text>
+      <text y="504" class="fade-in line" style="--i:17">    <tspan class="bracket">},</tspan></text>
+
+      <text y="560" class="fade-in line" style="--i:18">    <tspan class="key">currentMission</tspan><tspan class="bracket">:</tspan> <tspan class="bracket">[</tspan></text>
+      <text y="588" class="fade-in line" style="--i:19">        <tspan class="string">"🔥 Building scalable, secure &amp; production-ready cloud systems"</tspan><tspan class="bracket">,</tspan></text>
+      <text y="616" class="fade-in line" style="--i:20">        <tspan class="string">"🤖 Developing AI agents with MCP (Model Context Protocol) integration"</tspan><tspan class="bracket">,</tspan></text>
+      <text y="644" class="fade-in line" style="--i:21">        <tspan class="string">"⚡ Automating everything — if it runs twice, it gets a pipeline"</tspan><tspan class="bracket">,</tspan></text>
+      <text y="672" class="fade-in line" style="--i:22">    <tspan class="bracket">],</tspan></text>
+    </g>
+    <!-- Continuation to right pane to save vertical space and look cool -->
+    <g class="t-mono txt" transform="translate(620, 100)">
+      <text y="112" class="fade-in line" style="--i:23">    <tspan class="key">philosophy</tspan><tspan class="bracket">:</tspan> <tspan class="string">"Infrastructure should be "</tspan></text>
+      <text y="140" class="fade-in line" style="--i:24">                <tspan class="string">"invisible, resilient, and self-healing."</tspan><tspan class="bracket">,</tspan></text>
+
+      <text y="196" class="fade-in line" style="--i:25">    <tspan class="key">deploy</tspan><tspan class="bracket">:</tspan> <tspan class="keyword">function</tspan><tspan class="bracket">() {</tspan></text>
+      <text y="224" class="fade-in line" style="--i:26">        <tspan class="keyword">return</tspan> <tspan class="string">"🚀 Systems online. All pipelines green."</tspan><tspan class="bracket">;</tspan></text>
+      <text y="252" class="fade-in line" style="--i:27">    <tspan class="bracket">}</tspan></text>
+      <text y="280" class="fade-in line" style="--i:28"><tspan class="bracket">};</tspan></text>
+
+      <text y="336" class="fade-in line" style="--i:29"><tspan class="variable">DevOpsEngineer</tspan><tspan class="bracket">.</tspan><tspan class="key">deploy</tspan><tspan class="bracket">();</tspan></text>
+
+      <!-- Typing Output -->
+      <g transform="translate(0, 370)">
+        <text class="typewriter" filter="url(#glow)"><tspan class="comment">// Output:</tspan> <tspan class="string">🚀 Systems online.</tspan> <tspan class="bracket" fill="#22D3EE">_</tspan></text>
+      </g>
+    </g>
+  </g>
+
+  <!-- shimmering frame border -->
+  <rect x="1" y="1" width="1198" height="1248" rx="27" fill="none" stroke="url(#borderGrad)" stroke-width="2"/>
+  <rect x="1" y="1" width="1198" height="1248" rx="27" fill="none" stroke="#7DD3FC" stroke-opacity="0.15" stroke-width="1.5"/>
+</svg>
