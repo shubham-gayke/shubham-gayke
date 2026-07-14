@@ -462,7 +462,7 @@
   <rect width="220" height="240" class="glass-card"/>
   <rect x="20" y="25" width="12" height="12" rx="3" fill="#c084fc" opacity="0.2"/>
   <rect x="20" y="25" width="12" height="12" rx="3" fill="none" stroke="#c084fc" stroke-width="1.5"/>
-  <text x="42" y="36" class="subtitle" fill="#c084fc">SECURITY & AI</text>
+  <text x="42" y="36" class="subtitle" fill="#c084fc">SECURITY &amp; AI</text>
   <line x1="20" y1="55" x2="200" y2="55" stroke="#ffffff" stroke-opacity="0.05"/>
 
 
