@@ -93,17 +93,17 @@
 <br/>
 
 <div align="center">
-  <a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=D5959B79548455792A7547789EC433509523A61DAE0BFF0B1CF42B6437F7CD44"><img width="32%" src="./certs/oracle_devops.svg" alt="Oracle DevOps"/></a>&nbsp;
-  <a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=350B59B6807EFD465DC623FECE329C9CFE51A56BA1266899394D6DA5E5CFDC02"><img width="32%" src="./certs/oracle_aws.svg" alt="Oracle AWS Architect"/></a>&nbsp;
-  <a href="https://www.hackerrank.com/certificates/iframe/3877fd359065"><img width="32%" src="./certs/sql_advanced.svg" alt="SQL Advanced"/></a>
+  <a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=D5959B79548455792A7547789EC433509523A61DAE0BFF0B1CF42B6437F7CD44"><img width="32%" src="./certs/oracle_devops.svg?v=2" alt="Oracle DevOps"/></a>&nbsp;
+  <a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=350B59B6807EFD465DC623FECE329C9CFE51A56BA1266899394D6DA5E5CFDC02"><img width="32%" src="./certs/oracle_aws.svg?v=2" alt="Oracle AWS Architect"/></a>&nbsp;
+  <a href="https://www.hackerrank.com/certificates/iframe/3877fd359065"><img width="32%" src="./certs/sql_advanced.svg?v=2" alt="SQL Advanced"/></a>
   <br/><br/>
-  <a href="https://www.hackerrank.com/certificates/iframe/e7ecdbe31b88"><img width="32%" src="./certs/rest_api.svg" alt="REST API"/></a>&nbsp;
-  <a href="https://www.credly.com/badges/f9cfab76-4566-4a2f-8241-4bba8207ed6a"><img width="32%" src="./certs/ms_ai.svg" alt="MS AI Skills"/></a>&nbsp;
-  <a href="https://learn.microsoft.com/en-us/users/shubhamgayke-0899/"><img width="32%" src="./certs/azure.svg" alt="Azure Trophy"/></a>
+  <a href="https://www.hackerrank.com/certificates/iframe/e7ecdbe31b88"><img width="32%" src="./certs/rest_api.svg?v=2" alt="REST API"/></a>&nbsp;
+  <a href="https://www.credly.com/badges/f9cfab76-4566-4a2f-8241-4bba8207ed6a"><img width="32%" src="./certs/ms_ai.svg?v=2" alt="MS AI Skills"/></a>&nbsp;
+  <a href="https://learn.microsoft.com/en-us/users/shubhamgayke-0899/"><img width="32%" src="./certs/azure.svg?v=2" alt="Azure Trophy"/></a>
   <br/><br/>
-  <a href="https://www.credly.com/users/shubham-gayke/badges/credly"><img width="32%" src="./certs/gcp.svg" alt="GCP Skills"/></a>&nbsp;
-  <a href="https://www.udemy.com/certificate/UC-3cee2428-890d-44c1-b27d-b07c3d319046/"><img width="32%" src="./certs/aws_sa.svg" alt="AWS SA"/></a>&nbsp;
-  <a href="https://www.theforage.com/completion-certificates/9PBTqmSxAf6zZTseP/udmxiyHeqYQLkTPvf_9PBTqmSxAf6zZTseP_QHZfHBduwup8Bnq62_1755798824468_completion_certificate.pdf"><img width="32%" src="./certs/deloitte.svg" alt="Deloitte"/></a>
+  <a href="https://www.credly.com/users/shubham-gayke/badges/credly"><img width="32%" src="./certs/gcp.svg?v=2" alt="GCP Skills"/></a>&nbsp;
+  <a href="https://www.udemy.com/certificate/UC-3cee2428-890d-44c1-b27d-b07c3d319046/"><img width="32%" src="./certs/aws_sa.svg?v=2" alt="AWS SA"/></a>&nbsp;
+  <a href="https://www.theforage.com/completion-certificates/9PBTqmSxAf6zZTseP/udmxiyHeqYQLkTPvf_9PBTqmSxAf6zZTseP_QHZfHBduwup8Bnq62_1755798824468_completion_certificate.pdf"><img width="32%" src="./certs/deloitte.svg?v=2" alt="Deloitte"/></a>
 </div>
 
 <br/>
