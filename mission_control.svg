@@ -83,8 +83,7 @@
   <text x="75" y="42" class="title">Automated CI/CD Pipeline &amp; Multi-Cloud</text>
   
   <text x="75" y="75" class="desc">
-    <tspan x="75" dy="0">Designed and implemented a fully automated CI/CD pipeline using GitHub Actions, Jenkins, and Docker </tspan>
-    <tspan x="75" dy="25">to deploy microservices across AWS and Azure.</tspan>
+    <tspan x="75" dy="0">Designed and implemented a fully automated CI/CD pipeline using GitHub Actions,</tspan>\n    <tspan x="75" dy="25">Jenkins, and Docker to deploy microservices across AWS and Azure.</tspan>
   </text>
   
   <!-- Tags -->
@@ -150,8 +149,7 @@
   <text x="75" y="42" class="title">Infrastructure as Code Automation &amp; GitOps</text>
   
   <text x="75" y="75" class="desc">
-    <tspan x="75" dy="0">Built scalable cloud infrastructure using Terraform and Ansible. Implemented GitOps workflow for Kub</tspan>
-    <tspan x="75" dy="25">ernetes deployments with automated rollbacks.</tspan>
+    <tspan x="75" dy="0">Built scalable cloud infrastructure using Terraform and Ansible. Implemented GitOps</tspan>\n    <tspan x="75" dy="25">workflow for Kubernetes deployments with automated rollbacks.</tspan>
   </text>
   
   <!-- Tags -->
@@ -213,8 +211,7 @@
   <text x="75" y="42" class="title">Kubernetes Cluster Monitoring &amp; Logging</text>
   
   <text x="75" y="75" class="desc">
-    <tspan x="75" dy="0">Deployed centralized monitoring and logging stack with Prometheus, Grafana, and ELK stack. Custom al</tspan>
-    <tspan x="75" dy="25">erts for resource utilization reducing system downtime.</tspan>
+    <tspan x="75" dy="0">Deployed centralized monitoring and logging stack with Prometheus, Grafana, and ELK</tspan>\n    <tspan x="75" dy="25">stack. Custom alerts for resource utilization reducing system downtime.</tspan>
   </text>
   
   <!-- Tags -->
