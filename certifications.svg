@@ -20,10 +20,15 @@
   <style>
     .t-mono { font-family: 'JetBrains Mono', Consolas, monospace; }
     .t-main { font-family: 'Segoe UI', Roboto, sans-serif; }
-    .cert-box { fill: url(#boxGrad); stroke: #22D3EE; stroke-opacity: 0.3; stroke-width: 1; rx: 8; }
+    .cert-box { fill: url(#boxGrad); stroke: #22D3EE; stroke-opacity: 0.3; stroke-width: 1; rx: 8; transition: all 0.3s ease; }
     .cert-title { fill: #E0F2FE; font-size: 14px; font-weight: bold; }
     .cert-issuer { fill: #7C93A8; font-size: 12px; }
-    .cert-status { fill: #5EEAD4; font-size: 11px; }
+    .cert-status { fill: #5EEAD4; font-size: 11px; transition: all 0.3s ease; }
+    
+    a { cursor: pointer; text-decoration: none; outline: none; }
+    a:hover .cert-box { stroke: #5EEAD4; stroke-opacity: 0.9; fill: rgba(34, 211, 238, 0.2); }
+    a:hover .cert-status { fill: #ffffff; text-decoration: underline; }
+    a:hover .cert-title { fill: #ffffff; }
   </style>
 
   <rect width="1200" height="350" fill="url(#bg)" rx="16"/>
@@ -33,72 +38,96 @@
 
   <g transform="translate(40, 80)">
     <!-- Row 1 -->
-    <g transform="translate(0, 0)">
-      <rect width="350" height="70" class="cert-box"/>
-      <circle cx="20" cy="35" r="4" fill="#5EEAD4" filter="url(#glow)"><animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite"/></circle>
-      <text x="35" y="30" class="t-main cert-title">Oracle Certified DevOps Professional</text>
-      <text x="35" y="50" class="t-mono cert-issuer">Oracle</text>
-      <text x="280" y="40" class="t-mono cert-status">VERIFIED [🔗]</text>
-    </g>
-    <g transform="translate(380, 0)">
-      <rect width="350" height="70" class="cert-box"/>
-      <circle cx="20" cy="35" r="4" fill="#5EEAD4" filter="url(#glow)"><animate attributeName="opacity" values="1;0.4;1" dur="2.2s" repeatCount="indefinite"/></circle>
-      <text x="35" y="30" class="t-main cert-title">Oracle AWS Certified Architect Pro</text>
-      <text x="35" y="50" class="t-mono cert-issuer">Oracle</text>
-      <text x="280" y="40" class="t-mono cert-status">VERIFIED [🔗]</text>
-    </g>
-    <g transform="translate(760, 0)">
-      <rect width="350" height="70" class="cert-box"/>
-      <circle cx="20" cy="35" r="4" fill="#5EEAD4" filter="url(#glow)"><animate attributeName="opacity" values="1;0.4;1" dur="2.4s" repeatCount="indefinite"/></circle>
-      <text x="35" y="30" class="t-main cert-title">SQL Advanced</text>
-      <text x="35" y="50" class="t-mono cert-issuer">HackerRank</text>
-      <text x="280" y="40" class="t-mono cert-status">VERIFIED [🔗]</text>
-    </g>
+    <a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=D5959B79548455792A7547789EC433509523A61DAE0BFF0B1CF42B6437F7CD44" target="_blank">
+      <g transform="translate(0, 0)">
+        <rect width="350" height="70" class="cert-box"/>
+        <circle cx="20" cy="35" r="4" fill="#5EEAD4" filter="url(#glow)"><animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite"/></circle>
+        <text x="35" y="30" class="t-main cert-title">Oracle Certified DevOps Professional</text>
+        <text x="35" y="50" class="t-mono cert-issuer">Oracle</text>
+        <text x="280" y="40" class="t-mono cert-status">VERIFIED [🔗]</text>
+      </g>
+    </a>
+    
+    <a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=350B59B6807EFD465DC623FECE329C9CFE51A56BA1266899394D6DA5E5CFDC02" target="_blank">
+      <g transform="translate(380, 0)">
+        <rect width="350" height="70" class="cert-box"/>
+        <circle cx="20" cy="35" r="4" fill="#5EEAD4" filter="url(#glow)"><animate attributeName="opacity" values="1;0.4;1" dur="2.2s" repeatCount="indefinite"/></circle>
+        <text x="35" y="30" class="t-main cert-title">Oracle AWS Certified Architect Pro</text>
+        <text x="35" y="50" class="t-mono cert-issuer">Oracle</text>
+        <text x="280" y="40" class="t-mono cert-status">VERIFIED [🔗]</text>
+      </g>
+    </a>
+    
+    <a href="https://www.hackerrank.com/certificates/iframe/3877fd359065" target="_blank">
+      <g transform="translate(760, 0)">
+        <rect width="350" height="70" class="cert-box"/>
+        <circle cx="20" cy="35" r="4" fill="#5EEAD4" filter="url(#glow)"><animate attributeName="opacity" values="1;0.4;1" dur="2.4s" repeatCount="indefinite"/></circle>
+        <text x="35" y="30" class="t-main cert-title">SQL Advanced</text>
+        <text x="35" y="50" class="t-mono cert-issuer">HackerRank</text>
+        <text x="280" y="40" class="t-mono cert-status">VERIFIED [🔗]</text>
+      </g>
+    </a>
 
     <!-- Row 2 -->
-    <g transform="translate(0, 90)">
-      <rect width="350" height="70" class="cert-box"/>
-      <circle cx="20" cy="35" r="4" fill="#5EEAD4" filter="url(#glow)"><animate attributeName="opacity" values="1;0.4;1" dur="1.8s" repeatCount="indefinite"/></circle>
-      <text x="35" y="30" class="t-main cert-title">REST API Certification</text>
-      <text x="35" y="50" class="t-mono cert-issuer">HackerRank</text>
-      <text x="280" y="40" class="t-mono cert-status">VERIFIED [🔗]</text>
-    </g>
-    <g transform="translate(380, 90)">
-      <rect width="350" height="70" class="cert-box"/>
-      <circle cx="20" cy="35" r="4" fill="#5EEAD4" filter="url(#glow)"><animate attributeName="opacity" values="1;0.4;1" dur="2.5s" repeatCount="indefinite"/></circle>
-      <text x="35" y="30" class="t-main cert-title">Microsoft AI Skills Fest 2026</text>
-      <text x="35" y="50" class="t-mono cert-issuer">Microsoft / Credly</text>
-      <text x="280" y="40" class="t-mono cert-status">VERIFIED [🔗]</text>
-    </g>
-    <g transform="translate(760, 90)">
-      <rect width="350" height="70" class="cert-box"/>
-      <circle cx="20" cy="35" r="4" fill="#5EEAD4" filter="url(#glow)"><animate attributeName="opacity" values="1;0.4;1" dur="1.9s" repeatCount="indefinite"/></circle>
-      <text x="35" y="30" class="t-main cert-title">Azure Certification &amp; Achievement</text>
-      <text x="35" y="50" class="t-mono cert-issuer">Microsoft</text>
-      <text x="280" y="40" class="t-mono cert-status">VERIFIED [🔗]</text>
-    </g>
+    <a href="https://www.hackerrank.com/certificates/iframe/e7ecdbe31b88" target="_blank">
+      <g transform="translate(0, 90)">
+        <rect width="350" height="70" class="cert-box"/>
+        <circle cx="20" cy="35" r="4" fill="#5EEAD4" filter="url(#glow)"><animate attributeName="opacity" values="1;0.4;1" dur="1.8s" repeatCount="indefinite"/></circle>
+        <text x="35" y="30" class="t-main cert-title">REST API Certification</text>
+        <text x="35" y="50" class="t-mono cert-issuer">HackerRank</text>
+        <text x="280" y="40" class="t-mono cert-status">VERIFIED [🔗]</text>
+      </g>
+    </a>
+    
+    <a href="https://www.credly.com/badges/f9cfab76-4566-4a2f-8241-4bba8207ed6a" target="_blank">
+      <g transform="translate(380, 90)">
+        <rect width="350" height="70" class="cert-box"/>
+        <circle cx="20" cy="35" r="4" fill="#5EEAD4" filter="url(#glow)"><animate attributeName="opacity" values="1;0.4;1" dur="2.5s" repeatCount="indefinite"/></circle>
+        <text x="35" y="30" class="t-main cert-title">Microsoft AI Skills Fest 2026</text>
+        <text x="35" y="50" class="t-mono cert-issuer">Microsoft / Credly</text>
+        <text x="280" y="40" class="t-mono cert-status">VERIFIED [🔗]</text>
+      </g>
+    </a>
+    
+    <a href="https://learn.microsoft.com/en-us/users/shubhamgayke-0899/" target="_blank">
+      <g transform="translate(760, 90)">
+        <rect width="350" height="70" class="cert-box"/>
+        <circle cx="20" cy="35" r="4" fill="#5EEAD4" filter="url(#glow)"><animate attributeName="opacity" values="1;0.4;1" dur="1.9s" repeatCount="indefinite"/></circle>
+        <text x="35" y="30" class="t-main cert-title">Azure Certification &amp; Achievement</text>
+        <text x="35" y="50" class="t-mono cert-issuer">Microsoft</text>
+        <text x="280" y="40" class="t-mono cert-status">VERIFIED [🔗]</text>
+      </g>
+    </a>
 
     <!-- Row 3 -->
-    <g transform="translate(0, 180)">
-      <rect width="350" height="70" class="cert-box"/>
-      <circle cx="20" cy="35" r="4" fill="#5EEAD4" filter="url(#glow)"><animate attributeName="opacity" values="1;0.4;1" dur="2.1s" repeatCount="indefinite"/></circle>
-      <text x="35" y="30" class="t-main cert-title">GCP Skills &amp; Badges</text>
-      <text x="35" y="50" class="t-mono cert-issuer">Google Cloud / Credly</text>
-      <text x="280" y="40" class="t-mono cert-status">VERIFIED [🔗]</text>
-    </g>
-    <g transform="translate(380, 180)">
-      <rect width="350" height="70" class="cert-box"/>
-      <circle cx="20" cy="35" r="4" fill="#5EEAD4" filter="url(#glow)"><animate attributeName="opacity" values="1;0.4;1" dur="2.3s" repeatCount="indefinite"/></circle>
-      <text x="35" y="30" class="t-main cert-title">AWS Solution Architect</text>
-      <text x="35" y="50" class="t-mono cert-issuer">Udemy</text>
-      <text x="280" y="40" class="t-mono cert-status">VERIFIED [🔗]</text>
-    </g>
-    <g transform="translate(760, 180)">
-      <rect width="350" height="70" class="cert-box"/>
-      <circle cx="20" cy="35" r="4" fill="#5EEAD4" filter="url(#glow)"><animate attributeName="opacity" values="1;0.4;1" dur="2.6s" repeatCount="indefinite"/></circle>
-      <text x="35" y="30" class="t-main cert-title">Deloitte Completion Certificate</text>
-      <text x="35" y="50" class="t-mono cert-issuer">Forage</text>
-      <text x="280" y="40" class="t-mono cert-status">VERIFIED [🔗]</text>
-    </g>
+    <a href="https://www.credly.com/users/shubham-gayke/badges/credly" target="_blank">
+      <g transform="translate(0, 180)">
+        <rect width="350" height="70" class="cert-box"/>
+        <circle cx="20" cy="35" r="4" fill="#5EEAD4" filter="url(#glow)"><animate attributeName="opacity" values="1;0.4;1" dur="2.1s" repeatCount="indefinite"/></circle>
+        <text x="35" y="30" class="t-main cert-title">GCP Skills &amp; Badges</text>
+        <text x="35" y="50" class="t-mono cert-issuer">Google Cloud / Credly</text>
+        <text x="280" y="40" class="t-mono cert-status">VERIFIED [🔗]</text>
+      </g>
+    </a>
+    
+    <a href="https://www.udemy.com/certificate/UC-3cee2428-890d-44c1-b27d-b07c3d319046/" target="_blank">
+      <g transform="translate(380, 180)">
+        <rect width="350" height="70" class="cert-box"/>
+        <circle cx="20" cy="35" r="4" fill="#5EEAD4" filter="url(#glow)"><animate attributeName="opacity" values="1;0.4;1" dur="2.3s" repeatCount="indefinite"/></circle>
+        <text x="35" y="30" class="t-main cert-title">AWS Solution Architect</text>
+        <text x="35" y="50" class="t-mono cert-issuer">Udemy</text>
+        <text x="280" y="40" class="t-mono cert-status">VERIFIED [🔗]</text>
+      </g>
+    </a>
+    
+    <a href="https://www.theforage.com/completion-certificates/9PBTqmSxAf6zZTseP/udmxiyHeqYQLkTPvf_9PBTqmSxAf6zZTseP_QHZfHBduwup8Bnq62_1755798824468_completion_certificate.pdf" target="_blank">
+      <g transform="translate(760, 180)">
+        <rect width="350" height="70" class="cert-box"/>
+        <circle cx="20" cy="35" r="4" fill="#5EEAD4" filter="url(#glow)"><animate attributeName="opacity" values="1;0.4;1" dur="2.6s" repeatCount="indefinite"/></circle>
+        <text x="35" y="30" class="t-main cert-title">Deloitte Completion Certificate</text>
+        <text x="35" y="50" class="t-mono cert-issuer">Forage</text>
+        <text x="280" y="40" class="t-mono cert-status">VERIFIED [🔗]</text>
+      </g>
+    </a>
   </g>
 </svg>
