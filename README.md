@@ -144,13 +144,13 @@
 <br/>
 
 <!-- GitHub Stats -->
-<img width="49%" src="https://github-readme-stats.vercel.app/api?username=shubham-gayke&show_icons=true&theme=radical&hide_border=true&bg_color=040910&title_color=38BDF8&icon_color=22D3EE&text_color=c9d1d9&ring_color=38BDF8&count_private=true&include_all_commits=true" alt="GitHub Stats"/>
+<img width="49%" src="https://github-readme-stats-eight-theta.vercel.app/api?username=shubham-gayke&show_icons=true&theme=radical&hide_border=true&bg_color=040910&title_color=38BDF8&icon_color=22D3EE&text_color=c9d1d9&ring_color=38BDF8&count_private=true&include_all_commits=true" alt="GitHub Stats"/>
 <img width="49%" src="https://github-readme-streak-stats.herokuapp.com/?user=shubham-gayke&theme=radical&hide_border=true&background=040910&ring=38BDF8&fire=38BDF8&currStreakLabel=38BDF8&sideLabels=22D3EE&dates=c9d1d9&currStreakNum=ffffff&sideNums=22D3EE" alt="Streak Stats"/>
 
 <br/><br/>
 
 <!-- Top Languages -->
-<img width="40%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=shubham-gayke&layout=compact&theme=radical&hide_border=true&bg_color=040910&title_color=38BDF8&text_color=c9d1d9" alt="Top Languages"/>
+<img width="40%" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=shubham-gayke&layout=compact&theme=radical&hide_border=true&bg_color=040910&title_color=38BDF8&text_color=c9d1d9" alt="Top Languages"/>
 
 <br/><br/>
 
