@@ -121,16 +121,15 @@
 <br/>
 
 <div align="center">
-  <a href="https://leetcode.com/u/shubhamgayke/"><img src="./profiles/leetcode.svg" width="24%" alt="LeetCode"/></a>
-  <a href="https://www.hackerrank.com/profile/shubhamgayke123"><img src="./profiles/hackerrank.svg" width="24%" alt="HackerRank"/></a>
-  <a href="https://github.com/shubham-gayke"><img src="./profiles/github.svg" width="24%" alt="GitHub"/></a>
+  <a href="https://leetcode.com/u/Shubham_Gayke/"><img src="./profiles/leetcode.svg" width="24%" alt="LeetCode"/></a>
+  <a href="https://www.hackerrank.com/profile/shubhamgayke9860"><img src="./profiles/hackerrank.svg" width="24%" alt="HackerRank"/></a>
   <a href="https://dev.to/shubham_gayke"><img src="./profiles/devto.svg" width="24%" alt="DEV.TO"/></a>
+  <a href="https://www.credly.com/users/shubham-gayke"><img src="./profiles/credly.svg" width="24%" alt="Credly"/></a>
 </div>
 
 <div align="center">
-  <a href="https://www.credly.com/users/shubham-gayke/badges"><img src="./profiles/credly.svg" width="24%" alt="Credly"/></a>
   <a href="https://learn.microsoft.com/en-us/users/shubhamgayke-0899/"><img src="./profiles/mslearn.svg" width="24%" alt="Microsoft Learn"/></a>
-  <a href="https://drive.google.com/file/d/1OzzT5Mz3NrrzNX2J7AIz2WrCvPAfnGu0/view?usp=sharing"><img src="./profiles/awstalent.svg" width="24%" alt="AWS Talent"/></a>
+  <a href="https://drive.google.com/file/d/1OzzT5Mz3NrrzNX2J7AIz2WrCvPAfnGu0/view"><img src="./profiles/awstalent.svg" width="24%" alt="AWS Talent"/></a>
   <a href="https://community.oracle.com/ou/profile/discussions/Shubham%20Gayke"><img src="./profiles/oracleedu.svg" width="24%" alt="Oracle Edu"/></a>
 </div>
 
