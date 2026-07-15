@@ -159,39 +159,16 @@
 
 <br/><br/>
 
-<!-- Trophies -->
-<img src="https://github-profile-trophy.vercel.app/?username=shubham-gayke&theme=darkhub&no-frame=true&no-bg=true&column=7&margin-w=15&margin-h=15" alt="Trophies"/>
-
 <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
 
 <!-- ═══════════════════════════════════════════════════════════════════ -->
-<!-- ██                 CONTRIBUTION SNAKE                            ██ -->
+<!-- ██             SYSTEM TERMINAL & METRICS DASHBOARD               ██ -->
 <!-- ═══════════════════════════════════════════════════════════════════ -->
 
 <br/>
-<h2 align="center">🐍 `> CONTRIBUTION_SNAKE.animate()`</h2>
+<h2 align="center">⚙️ `> METRICS_DASHBOARD.render()`</h2>
 <br/>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/shubham-gayke/shubham-gayke/output/github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/shubham-gayke/shubham-gayke/output/github-snake.svg" />
-  <img alt="Snake animation" src="https://raw.githubusercontent.com/shubham-gayke/shubham-gayke/output/github-snake-dark.svg" />
-</picture>
-
-<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
-
-<!-- ═══════════════════════════════════════════════════════════════════ -->
-<!-- ██                    CONNECT — FOOTER                           ██ -->
-<!-- ═══════════════════════════════════════════════════════════════════ -->
-
-<img width="100%" src="./footer.svg" alt="Terminal Footer" />
-
-<br/><br/>
-
-<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark" alt="Random Dev Quote"/>
-
-<br/><br/>
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,25:1a0533,50:6366f1,75:f97316,100:0d1117&height=150&section=footer&animation=twinkling" />
+<img width="100%" src="./cyber_footer.svg" alt="Cyber Metrics Footer" />
 
 </div>
