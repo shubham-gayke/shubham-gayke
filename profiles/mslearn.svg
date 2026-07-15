@@ -45,14 +45,48 @@
     
     <!-- Scanning Effect -->
     <g clip-path="url(#cardClip)">
-      <linearGradient id="scanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0"/>
-      <stop offset="50%" stop-color="#22d3ee" stop-opacity="0.6"/>
-      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
+      
+    <linearGradient id="starGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="1" />
     </linearGradient>
-    <rect x="0" y="0" width="340" height="130" fill="url(#scanGrad)">
-      <animate attributeName="opacity" values="0;1;0" dur="3.2s" repeatCount="indefinite"/>
-    </rect>
+
+    <!-- Twinkling Stars -->
+    <circle cx="35" cy="25" r="1.2" fill="#fff" opacity="0">
+      <animate attributeName="opacity" values="0;1;0" dur="2s" repeatCount="indefinite" begin="0s"/>
+    </circle>
+    <circle cx="170" cy="90" r="1.5" fill="#22d3ee" opacity="0">
+      <animate attributeName="opacity" values="0;0.8;0" dur="3s" repeatCount="indefinite" begin="1s"/>
+    </circle>
+    <circle cx="280" cy="30" r="1" fill="#fff" opacity="0">
+      <animate attributeName="opacity" values="0;1;0" dur="2.5s" repeatCount="indefinite" begin="0.5s"/>
+    </circle>
+    <circle cx="320" cy="110" r="2" fill="#22d3ee" opacity="0">
+      <animate attributeName="opacity" values="0;0.5;0" dur="4s" repeatCount="indefinite" begin="2s"/>
+    </circle>
+    <circle cx="80" cy="110" r="1.2" fill="#fff" opacity="0">
+      <animate attributeName="opacity" values="0;0.9;0" dur="3.5s" repeatCount="indefinite" begin="1.2s"/>
+    </circle>
+    <circle cx="220" cy="40" r="1.8" fill="#22d3ee" opacity="0">
+      <animate attributeName="opacity" values="0;0.7;0" dur="2.2s" repeatCount="indefinite" begin="0.8s"/>
+    </circle>
+
+    <!-- Shooting Stars -->
+    <g filter="url(#softGlow)">
+      <line x1="-30" y1="-30" x2="0" y2="0" stroke="url(#starGrad)" stroke-width="2" stroke-linecap="round">
+        <animateTransform attributeName="transform" type="translate" from="-20 -20" to="400 400" dur="3s" repeatCount="indefinite" begin="0s" />
+      </line>
+      <line x1="-40" y1="-40" x2="0" y2="0" stroke="url(#starGrad)" stroke-width="1.5" stroke-linecap="round">
+        <animateTransform attributeName="transform" type="translate" from="150 -50" to="400 200" dur="4s" repeatCount="indefinite" begin="1.5s" />
+      </line>
+      <line x1="-20" y1="-20" x2="0" y2="0" stroke="url(#starGrad)" stroke-width="2.5" stroke-linecap="round">
+        <animateTransform attributeName="transform" type="translate" from="-50 50" to="200 300" dur="2.5s" repeatCount="indefinite" begin="2.2s" />
+      </line>
+      <line x1="-50" y1="-50" x2="0" y2="0" stroke="url(#starGrad)" stroke-width="1" stroke-linecap="round">
+        <animateTransform attributeName="transform" type="translate" from="50 -50" to="300 200" dur="3.5s" repeatCount="indefinite" begin="0.8s" />
+      </line>
+    </g>
+  
     </g>
   </g>
 </svg>
