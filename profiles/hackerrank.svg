@@ -47,11 +47,11 @@
     <g clip-path="url(#cardClip)">
       <linearGradient id="scanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#5eead4" stop-opacity="0"/>
-      <stop offset="50%" stop-color="#5eead4" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#5eead4" stop-opacity="0.6"/>
       <stop offset="100%" stop-color="#5eead4" stop-opacity="0"/>
     </linearGradient>
-    <rect x="0" y="0" width="4" height="130" fill="url(#scanGrad)" class="scanner">
-      <animateTransform attributeName="transform" type="translate" from="-20 0" to="360 0" dur="3.5s" repeatCount="indefinite" />
+    <rect x="0" y="0" width="340" height="130" fill="url(#scanGrad)">
+      <animate attributeName="opacity" values="0;1;0" dur="3.5s" repeatCount="indefinite"/>
     </rect>
     </g>
   </g>

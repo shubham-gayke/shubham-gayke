@@ -45,16 +45,13 @@
     
     <!-- Scanning Effect -->
     <g clip-path="url(#cardClip)">
-      <linearGradient id="scanGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <linearGradient id="scanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#ef4444" stop-opacity="0"/>
-      <stop offset="50%" stop-color="#ef4444" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#ef4444" stop-opacity="0.6"/>
       <stop offset="100%" stop-color="#ef4444" stop-opacity="0"/>
     </linearGradient>
-    <rect x="0" y="0" width="340" height="2" fill="url(#scanGrad)" class="scanner">
-      <animateTransform attributeName="transform" type="translate" from="0 -20" to="0 150" dur="3s" repeatCount="indefinite" />
-    </rect>
-    <rect x="0" y="0" width="340" height="2" fill="url(#scanGrad)" class="scanner">
-      <animateTransform attributeName="transform" type="translate" from="0 150" to="0 -20" dur="3s" repeatCount="indefinite" />
+    <rect x="0" y="0" width="340" height="130" fill="url(#scanGrad)">
+      <animate attributeName="opacity" values="0;1;0" dur="3s" repeatCount="indefinite"/>
     </rect>
     </g>
   </g>

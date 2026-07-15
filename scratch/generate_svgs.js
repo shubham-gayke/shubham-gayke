@@ -6,35 +6,35 @@ const config = {
     color: '#38bdf8',
     title: 'LeetCode',
     logo: paths.leetcode,
-    animType: 'topToBottom',
+    animType: 'pulseScanner',
     dur: '3s'
   },
   hackerrank: {
     color: '#5eead4',
     title: 'HackerRank',
     logo: paths.hackerrank,
-    animType: 'leftToRight',
+    animType: 'pulseScanner',
     dur: '3.5s'
   },
   devto: {
     color: '#ffffff',
     title: 'DEV.TO Community Member',
     logo: paths.devdotto,
-    animType: 'bottomToTop',
+    animType: 'pulseScanner',
     dur: '4s'
   },
   credly: {
     color: '#38bdf8',
     title: 'Credly',
     logo: paths.credly,
-    animType: 'rightToLeft',
+    animType: 'pulseScanner',
     dur: '4.5s'
   },
   mslearn: {
     color: '#22d3ee',
     title: 'Microsoft Learn',
     logo: paths.microsoft,
-    animType: 'diagonal',
+    animType: 'pulseScanner',
     dur: '3.2s'
   },
   awstalent: {
@@ -49,7 +49,7 @@ const config = {
     color: '#ef4444',
     title: 'Oracle Edu',
     logo: paths.oracle,
-    animType: 'doubleScan',
+    animType: 'pulseScanner',
     dur: '3s'
   }
 };
